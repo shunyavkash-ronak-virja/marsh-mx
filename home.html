@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!----- Info bar  ----->
+    <!----- Header ----->
     <div class="bg-black info-bar">
         <div class="container">
             <div class="info-bar-wrapper">
@@ -59,7 +59,6 @@
             </div>
         </div>
     </div>
-    <!----- Header ----->
     <header>
         <div class="container">
             <div class="header-wrapper">
@@ -304,7 +303,7 @@
                                     <li class="stack-item responsive-item-toggle">
                                         <div data-target-menu="shop-menu" class="text-uppercase cursor-pointer stack-item-link">
                                             <span>SHOP NOW</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" class="header-link-icon lucide lucide-plus-icon lucide-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" class="stack-item-icon lucide lucide-plus-icon lucide-plus">
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5v14"></path>
                                             </svg>
@@ -333,7 +332,7 @@
                                     <li class="stack-item">
                                         <div data-target-menu="about-us" class="text-uppercase cursor-pointer stack-item-link">
                                             <span>ABOUT US</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" class="header-link-icon lucide lucide-plus-icon lucide-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" class="stack-item-icon lucide lucide-plus-icon lucide-plus">
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5v14"></path>
                                             </svg>
@@ -349,7 +348,7 @@
                             <div class="stack-wrapper">
                                 <ul id="shop-menu" class="stack-item-menus">
                                     <li class="stack-item">
-                                        <div class="text-uppercase cursor-pointer stack-item-link">
+                                        <div class="text-uppercase cursor-pointer stack-item-link" data-target-menu="new-vehicles">
                                             <span>NEW VEHICLES</span>
                                         </div>
                                     </li>
@@ -379,6 +378,7 @@
                                         </div>
                                     </li>
                                 </ul>
+
                                 <ul id="about-us" class="stack-item-menus">
                                     <li class="stack-item">
                                         <div class="text-uppercase cursor-pointer stack-item-link">
@@ -398,44 +398,46 @@
                                 </ul>
                             </div>
                             <div class="stack-wrapper">
-                                <div class="stack-contents-wrapper">
-                                    <div class="cursor-pointer stack-item-link stack-contents-title">
-                                        <span>SHOP BY BRAND</span>
-                                        <svg class="stack-contents-title-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14" />
-                                            <path d="M12 5v14" />
-                                        </svg>
-                                    </div>
-                                    <div class="stack-items-contents-wrapper active">
-                                        <ul class="stack-items-contents">
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">HONDA</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">HUSQVARNA</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">KAWASAKI</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">GASGAS</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">GASGAS</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">SHERCO</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">STANDARD MOTOR CORPORATION</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">CANAM</div>
-                                            </li>
-                                            <li class="stack-item-content">
-                                                <div class="font-white text-uppercase stack-content">TM RACING</div>
-                                            </li>
-                                        </ul>
+                                <div id="new-vehicles" class="stack-item-menus">
+                                    <div class="stack-contents-wrapper">
+                                        <div class="cursor-pointer stack-item-link stack-contents-title">
+                                            <span>SHOP BY BRAND</span>
+                                            <svg class="stack-contents-title-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                        <div class="stack-items-contents-wrapper">
+                                            <ul class="stack-items-contents">
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">HONDA</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">HUSQVARNA</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">KAWASAKI</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">GASGAS</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">GASGAS</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">SHERCO</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">STANDARD MOTOR CORPORATION</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">CANAM</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">TM RACING</div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -482,7 +482,7 @@ header {
   color: var(--white);
 }
 
-.header-link-icon {
+.stack-item-icon {
   width: 26px;
 }
 
@@ -513,16 +513,13 @@ header {
   width: 38%;
 }
 
-/* .stack-item-menus {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+.stack-item-menus {
+  display: none;
 }
 
 .stack-item-menus.active {
-  opacity: 1;
-  visibility: visible;
-} */
+  display: block;
+}
 
 .stack-contents-title {
   color: var(--white);
