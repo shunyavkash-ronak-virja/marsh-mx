@@ -23,7 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function resetMenu() {
     wrappers.forEach((wrapper, index) => {
       wrapper.classList.remove("active", "is-previous");
+
       if (index === 0) wrapper.classList.add("active");
+
+      const menus = wrapper.querySelectorAll(".stack-item-menus");
+      menus.forEach(menu => menu.classList.remove("active"));
     });
 
     if (backBtn) backBtn.classList.remove("active");
@@ -72,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ================================
-  // OPEN SUBMENU (ID MATCH SYSTEM)
+  // OPEN SUBMENU (UPDATED WITH ACTIVE MENU SYSTEM)
   // ================================
 
   toggleLinks.forEach((link) => {
@@ -81,16 +85,19 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!targetId) return;
 
       const targetMenu = document.getElementById(targetId);
-      console.log(targetMenu);
-
       if (!targetMenu) return;
 
       const targetWrapper = targetMenu.closest(".stack-wrapper");
       const targetIndex = Array.from(wrappers).indexOf(targetWrapper);
 
-      if (targetIndex !== -1) {
-        updateMenu(targetIndex);
-      }
+      if (targetIndex === -1) return;
+
+      const menusInsideWrapper = targetWrapper.querySelectorAll(".stack-item-menus");
+      menusInsideWrapper.forEach(menu => menu.classList.remove("active"));
+
+      targetMenu.classList.add("active");
+
+      updateMenu(targetIndex);
     });
   });
 
@@ -101,6 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (backBtn) {
     backBtn.addEventListener("click", () => {
       if (currentIndex > 0) {
+
+        const currentWrapper = wrappers[currentIndex];
+
+        const menus = currentWrapper.querySelectorAll(".stack-item-menus");
+        menus.forEach(menu => menu.classList.remove("active"));
+
         updateMenu(currentIndex - 1);
       }
     });
@@ -112,19 +125,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   resetMenu();
 });
-
-//     const toggleLinks = document.querySelectorAll("[data-target-menu]");
-//     const wrappers = document.querySelectorAll(".stack-wrapper");
-
-//     toggleLinks.forEach((link) => {
-//       link.addEventListener("click", function () {
-//         const targetId = this.dataset.targetMenu;
-//         const targetMenu = document.getElementById(targetId);
-//         if (!targetMenu) return;
-//         const targetWrapper = targetMenu.closest(".stack-wrapper");
-//         const firstWrapper = wrappers[0];
-//         firstWrapper.classList.add("is-previous");
-//         targetWrapper.classList.add("active");
-//       });
-//     });
-//   });
