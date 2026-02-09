@@ -1,0 +1,1493 @@
+/* ----- Start Transducer ----- */
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedBlackRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedBlackRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedBlackRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedBlackRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerBoldItalic.eot");
+  src:
+    url("../fonts/transducer/TransducerBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerBoldItalic.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerBold.eot");
+  src:
+    url("../fonts/transducer/TransducerBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerBold.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedBlackItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedBlackItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedBlackItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedBlackItalicRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerBlackItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerBlackItalicRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerBlackItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerBlackItalicRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerBlackRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerBlackRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerBlackRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerBlackRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedMediumRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedMediumRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedMediumRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedMediumRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed Hairline";
+  src: url("../fonts/transducer/TransducerCondensedHairlineItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedHairlineItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedHairlineItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedHairlineItalicRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedBoldItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedBoldItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedBoldItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedBoldItalicRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed Hairline";
+  src: url("../fonts/transducer/TransducerCondensedHairlineRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedHairlineRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedHairlineRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedHairlineRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedBlackRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedBlackRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedBlackRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedBlackRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedBoldRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedBoldRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedBoldRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedBoldRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed Regular";
+  src: url("../fonts/transducer/TransducerCondensedRegularItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedRegularItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedRegularItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedRegularItalicRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedMediumItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedMediumItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedMediumItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedMediumItalicRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Condensed";
+  src: url("../fonts/transducer/TransducerCondensedRegularRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerCondensedRegularRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerCondensedRegularRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerCondensedRegularRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedMediumRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedMediumRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedMediumRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedMediumRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedBoldRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedBoldRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedBoldRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedBoldRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedBoldItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedBoldItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedBoldItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedBoldItalicRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended Hairline";
+  src: url("../fonts/transducer/TransducerExtendedHairlineRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedHairlineRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedHairlineRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedHairlineRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedBlackItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedBlackItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedBlackItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedBlackItalicRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended Hairline";
+  src: url("../fonts/transducer/TransducerExtendedHairlineItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedHairlineItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedHairlineItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedHairlineItalicRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedMediumItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedMediumItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedMediumItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedMediumItalicRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended Regular";
+  src: url("../fonts/transducer/TransducerExtendedRegularItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedRegularItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedRegularItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedRegularItalicRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Hairline";
+  src: url("../fonts/transducer/TransducerHairlineRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerHairlineRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerHairlineRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerHairlineRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Extended";
+  src: url("../fonts/transducer/TransducerExtendedRegularRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerExtendedRegularRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerExtendedRegularRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerExtendedRegularRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Hairline";
+  src: url("../fonts/transducer/TransducerHairlineItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerHairlineItalicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/transducer/TransducerHairlineItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerHairlineItalicRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer Regular";
+  src: url("../fonts/transducer/TransducerRegularItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerRegularItalicRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerRegularItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerRegularItalicRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerMediumItalicRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerMediumItalicRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerMediumItalicRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerMediumItalicRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Transducer";
+  src: url("../fonts/transducer/TransducerMediumRegular.eot");
+  src:
+    url("../fonts/transducer/TransducerMediumRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/transducer/TransducerMediumRegular.woff2") format("woff2"),
+    url("../fonts/transducer/TransducerMediumRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* ----- End Transducer ----- */
+
+/* ----- Start Acumin Pro Wide ----- */
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Black.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Black.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Regular.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Regular.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-BlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-BlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Bold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Bold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Black.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Black.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-BlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-BlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Regular.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Regular.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Bold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Bold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-BoldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-BoldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-BoldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-BoldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLight.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLight.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Light.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Light.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-LightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-LightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Italic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Italic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-SemiboldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-SemiboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Thin.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Thin.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Medium.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Medium.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-Semibold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Semibold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-MediumItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-MediumItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-ExtraLight.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-ExtraLight.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-ThinItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-ThinItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Condensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlack.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlack.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProCond-UltraBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-ExtraLightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Regular.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Regular.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Black.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Black.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-BlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-BlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Bold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Bold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-BoldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-BoldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Italic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Italic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLight.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLight.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-MediumItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-MediumItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Medium.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Medium.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-LightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-LightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Light.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Light.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Semibold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Semibold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-SemiboldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-SemiboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-Thin.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Thin.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-ThinItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ThinItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlack.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlack.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProExtraCond-UltraBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Light.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Light.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-LightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-LightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Italic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Italic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Medium.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Medium.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Semibold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Semibold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-MediumItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-MediumItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Black.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Black.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Regular.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Regular.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-SemiboldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-SemiboldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Bold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Bold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-BoldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-BoldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-BlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-BlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLight.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLight.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Italic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Italic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-LightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-LightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Light.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Light.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-MediumItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-MediumItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Semibold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Semibold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Medium.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Medium.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-ThinItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ThinItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-Thin.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Thin.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-SemiboldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-SemiboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-Thin.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Thin.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlack.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlack.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro SemiCondensed";
+  src: url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProSemiCond-UltraBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-ThinItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-ThinItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-UltraBlack.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-UltraBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-UltraBlack.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-UltraBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/acumin-pro-wide/AcuminPro-UltraBlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminPro-UltraBlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminPro-UltraBlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminPro-UltraBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Black.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Black.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Regular.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Regular.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-BlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-BlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLight.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLight.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-BoldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-BoldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Bold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Bold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Light.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Light.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Italic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Italic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Medium.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Medium.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-LightItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-LightItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-MediumItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-MediumItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Semibold.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Semibold.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-Thin.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Thin.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-SemiboldItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-SemiboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-ThinItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-ThinItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlack.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlack.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acumin Pro Wide";
+  src: url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlackItalic.eot");
+  src:
+    url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlackItalic.woff2") format("woff2"),
+    url("../fonts/acumin-pro-wide/AcuminProWide-UltraBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
