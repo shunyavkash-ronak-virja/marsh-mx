@@ -180,3 +180,9 @@ footer {
 
 @media (max-width: 1279px) {
 }
+
+@media (max-width: 991px) {
+  .footer-content-wrapper {
+    flex-direction: column;
+  }
+}
