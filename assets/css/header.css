@@ -66,6 +66,11 @@ header {
   left: 0;
   z-index: 990;
   background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+header.body-scroll {
+  top: 0;
 }
 
 .header-wrapper {
@@ -102,6 +107,10 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.header-icon-content {
+  width: 45%;
 }
 
 .header-item-link {
@@ -501,8 +510,6 @@ header {
 
 .option-icon-bg {
   width: 64px;
-  background-color: var(--white-16);
-  color: var(--primary-100);
 }
 
 .option-icon {

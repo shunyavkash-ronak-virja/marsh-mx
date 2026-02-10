@@ -95,6 +95,7 @@
 }
 
 body {
+  min-height: 100vh;
   font-size: 16px;
   line-height: 1.5;
   color: var(--black-200);
@@ -153,6 +154,25 @@ ol {
   cursor: pointer;
 }
 
+input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding-block: 12px;
+  font-family: var(--font-acumin-wide);
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus-visible {
+  outline: none;
+}
+@media (max-width: 575px) {
+  input {
+    font-size: 16px;
+  }
+}
+
 .truncate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -185,6 +205,7 @@ ol {
   font-size: 14px;
   line-height: 1.214;
   text-transform: uppercase;
+  border: none;
   font-family: var(--font-transducer);
   font-weight: 700;
 }
@@ -223,7 +244,12 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   position: relative;
+}
+
+.icon-btn-medium {
+  width: 50px;
 }
 
 .icon-btn::after {
@@ -247,12 +273,11 @@ ol {
 }
 
 .icon-btn-primary {
-  background-color: var(--primary-100);
-  color: var(--black);
+  background-color: var(--white-16);
+  color: var(--primary-100);
 }
 
 .icon-btn-content {
-  width: 45%;
   display: block;
   position: relative;
   z-index: 2;
@@ -272,76 +297,91 @@ ol {
 }
 
 .h1,
-h1 {
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  text-transform: uppercase;
+}
+
+.h1,
+h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   font-size: 55px;
   line-height: 1.163;
 }
 @media (max-width: 991px) {
   .h1,
-  h1 {
+  h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 48px;
   }
 }
 @media (max-width: 767px) {
   .h1,
-  h1 {
+  h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
     line-height: var(--line-height-1_2);
   }
 }
 
 .h2,
-h2 {
+h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 45px;
   line-height: 1.4;
 }
 @media (max-width: 991px) {
   .h2,
-  h2 {
+  h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
   }
 }
 @media (max-width: 767px) {
   .h2,
-  h2 {
+  h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 35px;
     line-height: 1.75;
   }
 }
 
 .h3,
-h3 {
+h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
   font-size: 34px;
   line-height: 1.323;
 }
 
 .h4,
-h4 {
+h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
   font-size: 30px;
   line-height: 1.166;
 }
 @media (max-width: 991px) {
   .h4,
-  h4 {
+  h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 22px;
   }
 }
 @media (max-width: 767px) {
   .h4,
-  h4 {
+  h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 15px;
     line-height: var(--line-height-1_2);
   }
 }
 
 .h5,
-h5 {
+h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
   font-size: 28px;
   line-height: 1.45;
 }
 
 .h6,
-h6 {
+h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 20px;
   line-height: 1;
 }
@@ -353,7 +393,7 @@ h6 {
 
 .font-12 {
   font-size: 12px;
-  line-height: 1%;
+  line-height: 1;
 }
 
 .font-14 {
@@ -368,7 +408,7 @@ h6 {
 
 .font-18 {
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .font-22 {

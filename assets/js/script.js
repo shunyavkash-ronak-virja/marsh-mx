@@ -141,3 +141,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   resetMenu();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const headerWrapper = document.querySelector("header");
+  addEventListener("scroll", () => {
+    if (window.pageYOffset > 26) {
+      headerWrapper.classList.add("body-scroll");
+    } else {
+      headerWrapper.classList.remove("body-scroll");
+    }
+  });
+});
+
+if (document.querySelector(".footer-slider.splide")) {
+  new Splide(".footer-slider", {
+    type: "loop",
+    gap: "24px",
+    pagination: !1,
+    arrows: !1,
+    autoWidth: !0,
+    autoScroll: { speed: 0.7 },
+  }).mount(window.splide.Extensions);
+}

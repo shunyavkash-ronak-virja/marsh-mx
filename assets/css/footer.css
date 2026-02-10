@@ -1,3 +1,182 @@
 footer {
   margin-top: auto;
+  padding-bottom: 46px;
+  background-color: var(--black);
+  font-family: var(--font-transducer-condensed-hairline);
+  font-weight: 500;
+}
+
+.footer-ig-link-wrapper {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.footer-ig-link {
+  position: relative;
+}
+
+.footer-ig-link::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  border-bottom: 1px solid var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-ig-link-wrapper:hover .footer-ig-link::after {
+  width: 100%;
+}
+
+.footer-slide {
+  margin-bottom: 79px;
+}
+
+.footer-track {
+  overflow: visible;
+}
+
+.footer-slide-img-content {
+  width: 228px;
+  height: 208px;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-content {
+  width: 50%;
+}
+
+.footer-contact-title {
+  margin-bottom: 50px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-contact-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-icon-content {
+  width: 36%;
+}
+
+.footer-contact-content {
+  font-family: var(--font-acumin-wide);
+}
+
+.contact-location {
+  align-items: start;
+}
+
+.footer-contact-location {
+  font-size: 12px;
+  color: var(--white-50);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-top: 14px;
+}
+
+.footer-update-wrapper {
+  width: 50%;
+  max-width: 464px;
+}
+
+.footer-sign-up-form {
+  margin-top: 20px;
+}
+
+.footer-sign-up-form input::placeholder {
+  color: var(--white);
+}
+
+.footer-sign-up-btn {
+  margin-top: 36px;
+}
+
+.footer-social-media-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 50px;
+}
+
+.footer-media-icon {
+  width: 48%;
+  aspect-ratio: 1;
+}
+
+.footer-platforms {
+  margin-top: 64px;
+}
+
+.finance-media-title {
+  font-family: var(--font-acumin-wide);
+  font-weight: 500;
+}
+
+.finance-media-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 38px;
+}
+
+.finance-img-content {
+  max-width: 145px;
+  max-height: 72px;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.finance-img {
+  object-fit: contain;
+}
+
+.finance-img-content:hover {
+  filter: grayscale(0);
+}
+
+.the-curious-tag {
+  max-width: 112px;
+  min-height: 12px;
+  margin-top: 52px;
+}
+
+.the-curious-img {
+  object-fit: contain;
+}
+
+.footer-link-wrapper {
+  width: 50%;
+  max-width: 464px;
+  font-family: var(--font-acumin-wide);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: var(--white-50);
+  margin-top: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: var(--white);
+}
+
+@media (max-width: 1279px) {
 }
