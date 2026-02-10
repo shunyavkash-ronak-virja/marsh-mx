@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marsh-mx</title>
 
-
     <!----- Custom css ----->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -62,26 +61,27 @@
     <header>
         <div class="container">
             <div class="header-wrapper">
-                <a class="header-logo-content" href="javascript:void(0);">
-                    <img src="assets/images/logo/header-logo.png" alt="header-logo">
+                <a class="header-logo" href="javascript:void(0);">
+                    <img class="header-logo-content" src="assets/images/logo/header-logo.png" alt="header-logo">
                 </a>
                 <div class="header-items-wrapper">
                     <ul class="header-items">
                         <li class="header-item-link">
-                            <a class="text-uppercase font-22 header-link" href="javascript:void(0);">SHOP NOW
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">SHOP NOW
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" class="header-link-icon lucide lucide-plus-icon lucide-plus">
                                     <path d="M5 12h14" />
                                     <path d="M12 5v14" />
                                 </svg>
                             </a>
-                            <div class="header-mega-menu-wrapper">
+                            <div class="scroll-bar header-mega-menu-wrapper">
                                 <ul class="mega-menu-items">
                                     <li class="mega-menu-item">
-                                        <a href="javascript:void(0);" class="h5 text-uppercase mega-menu-title is-active">NEW VEHICLES</a>
+                                        <a href="javascript:void(0);" class="h5 text-uppercase mega-menu-title active">NEW VEHICLES</a>
                                     </li>
                                     <li class="mega-menu-item">
                                         <a href="javascript:void(0);" class="h5 text-uppercase mega-menu-title">USED
-                                            VEHICLES</a>
+                                            VEHICLES
+                                        </a>
                                     </li>
                                     <li class="mega-menu-item">
                                         <a href="javascript:void(0);" class="h5 text-uppercase mega-menu-title">PARTS</a>
@@ -208,7 +208,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="mega-menu-img-media">
+                                <div class="mega-menu-media">
                                     <img class="img-cover" src="assets/images/sections/header/mega-menu-blog-img.png" alt="mega-menu-img">
                                     <div class="mega-menu-img-content">
                                         <h2 class="font-white mega-menu-img-content-title">LATEST ARRIVALS</h2>
@@ -218,19 +218,19 @@
                             </div>
                         </li>
                         <li class="header-item-link">
-                            <a class="text-uppercase font-22  header-link" href="javascript:void(0);">PARTS FINDER</a>
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">PARTS FINDER</a>
                         </li>
                         <li class="header-item-link">
-                            <a class="text-uppercase font-22  header-link" href="javascript:void(0);">FINANCE</a>
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">FINANCE</a>
                         </li>
                         <li class="header-item-link">
-                            <a class="text-uppercase font-22  header-link" href="javascript:void(0);">NEWS</a>
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">NEWS</a>
                         </li>
                         <li class="header-item-link">
-                            <a class="text-uppercase font-22  header-link" href="javascript:void(0);">SERVICING</a>
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">SERVICING</a>
                         </li>
                         <li class="header-item-link submenu-link">
-                            <a class="text-uppercase font-22  header-link" href="javascript:void(0);">ABOUT US
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">ABOUT US
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" class="header-link-icon lucide lucide-plus-icon lucide-plus">
                                     <path d="M5 12h14" />
                                     <path d="M12 5v14" />
@@ -251,7 +251,7 @@
                             </div>
                         </li>
                         <li class="header-item-link">
-                            <a class="text-uppercase font-22  header-link" href="javascript:void(0);">CONTACT US</a>
+                            <a class="h6 text-uppercase header-link" href="javascript:void(0);">CONTACT US</a>
                         </li>
                     </ul>
                     <div class="header-features-wrapper">
@@ -281,13 +281,15 @@
                     </div>
                     <div class="responsive-items-wrapper">
                         <div class="header-input-wrapper">
-                            <div class="header-menu-close">
-                                <svg class="cursor-pointer font-white header-menu-close-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 6 6 18" />
-                                    <path d="m6 6 12 12" />
-                                </svg>
+                            <div class="header-menu-btn-wrapper">
+                                <div class="font-white cursor-pointer go-back-btn ">Go Back</div>
+                                <div class="font-white cursor-pointer header-menu-close">
+                                    <svg class="header-menu-close-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18" />
+                                        <path d="m6 6 12 12" />
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="font-white cursor-pointer go-back-btn ">Go Back</div>
                             <form class="header-search-wrapper">
                                 <input class="font-white header-search-input" type="text" placeholder="Search…">
                                 <button class="cursor-pointer header-search-btn" type="submit">
@@ -297,7 +299,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="responsive-menu-wrapper">
+                        <div class="scroll-bar responsive-menu-wrapper">
                             <div class="stack-wrapper">
                                 <ul class="stack-items">
                                     <li class="stack-item responsive-item-toggle">
@@ -439,6 +441,46 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <div class="stack-contents-wrapper">
+                                        <div class="cursor-pointer stack-item-link stack-contents-title">
+                                            <span>SHOP BY BRAND</span>
+                                            <svg class="stack-contents-title-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                        <div class="stack-items-contents-wrapper">
+                                            <ul class="stack-items-contents">
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Motorcross</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Enduro</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Kids</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Trials</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Supermoto</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">ATV Sports</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">ATV Utitlity</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Side By Side</div>
+                                                </li>
+                                                <li class="stack-item-content">
+                                                    <div class="font-white text-uppercase stack-content">Electric</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -465,7 +507,7 @@
     </header>
 
 
-    <!-- Custom js -->
+    <!----- Custom js ----->
     <script src="assets/js/script.js"></script>
 </body>
 

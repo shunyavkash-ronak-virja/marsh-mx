@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const toggleBtn = document.querySelector(".header-toggle");
   const responsiveItemsWrapper = document.querySelector(".responsive-items-wrapper");
-  const menuCloseBtn = document.querySelector(".header-menu-close-icon");
+  const menuCloseBtn = document.querySelector(".header-menu-close");
 
   const wrappers = document.querySelectorAll(".stack-wrapper");
   const toggleLinks = document.querySelectorAll("[data-target-menu]");
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (index === 0) wrapper.classList.add("active");
 
       const menus = wrapper.querySelectorAll(".stack-item-menus");
-      menus.forEach(menu => menu.classList.remove("active"));
+      menus.forEach((menu) => menu.classList.remove("active"));
     });
 
     if (backBtn) backBtn.classList.remove("active");
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (targetIndex === -1) return;
 
       const menusInsideWrapper = targetWrapper.querySelectorAll(".stack-item-menus");
-      menusInsideWrapper.forEach(menu => menu.classList.remove("active"));
+      menusInsideWrapper.forEach((menu) => menu.classList.remove("active"));
 
       targetMenu.classList.add("active");
 
@@ -108,11 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (backBtn) {
     backBtn.addEventListener("click", () => {
       if (currentIndex > 0) {
-
         const currentWrapper = wrappers[currentIndex];
 
         const menus = currentWrapper.querySelectorAll(".stack-item-menus");
-        menus.forEach(menu => menu.classList.remove("active"));
+        menus.forEach((menu) => menu.classList.remove("active"));
 
         updateMenu(currentIndex - 1);
       }
@@ -120,8 +119,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ================================
-  // INITIAL STATE
+  // STACK CONTENTS ACCORDION (TOGGLE VERSION)
   // ================================
+  const stackContentTitles = document.querySelectorAll(".stack-contents-title");
+  stackContentTitles.forEach((title) => {
+    title.addEventListener("click", function () {
+      const parentWrapper = this.closest(".stack-contents-wrapper");
+      if (!parentWrapper) return;
+      const currentMenu = this.closest(".stack-item-menus");
+      if (!currentMenu) return;
+      const allWrappers = currentMenu.querySelectorAll(".stack-contents-wrapper");
+      const isAlreadyActive = parentWrapper.classList.contains("active");
+      allWrappers.forEach((wrapper) => {
+        wrapper.classList.remove("active");
+      });
+      if (!isAlreadyActive) {
+        parentWrapper.classList.add("active");
+      }
+    });
+  });
 
   resetMenu();
 });
