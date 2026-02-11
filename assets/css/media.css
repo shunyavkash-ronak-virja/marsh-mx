@@ -1,0 +1,58 @@
+@media (max-width: 1279px) {
+  /* ----- Hero section ----- */
+  .hero-content-wrapper::before {
+    clip-path: polygon(0 0, 72% 0, 42% 100%, 0 100%);
+  }
+
+  .hero-content-wrapper::after {
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 42% 100%);
+  }
+}
+
+@media (max-width: 991px) {
+  /* ----- Hero section ----- */
+  .hero-section {
+    height: auto;
+    align-items: start;
+    padding-top: 82px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .hero-main-wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .hero-content-wrapper {
+    padding-top: 98px;
+    width: 100%;
+  }
+
+  .hero-media {
+    width: calc(100% + 40px);
+    height: 464px;
+    position: static;
+    clip-path: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* ----- Hero section ----- */
+  .hero-content-wrapper::before {
+    clip-path: polygon(0 0, 136% 0, 10% 100%, 0 100%);
+  }
+
+  .hero-content-wrapper::after {
+    clip-path: polygon(150% 0, 100% 0, 100% 100%, -38% 100%);
+  }
+}
+
+@media (max-width: 575px) {
+  /* ----- Hero section ----- */
+  .hero-btn-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 18px;
+  }
+}

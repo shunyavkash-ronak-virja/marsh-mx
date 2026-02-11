@@ -1,0 +1,143 @@
+/* ----- Hero section ----- */
+.hero-section {
+  height: 100vh;
+  padding-top: 92px;
+  display: flex;
+  align-items: center;
+  background: url(../images/sections/hero-section/hero-bg-layer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.hero-content-wrapper::before,
+.hero-content-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.hero-content-wrapper::before {
+  left: 0;
+  background-color: var(--black-300);
+  clip-path: polygon(0 0, 68% 0, 38% 100%, 0 100%);
+}
+
+.hero-content-wrapper::after {
+  right: 0;
+  background-color: var(--gray-500);
+  clip-path: polygon(66% 0, 100% 0, 100% 100%, 36% 100%);
+}
+
+.hero-main-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero-content-wrapper {
+  width: 48%;
+  height: 100%;
+  padding-left: 4%;
+}
+
+.hero-title {
+  font-family: var(--font-transducer-extended);
+  font-weight: 900;
+  font-style: italic;
+  span {
+    color: var(--primary-100);
+    font-weight: normal;
+  }
+}
+
+.hero-dec {
+  max-width: 481px;
+  margin-block: 22px 30px;
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-media {
+  width: 52%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(54% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ----- Featured slier section ----- */
+.home-featured-slider {
+  padding-block: 92px 80px;
+}
+
+.featured-slider {
+  margin-top: 36px;
+}
+
+.primary-slider-arrows .splide__arrow {
+  top: 0;
+  width: 56px;
+  height: 46px;
+  opacity: 1;
+  border-radius: 0;
+}
+
+.primary-slider-arrows .splide__arrow:focus {
+  outline: none;
+}
+
+.primary-slider-arrows .splide__arrow--prev {
+  left: auto;
+  right: 80px;
+}
+
+.primary-slider-arrows .splide__arrow--next {
+  right: 1px;
+}
+.featured-track {
+  overflow: visible;
+}
+
+.featured-slider-wrapper {
+  background-color: var(--white-200);
+  padding-inline: 56px;
+  padding-bottom: 32px;
+}
+
+.featured-slider-img-content {
+  width: 492px;
+  height: 454px;
+}
+
+.featured-slider-content {
+  color: var(--gray-100);
+}
+
+.featured-content-title,
+.featured-content-caption {
+  font-family: var(--font-transducer-extended);
+  font-style: italic;
+}
+
+.featured-content-title {
+  font-weight: 900;
+}
+
+.featured-content-caption {
+  font-weight: 500;
+}
+
+.featured-content-price {
+  margin-top: 18px;
+  font-family: var(--font-transducer-condensed);
+  font-weight: 400;
+}

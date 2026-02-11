@@ -26,6 +26,7 @@
   --black-100-47: #14141478;
   --black-200: #332d29;
   --black-200-75: #332d29bf;
+  --black-300: #1a1919;
   --primary: #ffff37;
   --primary-100: #ffff00;
   --primary-100-32: #ffff0052;
@@ -370,6 +371,8 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 45px;
   line-height: 1.4;
+  font-family: var(--font-transducer-condensed);
+  font-weight: 500;
 }
 @media (max-width: 991px) {
   .h2,
