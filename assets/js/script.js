@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
 if (document.querySelector(".footer-slider.splide")) {
   new Splide(".footer-slider", {
     type: "loop",
-    gap: "24px",
+    gap: "15px",
     pagination: !1,
     arrows: !1,
     autoWidth: !0,

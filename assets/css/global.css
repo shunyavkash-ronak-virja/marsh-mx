@@ -103,6 +103,7 @@ body {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -158,6 +159,7 @@ input {
   width: 100%;
   background-color: transparent;
   border: none;
+  font-size: 16px;
   border-bottom: 1px solid var(--white);
   padding-block: 12px;
   font-family: var(--font-acumin-wide);
@@ -166,11 +168,6 @@ input {
 
 input:focus-visible {
   outline: none;
-}
-@media (max-width: 575px) {
-  input {
-    font-size: 16px;
-  }
 }
 
 .truncate {
@@ -220,7 +217,7 @@ input:focus-visible {
   min-width: 260px;
 }
 @media (max-width: 767px) {
-  .btn {
+  .btn-big {
     min-width: 216px;
     padding: 24px;
   }
@@ -250,6 +247,11 @@ input:focus-visible {
 
 .icon-btn-medium {
   width: 50px;
+}
+@media (max-width: 767px) {
+  .icon-btn-medium {
+    width: 45px;
+  }
 }
 
 .icon-btn::after {
@@ -281,6 +283,40 @@ input:focus-visible {
   display: block;
   position: relative;
   z-index: 2;
+}
+
+.text-btn {
+  padding-block: 6px;
+  width: max-content;
+  position: relative;
+}
+
+.text-btn::before,
+.text-btn::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid var(--white-50);
+  transition: all 0.3s ease-in-out;
+}
+
+.text-btn::before {
+  right: 0;
+  bottom: 6px;
+}
+
+.text-btn::after {
+  left: 0;
+  bottom: 4px;
+}
+
+.text-btn::after,
+.text-btn:hover::before {
+  width: 0;
+}
+
+.text-btn::before,
+.text-btn:hover::after {
+  width: 100%;
 }
 
 /* ----- Common scroll bar ----- */
@@ -345,7 +381,6 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 35px;
-    line-height: 1.75;
   }
 }
 
