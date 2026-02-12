@@ -170,10 +170,17 @@ if (featuredSlider.values) {
     var splide = new Splide(".featured-slider.splide", {
       type: "loop",
       gap: 32,
-      fixedWidth: "605",
+      fixedWidth: "auto",
       pagination: false,
       perPage: 2,
-      rewindSpeed: 5000,
+      perMove: 1,
+      speed: 800,
+      breakpoints: {
+        767: {
+          gap: 26,
+          perPage: 1,
+        },
+      },
     });
     splide.mount();
   });
