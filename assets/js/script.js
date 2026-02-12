@@ -169,16 +169,52 @@ if (featuredSlider.values) {
   document.addEventListener("DOMContentLoaded", function () {
     var splide = new Splide(".featured-slider.splide", {
       type: "loop",
+      autoplay: true,
       gap: 32,
       fixedWidth: "auto",
       pagination: false,
       perPage: 2,
       perMove: 1,
       speed: 800,
+      interval: 5000,
       breakpoints: {
         767: {
           gap: 26,
           perPage: 1,
+        },
+      },
+    });
+    splide.mount();
+  });
+}
+
+const exploreSlider = document.querySelectorAll(".explore-slider");
+if (exploreSlider.values) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".explore-slider.splide", {
+      autoplay: true,
+      type: "loop",
+      fixedWidth: "auto",
+      focus: "center",
+      gap: 150,
+      perPage: 2,
+      pagination: false,
+      arrows: false,
+      perMove: 1,
+      speed: 800,
+      interval: 5000,
+      breakpoints: {
+        1279: {
+          gap: 110,
+        },
+        991: {
+          gap: 80,
+        },
+        767: {
+          gap: 50,
+        },
+        575: {
+          gap: 24,
         },
       },
     });

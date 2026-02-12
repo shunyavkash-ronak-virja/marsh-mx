@@ -160,3 +160,134 @@
   font-family: var(--font-transducer-condensed);
   font-weight: 400;
 }
+
+/* ----- Explore more section ----- */
+.explore-more-section {
+  background-color: var(--black-300);
+}
+
+.home-explore-more {
+  padding-block: 80px 122px;
+}
+
+.explore-slider {
+  margin-block: 56px 46px;
+}
+
+.explore-track {
+  overflow: visible;
+}
+
+.explore-wrapper {
+  width: 674px;
+  height: 440px;
+  position: relative;
+}
+
+.explore-media-title {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-family: var(--font-transducer-extended);
+  font-weight: 900;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.explore-media-btn {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ----- Two column section ----- */
+.champions-column-section {
+  padding-block: 155px 92px;
+}
+
+.two-column-section {
+  position: relative;
+}
+
+.two-column-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--white-200);
+  clip-path: polygon(42% 0, 0 0, 0 100%);
+}
+
+.two-column-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.two-column-img-content {
+  width: 52%;
+  max-width: 670px;
+}
+
+.two-column-content {
+  width: 48%;
+  max-width: 566px;
+}
+
+.two-column-title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-transducer-extended);
+  font-weight: 900;
+  font-style: italic;
+}
+
+.two-column-title span {
+  font-weight: 400;
+}
+
+.two-column-description {
+  max-width: 502px;
+  margin-block: 44px;
+  color: var(--black-200);
+}
+
+/* ----- Cta banner section ----- */
+.home-cta-banner {
+  padding-block: 92px 45px;
+}
+
+.cta-banner-wrapper {
+  position: relative;
+  height: 296px;
+}
+
+.cta-banner-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 18px;
+}
+
+.cta-banner-title {
+  font-family: var(--font-transducer-extended);
+  font-weight: 900;
+  font-style: italic;
+}
