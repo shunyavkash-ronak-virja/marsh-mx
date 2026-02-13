@@ -27,6 +27,20 @@
   .home-cta-banner {
     padding-block: 72px 42px;
   }
+
+  /* ----- Finance column section ----- */
+  .finance-column-section {
+    padding-block: 60px 110px;
+  }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-section {
+    padding-block: 138px 120px;
+  }
+
+  .testimonial-content-tag {
+    font-size: 96px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -103,7 +117,8 @@
     gap: 70px;
   }
 
-  .two-column-section::before {
+  .two-column-bg-left-layer::before,
+  .two-column-bg-right-layer::after {
     display: none;
   }
 
@@ -134,6 +149,40 @@
   /* ----- Shop by brand section ----- */
   .shop-by-brand {
     padding-block: 42px 50px;
+  }
+
+  /* ----- Finance column section ----- */
+  .finance-column-section {
+    padding-block: 50px 80px;
+  }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-section {
+    padding-block: 108px 90px;
+  }
+
+  .testimonial-content-tag {
+    font-size: 76px;
+  }
+
+  .testimonial-content {
+    font-size: 25px;
+  }
+
+  .testimonial-content-wrapper {
+    max-width: 678px;
+  }
+
+  .testimonial-slider {
+    margin-bottom: 50px;
+  }
+
+  .testimonial-location {
+    font-size: 16px;
+  }
+
+  .testimonial-slider .splide__pagination {
+    bottom: -54px;
   }
 }
 
@@ -191,6 +240,25 @@
     font-size: 16px;
     line-height: 1.625;
   }
+
+  /* ----- Finance column section ----- */
+  .finance-column-section {
+    padding-bottom: 58px;
+  }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-section {
+    padding-block: 78px 78px;
+  }
+
+  .testimonial-slider,
+  .testimonial-content-wrapper {
+    max-width: 100%;
+  }
+
+  .testimonial-content-tag {
+    font-size: 68px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -229,5 +297,15 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
+  }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-location {
+    font-size: 14px;
+  }
+
+  .testimonial-slider .splide__pagination__page::before,
+  .testimonial-slider .splide__pagination__page {
+    width: 44px;
   }
 }

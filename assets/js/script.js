@@ -241,3 +241,19 @@ if (document.querySelector(".shop-brand-slider.splide")) {
     },
   }).mount(window.splide.Extensions);
 }
+
+const testimonialSlider = document.querySelectorAll(".testimonial-slider");
+if (testimonialSlider.values) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".testimonial-slider.splide", {
+      type: "loop",
+      // autoplay: true,
+      arrows: false,
+      perPage: 1,
+      perMove: 1,
+      speed: 800,
+      interval: 5000,
+    });
+    splide.mount();
+  });
+}
