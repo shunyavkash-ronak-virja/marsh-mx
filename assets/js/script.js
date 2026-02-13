@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
 if (document.querySelector(".footer-slider.splide")) {
   new Splide(".footer-slider", {
     type: "loop",
-    gap: "15px",
+    gap: 15,
     pagination: !1,
     arrows: !1,
     autoWidth: !0,
@@ -225,11 +225,19 @@ if (exploreSlider.values) {
 if (document.querySelector(".shop-brand-slider.splide")) {
   new Splide(".shop-brand-slider", {
     type: "loop",
-    gap: "60px",
+    gap: 60,
     pagination: !1,
     perPage: 8,
     arrows: !1,
     autoWidth: true,
     autoScroll: { speed: 0.7 },
+    breakpoints: {
+      991: {
+        gap: 45,
+      },
+      575: {
+        gap: 30,
+      },
+    },
   }).mount(window.splide.Extensions);
 }
