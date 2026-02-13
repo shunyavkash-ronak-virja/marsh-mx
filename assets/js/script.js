@@ -225,13 +225,11 @@ if (exploreSlider.values) {
 if (document.querySelector(".shop-brand-slider.splide")) {
   new Splide(".shop-brand-slider", {
     type: "loop",
-    gap: "40px",
-    // fixedWidth: "auto",
+    gap: "60px",
     pagination: !1,
     perPage: 8,
     arrows: !1,
     autoWidth: true,
     autoScroll: { speed: 0.7 },
-  }).mount();
-  // window.splide.Extensions;
+  }).mount(window.splide.Extensions);
 }

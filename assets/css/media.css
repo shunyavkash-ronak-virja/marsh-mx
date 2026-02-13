@@ -130,6 +130,11 @@
   .home-cta-banner {
     padding-top: 50px;
   }
+
+  /* ----- Shop by brand section ----- */
+  .shop-by-brand {
+    padding-block: 42px 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -217,5 +222,12 @@
   .explore-wrapper {
     width: 345px;
     height: 225px;
+  }
+
+  /* ----- Shop by brand section ----- */
+  .shop-brand-title {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
 }
