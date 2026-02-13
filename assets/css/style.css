@@ -45,12 +45,12 @@
 }
 
 .hero-title {
-  font-family: var(--font-transducer-extended);
-  font-weight: 900;
+  font-family: var(--font-transducer-exp);
   font-style: italic;
+  font-weight: 400;
+  color: var(--primary-100);
   span {
-    color: var(--primary-100);
-    font-weight: normal;
+    font-family: var(--font-transducer-black-exp);
   }
 }
 
@@ -143,21 +143,21 @@
 
 .featured-content-title,
 .featured-content-caption {
-  font-family: var(--font-transducer-extended);
   font-style: italic;
 }
 
 .featured-content-title {
-  font-weight: 900;
+  font-family: var(--font-transducer-black-exp);
 }
 
 .featured-content-caption {
+  font-family: var(--font-transducer);
   font-weight: 500;
 }
 
 .featured-content-price {
   margin-top: 18px;
-  font-family: var(--font-transducer-condensed);
+  font-family: var(--font-transducer);
   font-weight: 400;
 }
 
@@ -188,8 +188,7 @@
   width: 100%;
   height: 100%;
   padding: 20px;
-  font-family: var(--font-transducer-extended);
-  font-weight: 900;
+  font-family: var(--font-transducer-black-exp);
   font-style: italic;
   display: flex;
   align-items: center;
@@ -247,13 +246,13 @@
 .two-column-title {
   display: flex;
   flex-direction: column;
-  font-family: var(--font-transducer-extended);
-  font-weight: 900;
+  font-family: var(--font-transducer-black-exp);
   font-style: italic;
-}
 
-.two-column-title span {
-  font-weight: 400;
+  span {
+    font-family: var(--font-transducer);
+    font-weight: 500;
+  }
 }
 
 .two-column-description {
@@ -287,7 +286,37 @@
 }
 
 .cta-banner-title {
-  font-family: var(--font-transducer-extended);
-  font-weight: 900;
+  font-family: var(--font-transducer-black-exp);
   font-style: italic;
+}
+
+/* ----- Shop by brand section ----- */
+.shop-by-brand {
+  padding-block: 45px 70px;
+}
+
+.shop-brand-title {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  font-family: var(--font-transducer-black-exp);
+  font-style: italic;
+
+  span {
+    font-family: var(--font-transducer);
+    font-weight: 500;
+  }
+}
+
+.shop-brand-slider {
+  margin-top: 62px;
+}
+
+.shop-brand-list {
+  align-items: center;
+}
+
+.shop-brand-content {
+  max-width: 200px;
+  max-height: 120px;
 }

@@ -132,7 +132,7 @@ header.body-scroll {
   align-items: center;
   gap: 2px;
   color: var(--black-100);
-  font-family: var(--font-transducer-condensed);
+  font-family: var(--font-transducer);
   font-weight: 400;
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -176,8 +176,8 @@ header.body-scroll {
   justify-content: space-between;
   gap: 20px;
   background-color: var(--black);
-  font-family: var(--font-transducer-condensed);
-  font-weight: 500;
+  font-family: var(--font-transducer);
+  font-weight: 400;
   transition: all 0.3s linear;
   opacity: 0;
   visibility: hidden;
@@ -232,7 +232,7 @@ header.body-scroll {
 }
 
 .mega-menu-content-wrapper {
-  font-family: var(--font-acumin-wide);
+  font-family: var(--font-acumin-pro-wide);
   font-weight: 400;
 }
 
@@ -437,8 +437,8 @@ header.body-scroll {
 
 .responsive-menu-wrapper {
   margin-block: 18px 45px;
-  font-family: var(--font-transducer-condensed);
-  font-weight: 500;
+  font-family: var(--font-transducer);
+  font-weight: 400;
   display: flex;
   flex-grow: 1;
   overflow-y: auto;
@@ -499,7 +499,7 @@ header.body-scroll {
   display: flex;
   align-items: center;
   gap: 26px;
-  font-family: var(--font-transducer-extended-regular);
+  font-family: var(--font-transducer-exp);
   font-style: italic;
   line-height: 1.187;
 }
@@ -555,7 +555,8 @@ header.body-scroll {
 }
 
 .stack-items-contents {
-  font-family: var(--font-transducer-extended-regular);
+  font-family: var(--font-transducer-exp);
+  font-style: italic;
   overflow: hidden;
 }
 

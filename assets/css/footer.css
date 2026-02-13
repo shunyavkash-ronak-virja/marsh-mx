@@ -2,14 +2,15 @@ footer {
   margin-top: auto;
   padding-bottom: 46px;
   background-color: var(--black);
-  font-family: var(--font-transducer-condensed-hairline);
-  font-weight: 500;
 }
 
 .footer-ig-link-wrapper {
   width: max-content;
   display: flex;
   align-items: center;
+  gap: 6px;
+  font-family: var(--font-transducer);
+  font-weight: 400;
   margin-bottom: 34px;
 }
 
@@ -71,10 +72,6 @@ footer {
 
 .footer-icon-content {
   width: 36%;
-}
-
-.footer-contact-content {
-  font-family: var(--font-acumin-wide);
 }
 
 .contact-location {
