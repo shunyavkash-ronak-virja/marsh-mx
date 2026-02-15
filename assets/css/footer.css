@@ -61,6 +61,7 @@ footer {
 }
 
 .footer-contact-item {
+  max-width: max-content;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -167,6 +168,7 @@ footer {
 }
 
 .footer-link {
+  max-width: max-content;
   color: var(--white-50);
   margin-top: 14px;
   transition: all 0.3s ease-in-out;
