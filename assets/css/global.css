@@ -208,7 +208,6 @@ input:focus-visible {
   font-weight: 700;
   overflow: hidden;
   position: relative;
-
   span{
     z-index: 2;
   }
@@ -230,15 +229,21 @@ input:focus-visible {
   }
 }
 
+.primary-btn,
+.secondary-btn {
+  transition: all 0.3s  ease-in-out;
+  border: 1px solid;
+}
+
 .primary-btn {
   background-color: var(--primary);
   color: var(--black);
+  border-color: transparent;
 }
 
 .secondary-btn {
   color: var(--white);
-  border: 1px solid var(--white);
-  transition: all 0.3s  ease-in-out;
+  border-color: var(--white);
 }
 
 .primary-btn::before,
@@ -266,6 +271,10 @@ input:focus-visible {
 
 .secondary-btn::before{
   background-color: var(--primary);
+}
+
+.primary-btn:hover{
+  border-color: var(--black);
 }
 
 .secondary-btn:hover{
