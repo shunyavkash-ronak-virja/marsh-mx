@@ -19,19 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // RESET MENU FUNCTION
   // ================================
-
   function resetMenu() {
     wrappers.forEach((wrapper, index) => {
       wrapper.classList.remove("active", "is-previous");
-
       if (index === 0) wrapper.classList.add("active");
-
       const menus = wrapper.querySelectorAll(".stack-item-menus");
       menus.forEach((menu) => menu.classList.remove("active"));
     });
-
     if (backBtn) backBtn.classList.remove("active");
-
     currentIndex = 0;
   }
 
@@ -42,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateMenu(index) {
     wrappers.forEach((wrapper, i) => {
       wrapper.classList.remove("active", "is-previous");
-
       if (i < index) wrapper.classList.add("is-previous");
       if (i === index) wrapper.classList.add("active");
     });

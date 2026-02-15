@@ -206,6 +206,12 @@ input:focus-visible {
   border: none;
   font-family: var(--font-transducer);
   font-weight: 700;
+  overflow: hidden;
+  position: relative;
+
+  span{
+    z-index: 2;
+  }
 }
 @media (max-width: 767px) {
   .btn {
@@ -232,6 +238,39 @@ input:focus-visible {
 .secondary-btn {
   color: var(--white);
   border: 1px solid var(--white);
+  transition: all 0.3s  ease-in-out;
+}
+
+.primary-btn::before,
+.secondary-btn::before{
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:hover::before,
+.secondary-btn:hover::before{
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.primary-btn::before{
+  background-color: var(--white);
+}
+
+.secondary-btn::before{
+  background-color: var(--primary);
+}
+
+.secondary-btn:hover{
+  border-color: transparent;
+  color: var(--black);
 }
 
 .icon-btn {
