@@ -155,7 +155,8 @@ ol {
   cursor: pointer;
 }
 
-input {
+/* ----- Text input ----- */
+.text-field-input {
   width: 100%;
   background-color: transparent;
   border: none;
@@ -166,8 +167,35 @@ input {
   transition: all 0.3s ease-in-out;
 }
 
-input:focus-visible {
+.text-field-input:focus-visible {
   outline: none;
+}
+
+/* ----- Checkbox input ----- */
+.checkbox-input {
+  width: 20px;
+  aspect-ratio: 1;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  position: relative;
+  appearance: none;
+}
+
+.checkbox-input::after {
+  content: "";
+  width: 78%;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: var(--black);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox-input:checked::after {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .truncate {
@@ -208,7 +236,7 @@ input:focus-visible {
   font-weight: 700;
   overflow: hidden;
   position: relative;
-  span{
+  span {
     z-index: 2;
   }
 }
@@ -231,7 +259,7 @@ input:focus-visible {
 
 .primary-btn,
 .secondary-btn {
-  transition: all 0.3s  ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 1px solid;
 }
 
@@ -247,7 +275,7 @@ input:focus-visible {
 }
 
 .primary-btn::before,
-.secondary-btn::before{
+.secondary-btn::before {
   content: "";
   width: 100%;
   height: 0;
@@ -259,25 +287,25 @@ input:focus-visible {
 }
 
 .primary-btn:hover::before,
-.secondary-btn:hover::before{
+.secondary-btn:hover::before {
   top: auto;
   bottom: 0;
   height: 100%;
 }
 
-.primary-btn::before{
+.primary-btn::before {
   background-color: var(--white);
 }
 
-.secondary-btn::before{
+.secondary-btn::before {
   background-color: var(--primary);
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
   border-color: var(--black);
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover {
   border-color: transparent;
   color: var(--black);
 }
@@ -495,6 +523,11 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .font-18 {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.font-20 {
+  font-size: 20px;
+  line-height: 1;
 }
 
 .font-22 {

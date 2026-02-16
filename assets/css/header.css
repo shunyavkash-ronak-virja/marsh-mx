@@ -66,6 +66,7 @@ header {
   left: 0;
   z-index: 990;
   background-color: var(--white);
+  filter: drop-shadow(0 0 20px #00000029);
   transition: all 0.3s ease-in-out;
 }
 
@@ -297,8 +298,8 @@ header.body-scroll {
 }
 
 .header-submenu-wrapper {
-  font-family: var(--font-transducer-condensed);
-  font-weight: 500;
+  font-family: var(--font-transducer);
+  font-weight: 400;
 }
 
 .header-submenu-item:not(:last-child) {

@@ -1,6 +1,6 @@
 footer {
   margin-top: auto;
-  padding-bottom: 46px;
+  padding-block: 64px 46px;
   background-color: var(--black);
 }
 

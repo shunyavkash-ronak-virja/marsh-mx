@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.querySelector(".header-toggle");
   const responsiveItemsWrapper = document.querySelector(".responsive-items-wrapper");
   const menuCloseBtn = document.querySelector(".header-menu-close");
-
   const wrappers = document.querySelectorAll(".stack-wrapper");
   const toggleLinks = document.querySelectorAll("[data-target-menu]");
   const backBtn = document.querySelector(".go-back-btn");
@@ -83,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const targetWrapper = targetMenu.closest(".stack-wrapper");
       const targetIndex = Array.from(wrappers).indexOf(targetWrapper);
-
       if (targetIndex === -1) return;
 
       const menusInsideWrapper = targetWrapper.querySelectorAll(".stack-item-menus");
@@ -136,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
   resetMenu();
 });
 
+// Body Scroll JS
 document.addEventListener("DOMContentLoaded", function () {
   const headerWrapper = document.querySelector("header");
   addEventListener("scroll", () => {
@@ -147,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Footer Slider
 if (document.querySelector(".footer-slider.splide")) {
   new Splide(".footer-slider", {
     type: "loop",
@@ -158,10 +158,11 @@ if (document.querySelector(".footer-slider.splide")) {
   }).mount(window.splide.Extensions);
 }
 
+// Featured Slider
 const featuredSlider = document.querySelectorAll(".featured-slider");
-if (featuredSlider.values) {
+if (featuredSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
-    var splide = new Splide(".featured-slider.splide", {
+    const splide = new Splide(".featured-slider.splide", {
       type: "loop",
       autoplay: true,
       gap: 32,
@@ -182,10 +183,11 @@ if (featuredSlider.values) {
   });
 }
 
+// Explore More Slider
 const exploreSlider = document.querySelectorAll(".explore-slider");
-if (exploreSlider.values) {
+if (exploreSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
-    var splide = new Splide(".explore-slider.splide", {
+    const splide = new Splide(".explore-slider.splide", {
       autoplay: true,
       type: "loop",
       fixedWidth: "auto",
@@ -216,6 +218,7 @@ if (exploreSlider.values) {
   });
 }
 
+// Shop By Brand Slider
 if (document.querySelector(".shop-brand-slider.splide")) {
   new Splide(".shop-brand-slider", {
     type: "loop",
@@ -236,12 +239,13 @@ if (document.querySelector(".shop-brand-slider.splide")) {
   }).mount(window.splide.Extensions);
 }
 
+// Testimonial Slider
 const testimonialSlider = document.querySelectorAll(".testimonial-slider");
-if (testimonialSlider.values) {
+if (testimonialSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
-    var splide = new Splide(".testimonial-slider.splide", {
+    const splide = new Splide(".testimonial-slider.splide", {
       type: "loop",
-      // autoplay: true,
+      autoplay: true,
       arrows: false,
       perPage: 1,
       perMove: 1,
@@ -251,3 +255,24 @@ if (testimonialSlider.values) {
     splide.mount();
   });
 }
+
+/* ========================================
+          productCategory JS
+========================================*/
+// Product category lists
+const productListsWrapper = document.querySelectorAll(".product-lists-wrapper");
+if (productListsWrapper.length) {
+  const productListsItemTitle = document.querySelectorAll(".product-lists-item-title");
+
+  productListsItemTitle.forEach((title) => {
+    title.addEventListener("click", () => {
+      title.classList.toggle("active");
+      const content = title.nextElementSibling;
+      content.classList.toggle("active");
+    });
+  });
+}
+
+// $(document).ready(function () {
+//   $("select").niceSelect();
+// });
