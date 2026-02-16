@@ -366,7 +366,7 @@ header.body-scroll {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .header-menu-close {
@@ -437,7 +437,7 @@ header.body-scroll {
 }
 
 .responsive-menu-wrapper {
-  margin-block: 18px 45px;
+  margin-block: 18px 24px;
   font-family: var(--font-transducer);
   font-weight: 400;
   display: flex;
