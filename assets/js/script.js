@@ -273,6 +273,15 @@ if (productListsWrapper.length) {
   });
 }
 
-// $(document).ready(function () {
-//   $("select").niceSelect();
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  const element = document.getElementById("bikesFilter");
+
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: "",
+    shouldSort: false,
+    placeholder: true,
+    placeholderValue: "Sort",
+    removeItemButton: false
+  });
+});
