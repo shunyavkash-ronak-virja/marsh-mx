@@ -125,7 +125,11 @@
   .two-column-img-content {
     max-width: none;
     width: calc(100% + 36px);
-    height: 425px;
+    max-height: 816px;
+  }
+
+  .two-column-img{
+    height: auto;
   }
 
   .two-column-content,
