@@ -14,14 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const backBtn = document.querySelector(".go-back-btn");
 
   let currentIndex = 0;
+  
+  // ================================
+  // INIT MENU FUNCTION
+  // ================================
+  function initMenu() {
+    wrappers[0].classList.add("active");
+  }
 
   // ================================
   // RESET MENU FUNCTION
   // ================================
   function resetMenu() {
     wrappers.forEach((wrapper, index) => {
-      wrapper.classList.remove("active", "is-previous");
-      if (index === 0) wrapper.classList.add("active");
+      wrapper.classList.remove("active", "is-previous"); 
       const menus = wrapper.querySelectorAll(".stack-item-menus");
       menus.forEach((menu) => menu.classList.remove("active"));
     });
@@ -58,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggleBtn && responsiveItemsWrapper) {
     toggleBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.toggle("active");
+      initMenu();
     });
   }
 
@@ -131,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  resetMenu();
+  
 });
 
 // Body Scroll JS
@@ -273,33 +280,6 @@ if (productListsWrapper.length) {
   });
 }
 
-// Select Box Js
-// document.addEventListener("DOMContentLoaded", function () {
-//   const element = document.getElementById("bikesFilter");
-//   const choices = new Choices(element, {
-//     searchEnabled: false,
-//     itemSelectText: "",
-//     shouldSort: false,
-//     placeholder: true,
-//     placeholderValue: "Sort",
-//     removeItemButton: false,
-//   });
-// });
-
-const selectBox = document.querySelectorAll(".select-box");
-if (selectBox.length) {
-  const bikesFilter = new Choices("#bikesFilter", {
-    searchEnabled: false,
-    itemSelectText: "",
-    shouldSort: false,
-    position: "bottom",
-  });
-
-  // Keep "sort" static
-  document.querySelector("#bikesFilter").addEventListener("change", function () {
-    bikesFilter.removeActiveItems();
-  });
-}
 
 // Filter Toggle Js
 const productItemsWrapper = document.querySelectorAll(".product-items-wrapper");
