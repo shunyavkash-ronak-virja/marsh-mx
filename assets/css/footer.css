@@ -282,6 +282,14 @@ footer {
     gap: 12px;
   }
 
+  .footer-contact-item .icon-btn-medium {
+    width: 40px;
+  }
+
+  .footer-contact-content {
+    font-size: 12px;
+  }
+
   .footer-contact-item:not(:last-child) {
     margin-bottom: 24px;
   }
