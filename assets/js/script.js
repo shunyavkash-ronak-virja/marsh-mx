@@ -273,15 +273,26 @@ if (productListsWrapper.length) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const element = document.getElementById("bikesFilter");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const element = document.getElementById("bikesFilter");
+//   const choices = new Choices(element, {
+//     searchEnabled: false,
+//     itemSelectText: "",
+//     shouldSort: false,
+//     placeholder: true,
+//     placeholderValue: "Sort",
+//     removeItemButton: false,
+//   });
+// });
 
-  const choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: "",
-    shouldSort: false,
-    placeholder: true,
-    placeholderValue: "Sort",
-    removeItemButton: false
-  });
+const bikesFilter = new Choices("#bikesFilter", {
+  searchEnabled: false,
+  itemSelectText: "",
+  shouldSort: false,
+  position: "bottom",
+});
+
+// Keep "sort" static
+document.querySelector("#bikesFilter").addEventListener("change", function () {
+  bikesFilter.removeActiveItems();
 });

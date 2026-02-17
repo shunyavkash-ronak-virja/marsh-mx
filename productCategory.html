@@ -7,7 +7,7 @@
     <title>marsh-mx</title>
 
     <!----- choices select css ----->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 
     <!----- Splide css ----->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
@@ -663,14 +663,13 @@
                     </form>
                 </div>
                 <div class="product-blog-content">
-                    <select name="bikes-filter" id="bikesFilter">
-                        <option value="NewBikes-1">
-                            <label for="NewBikes">Brand New Bikes</label>
-                        </option>
-                        <option value="UsedBikes-2">
-                            <label for="UsedBikes">Used Bikes</label>
-                        </option>
-                    </select>
+                    <div class="select-box">
+                        <span class="select-box-label">sort</span>
+                        <select name="bikes-filter" id="bikesFilter">
+                            <option value="NewBikes">brand new bikes</option>
+                            <option value="UsedBikes">used bikes</option>
+                        </select>
+                    </div>
                     <div class="product-card-wrapper">
                         <div class="product-card">
                             <img class="img-cover product-card-img" src="assets/images/sections/product-category-section/product-category-img-01.png" alt="product-category-img">
@@ -770,6 +769,7 @@
             </div>
         </div>
     </section>
+
 
     <!----- Footer ----->
     <footer class="overflow-hidden">
@@ -918,7 +918,7 @@
 
 
     <!----- choices select js ----->
-<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
     <!----- Splide js ----->
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
