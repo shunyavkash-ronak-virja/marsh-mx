@@ -235,6 +235,10 @@
   }
 
   /* ----- Product category section ----- */
+  .product-category-section {
+    padding-block: 56px 80px;
+  }
+
   .product-category-wrapper {
     flex-direction: column;
   }
@@ -442,6 +446,10 @@
   }
 
   /* ----- Product category section ----- */
+  .product-category-section {
+    padding-block: 48px 65px;
+  }
+
   .product-card-wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 44px;

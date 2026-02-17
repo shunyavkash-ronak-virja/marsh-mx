@@ -502,7 +502,8 @@
 
 /* ----- Product category section ----- */
 .product-category-section {
-  padding-block: 132px 110px;
+  padding-block: 66px 110px;
+  /* 48 65 */
   position: relative;
 }
 
