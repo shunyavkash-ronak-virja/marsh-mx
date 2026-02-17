@@ -511,6 +511,29 @@
         </div>
     </header>
 
+    <!----- Category hero section ----->
+    <section class="category-hero">
+        <div class="container">
+            <div class="mx-auto text-center category-hero-contents">
+                <h1 class="font-white category-hero-title">ELECTRIC BIKES</h1>
+                <p class="truncate line-clamp-2 category-hero-description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                </p>
+                <div class="category-hero-btn-wrapper">
+                    <a class="btn primary-btn category-hero-btn" href="javascript:void(0);">
+                        <span>MOUNTAIN BIKES</span>
+                    </a>
+                    <a class="btn primary-btn category-hero-btn" href="javascript:void(0);">
+                        <span>MOTORBIKES</span>
+                    </a>
+                    <a class="btn primary-btn category-hero-btn" href="javascript:void(0);">
+                        <span>HYBRID BIKES</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!----- Product category section ----->
     <section class="product-category-section">
         <div class="container">
@@ -521,7 +544,20 @@
                         <p class="font-10 text-uppercase product-category-link active">NEW ARRIVALS</p>
                     </div>
                     <h2 class="h3 font-black product-category-title">NEW ARRIVALS</h2>
+                    <a class="h6 font-black filter-toggle-btn" href="javascript:void(0);">FILTER BY
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <path fill="currentColor" d="M20 8H4l8 8z" opacity="1" data-original="#333333" class=""></path>
+                            </g>
+                        </svg>
+                    </a>
                     <form class="product-lists-wrapper">
+                        <div class="font-black cursor-pointer product-lists-close-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="" class="lucide lucide-x-icon lucide-x">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </div>
                         <button class="font-12 cursor-pointer product-clear-btn" type="reset">
                             Clear Filters
                         </button>
@@ -720,7 +756,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cta-content-banner">
+                    <div class="overflow-hidden cta-content-banner">
                         <img class="img-cover" src="assets/images/sections/product-category-section/cta-content-bg.png" alt="cta-content-img">
                         <div class="cta-contents-wrapper">
                             <div class="cta-content">
@@ -770,6 +806,45 @@
         </div>
     </section>
 
+    <!----- Explore more section ----->
+    <section class="overflow-hidden explore-more-section category-explore-more">
+        <div class="container">
+            <h2 class="text-uppercase font-white text-center">EXPLORE BIKES</h2>
+            <div class="explore-slider splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="explore-track splide__track">
+                    <ul class="explore-list splide__list">
+                        <li class="explore-slide splide__slide">
+                            <div class="explore-wrapper">
+                                <img class="img-cover" src="assets/images/sections/explore-section/explore-img-01.png" alt="explore-img">
+                                <h3 class="font-60 font-white explore-media-title">MOTOCROSS</h3>
+                                <a class="btn primary-btn btn-big explore-media-btn" href="javascript:void(0);">
+                                    <span>EXPLORE MOTOCROSS</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="explore-slide splide__slide">
+                            <div class="explore-wrapper">
+                                <img class="img-cover" src="assets/images/sections/explore-section/explore-img-02.png" alt="explore-img">
+                                <h3 class="font-60 font-white explore-media-title">KIDS</h3>
+                                <a class="btn primary-btn btn-big explore-media-btn" href="javascript:void(0);">
+                                    <span>EXPLORE MOTOCROSS</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="explore-slide splide__slide">
+                            <div class="explore-wrapper">
+                                <img class="img-cover" src="assets/images/sections/explore-section/explore-img-03.png" alt="explore-img">
+                                <h3 class="font-60 font-white explore-media-title">ENDURO</h3>
+                                <a class="btn primary-btn btn-big explore-media-btn" href="javascript:void(0);">
+                                    <span>EXPLORE MOTOCROSS</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!----- Footer ----->
     <footer class="overflow-hidden">
@@ -915,7 +990,6 @@
             </div>
         </div>
     </footer>
-
 
     <!----- choices select js ----->
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>

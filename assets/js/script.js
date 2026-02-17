@@ -259,7 +259,7 @@ if (testimonialSlider.length) {
 /* ========================================
           productCategory JS
 ========================================*/
-// Product category lists
+// Product Category Lists
 const productListsWrapper = document.querySelectorAll(".product-lists-wrapper");
 if (productListsWrapper.length) {
   const productListsItemTitle = document.querySelectorAll(".product-lists-item-title");
@@ -273,6 +273,7 @@ if (productListsWrapper.length) {
   });
 }
 
+// Select Box Js
 // document.addEventListener("DOMContentLoaded", function () {
 //   const element = document.getElementById("bikesFilter");
 //   const choices = new Choices(element, {
@@ -285,14 +286,33 @@ if (productListsWrapper.length) {
 //   });
 // });
 
-const bikesFilter = new Choices("#bikesFilter", {
-  searchEnabled: false,
-  itemSelectText: "",
-  shouldSort: false,
-  position: "bottom",
-});
+const selectBox = document.querySelectorAll(".select-box");
+if (selectBox.length) {
+  const bikesFilter = new Choices("#bikesFilter", {
+    searchEnabled: false,
+    itemSelectText: "",
+    shouldSort: false,
+    position: "bottom",
+  });
 
-// Keep "sort" static
-document.querySelector("#bikesFilter").addEventListener("change", function () {
-  bikesFilter.removeActiveItems();
-});
+  // Keep "sort" static
+  document.querySelector("#bikesFilter").addEventListener("change", function () {
+    bikesFilter.removeActiveItems();
+  });
+}
+
+// Filter Toggle Js
+const productItemsWrapper = document.querySelectorAll(".product-items-wrapper");
+if (productItemsWrapper.length) {
+  const filterToggleBtn = document.querySelector(".filter-toggle-btn");
+  const productListsWrapper = document.querySelector(".product-lists-wrapper");
+  const productListsCloseBtn = document.querySelector(".product-lists-close-btn");
+
+  filterToggleBtn.addEventListener("click", () => {
+    productListsWrapper.classList.toggle("active");
+  });
+
+  productListsCloseBtn.addEventListener("click", () => {
+    productListsWrapper.classList.remove("active");
+  });
+}

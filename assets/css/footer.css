@@ -214,8 +214,13 @@ footer {
   .footer-slider {
     margin-bottom: 42px;
   }
+
   .footer-contact-content {
     font-size: 14px;
+  }
+
+  footer {
+    padding-block: 50px 40px;
   }
 }
 
@@ -279,8 +284,5 @@ footer {
 
   .footer-contact-item:not(:last-child) {
     margin-bottom: 24px;
-  }
-
-  .finance-media-wrapper {
   }
 }
