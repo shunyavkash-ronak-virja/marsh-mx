@@ -580,7 +580,7 @@
   max-width: 995px;
 }
 
-/* Custom select css */
+/* Start custom select css */
 .select-box {
   width: 194px;
   position: relative;
@@ -728,8 +728,7 @@
 .choices__item--selectable.is-highlighted::before::after {
   transform: translate(-50%, -50%) scale(1);
 } */
-
-/* End custom select */
+/* End custom select css */
 
 .product-card-wrapper {
   display: grid;
