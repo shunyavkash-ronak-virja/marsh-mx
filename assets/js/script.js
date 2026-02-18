@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // EXISTING SELECTORS
   // ================================
-
   const toggleBtn = document.querySelector(".header-toggle");
   const responsiveItemsWrapper = document.querySelector(".responsive-items-wrapper");
   const menuCloseBtn = document.querySelector(".header-menu-close");
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const backBtn = document.querySelector(".go-back-btn");
 
   let currentIndex = 0;
-  
+
   // ================================
   // INIT MENU FUNCTION
   // ================================
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   function resetMenu() {
     wrappers.forEach((wrapper, index) => {
-      wrapper.classList.remove("active", "is-previous"); 
+      wrapper.classList.remove("active", "is-previous");
       const menus = wrapper.querySelectorAll(".stack-item-menus");
       menus.forEach((menu) => menu.classList.remove("active"));
     });
@@ -38,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // UPDATE MENU (SLIDING SYSTEM)
   // ================================
-
   function updateMenu(index) {
     wrappers.forEach((wrapper, i) => {
       wrapper.classList.remove("active", "is-previous");
@@ -60,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // MOBILE MENU TOGGLE
   // ================================
-
   if (toggleBtn && responsiveItemsWrapper) {
     toggleBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.toggle("active");
@@ -78,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // OPEN SUBMENU (UPDATED WITH ACTIVE MENU SYSTEM)
   // ================================
-
   toggleLinks.forEach((link) => {
     link.addEventListener("click", function () {
       const targetId = this.dataset.targetMenu;
@@ -103,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // GO BACK BUTTON
   // ================================
-
   if (backBtn) {
     backBtn.addEventListener("click", () => {
       if (currentIndex > 0) {
@@ -137,11 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  
 });
 
-// Body Scroll JS
+// BODY SCROLL JS
 document.addEventListener("DOMContentLoaded", function () {
   const headerWrapper = document.querySelector("header");
   addEventListener("scroll", () => {
@@ -153,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Footer Slider
+// FOOTER SLIDER
 if (document.querySelector(".footer-slider.splide")) {
   new Splide(".footer-slider", {
     type: "loop",
@@ -165,7 +158,7 @@ if (document.querySelector(".footer-slider.splide")) {
   }).mount(window.splide.Extensions);
 }
 
-// Featured Slider
+// FEATURED SLIDER
 const featuredSlider = document.querySelectorAll(".featured-slider");
 if (featuredSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
@@ -190,7 +183,7 @@ if (featuredSlider.length) {
   });
 }
 
-// Explore More Slider
+// EXPLORE MORE SLIDER
 const exploreSlider = document.querySelectorAll(".explore-slider");
 if (exploreSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
@@ -225,7 +218,7 @@ if (exploreSlider.length) {
   });
 }
 
-// Shop By Brand Slider
+// SHOP BY BRAND SLIDER
 if (document.querySelector(".shop-brand-slider.splide")) {
   new Splide(".shop-brand-slider", {
     type: "loop",
@@ -246,7 +239,7 @@ if (document.querySelector(".shop-brand-slider.splide")) {
   }).mount(window.splide.Extensions);
 }
 
-// Testimonial Slider
+// TESTIMONIAL SLIDER
 const testimonialSlider = document.querySelectorAll(".testimonial-slider");
 if (testimonialSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
@@ -266,7 +259,7 @@ if (testimonialSlider.length) {
 /* ========================================
           productCategory JS
 ========================================*/
-// Product Category Lists
+// PRODUCT CATEGORY LISTS
 const productListsWrapper = document.querySelectorAll(".product-lists-wrapper");
 if (productListsWrapper.length) {
   const productListsItemTitle = document.querySelectorAll(".product-lists-item-title");
@@ -280,8 +273,18 @@ if (productListsWrapper.length) {
   });
 }
 
+// FILTER BOX JS
+const filterDropDown = document.querySelectorAll(".filter-drop-down");
+if (filterDropDown.length) {
+  const filterDropDown = document.querySelector(".filter-drop-down");
+  const filterBoxLabel = document.querySelector(".filter-box-label");
 
-// Filter Toggle Js
+  filterBoxLabel.addEventListener("click", () => {
+    filterDropDown.classList.toggle("active");
+  });
+}
+
+// FILTER TOGGLE JS
 const productItemsWrapper = document.querySelectorAll(".product-items-wrapper");
 if (productItemsWrapper.length) {
   const filterToggleBtn = document.querySelector(".filter-toggle-btn");

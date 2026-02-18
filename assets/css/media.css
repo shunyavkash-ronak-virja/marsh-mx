@@ -247,6 +247,15 @@
   .product-blog-content {
     width: 100%;
     max-width: 100%;
+    padding-top: 0;
+  }
+
+  .filter-drop-down {
+    display: none;
+  }
+
+  .type-lists-item-wrapper {
+    display: block;
   }
 
   .product-items-wrapper {

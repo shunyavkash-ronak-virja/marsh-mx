@@ -505,7 +505,6 @@
 /* ----- Product category section ----- */
 .product-category-section {
   padding-block: 66px 110px;
-  /* 48 65 */
   position: relative;
 }
 
@@ -592,6 +591,10 @@
   border-top: 1px solid var(--black-25);
 }
 
+.type-lists-item-wrapper {
+  display: none;
+}
+
 .product-lists-item-title {
   display: flex;
   align-items: center;
@@ -622,7 +625,7 @@
   padding-block: 30px 10px;
 }
 
-.product-lists-item {
+.product-item-content {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -633,6 +636,7 @@
 }
 
 .product-lists-item label {
+  max-width: max-content;
   font-family: var(--font-transducer-exp);
   font-style: italic;
 }
@@ -640,16 +644,70 @@
 .product-blog-content {
   width: 82%;
   max-width: 995px;
+  position: relative;
+  padding-top: 66px;
 }
 
-.filter-drope-down {
-  width: 194px;
-  height: 135px;
-  background-color: var(--white);
+.filter-drop-down {
+  max-width: 194px;
+  max-height: 135px;
+  color: var(--black-200);
   border-radius: 14px;
-  filter: drop-shadow(0 3px 6px var(--black-6) );
+  filter: drop-shadow(0 3px 6px var(--black-6));
+  padding: 22px 19px 12px;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  transition: all 0.3s ease-in-out;
 }
 
+.filter-drop-down.active {
+  background-color: var(--white);
+}
+
+.filter-box-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--black-25);
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-drop-down.active .filter-box-label {
+  border-color: transparent;
+}
+
+.filter-box-label svg {
+  width: 16px;
+  height: 16px;
+  color: var(--black);
+}
+
+.filter-box-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-drop-down.active .filter-box-wrapper {
+  grid-template-rows: 1fr;
+  padding-block: 5px 6 px;
+}
+
+.filter-box-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-box-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.filter-box-item-label {
+  text-transform: capitalize;
+}
 
 .product-card-wrapper {
   display: grid;
