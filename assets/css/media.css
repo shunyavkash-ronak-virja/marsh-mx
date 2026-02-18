@@ -68,6 +68,31 @@
   .cta-content-banner {
     margin-block: 70px;
   }
+
+  /* ========================================
+          ProductOpen HTML
+========================================*/
+  /* ----- Product Overview section ----- */
+  .product-overview-section {
+    margin-top: 92px;
+  }
+
+  .product-overview-media-wrapper {
+    width: 60%;
+    max-width: 100%;
+  }
+
+  .product-overview-contents {
+    width: 40%;
+  }
+
+  #product-overview-thumbnail {
+    width: 86%;
+  }
+
+  .product-overview-label-description {
+    margin-right: 6px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -369,6 +394,51 @@
   /* ----- Explore more section ----- */
   .category-explore-more {
     padding-block: 64px 60px;
+  }
+
+  /* ========================================
+          ProductOpen HTML
+========================================*/
+  /* ----- Product Overview section ----- */
+  .product-overview-section {
+    margin-top: 82px;
+  }
+
+  .product-overview-wrapper {
+    flex-direction: column;
+  }
+
+  .product-overview-media-wrapper {
+    width: 100%;
+  }
+
+  .product-overview-contents {
+    width: calc(100% + 40px);
+    max-width: none;
+    padding-inline: 20px;
+    background-color: var(--white);
+  }
+
+  .product-overview-img {
+    max-width: 100%;
+  }
+
+  .product-overview-share-btn {
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  .product-overview-title {
+    font-size: 34px;
+    margin-block: 14px 18px;
+  }
+
+  .product-overview-more-info {
+    margin-top: 10px;
+  }
+
+  .product-overview-price-wrapper {
+    margin-top: 12px;
   }
 }
 

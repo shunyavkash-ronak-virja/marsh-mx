@@ -299,3 +299,36 @@ if (productItemsWrapper.length) {
     productListsWrapper.classList.remove("active");
   });
 }
+
+/* ========================================
+          ProductOpen JS
+========================================*/
+// PRODUCT OVERVIEW
+
+document.addEventListener("DOMContentLoaded", function () {
+  var main = new Splide(".product-overview-slider", {
+    type: "fade",
+    rewind: true,
+    pagination: false,
+    arrows: false,
+  });
+
+  var thumbnails = new Splide("#product-overview-thumbnail", {
+    fixedWidth: 108,
+    fixedHeight: 62,
+    gap: 10,
+    rewind: true,
+    pagination: false,
+    perPage: 3,
+    breakpoints: {
+      600: {
+        // fixedWidth: 60,
+        // fixedHeight: 44,
+      },
+    },
+  });
+
+  main.sync(thumbnails);
+  main.mount();
+  thumbnails.mount();
+});

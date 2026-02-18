@@ -789,3 +789,225 @@
 .category-explore-more {
   padding-block: 70px 85px;
 }
+
+/* ========================================
+          ProductOpen HTML
+========================================*/
+/* ----- Product Overview section ----- */
+.product-overview-section {
+  margin-top: 96px;
+  position: relative;
+  z-index: 0;
+  /* background-color: var(--white-200); */
+}
+
+.product-overview-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--white-200);
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.product-overview-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-overview-media-wrapper {
+  width: 70%;
+  max-width: 882px;
+}
+
+.product-overview-share-btn {
+  width: max-content;
+  min-width: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  gap: 8px;
+  background-color: var(--black-200);
+  padding: 10px;
+  font-family: var(--font-transducer);
+  clip-path: polygon(18% 0%, 100% 0%, 82% 100%, 0% 100%);
+  margin-top: 70px;
+  margin-right: 40px;
+}
+
+.product-overview-share-btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.product-overview-img {
+  max-width: 882px;
+}
+
+#product-overview-thumbnail {
+  width: 60%;
+}
+
+.product-overview-thumbnail-track {
+  width: 66%;
+  margin-inline: auto;
+}
+
+.product-overview-thumbnail-list {
+  justify-content: center;
+}
+
+.splide__track--nav > .splide__list > .splide__slide,
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: none;
+}
+
+.splide.is-focus-in .splide__slide:focus {
+  outline: none;
+}
+
+.product-overview-thumbnail-arrows .splide__arrow {
+  width: 22px;
+  height: 26px;
+  background: transparent;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.product-overview-thumbnail-arrows .splide__arrow svg {
+  width: 22px;
+  height: 26px;
+  color: var(--black);
+  fill: none;
+}
+
+.product-overview-thumbnail-arrows .splide__arrow--next {
+  right: 18px;
+}
+
+.product-overview-thumbnail-arrows .splide__arrow--prev {
+  left: 18px;
+}
+
+.product-overview-contents {
+  width: 30%;
+  max-width: 364px;
+}
+
+.product-overview-label {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  color: var(--black-200);
+  padding-block: 12px;
+  padding-left: 22px;
+}
+
+.product-overview-label-description {
+  display: flex;
+  margin-right: 15px;
+}
+
+.product-overview-label-tag {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.product-overview-title {
+  font-family: var(--font-transducer-black-exp);
+  font-style: italic;
+  margin-block: 14px 22px;
+}
+
+.product-overview-title span {
+  font-family: var(--font-transducer);
+  font-weight: 500;
+}
+
+.product-overview-dec {
+  color: var(--black-200);
+  line-height: 1.6;
+}
+
+.product-overview-more-info {
+  margin-top: 16px;
+}
+
+.product-overview-more-info::before,
+.product-overview-more-info::after {
+  border-color: var(--black);
+}
+
+.product-overview-price-wrapper {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin-top: 18px;
+  color: var(--black-200);
+}
+
+.product-overview-price-wrapper span {
+  font-family: var(--font-transducer);
+  font-weight: 400;
+  color: var(--gray-100);
+}
+
+.product-overview-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-block: 24px 22px;
+}
+
+.product-overview-qty-btn {
+  min-width: 136px;
+  border-color: var(--black);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-overview-qty-btn svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.product-overview-qty-btn:hover svg {
+  transform: rotate(180deg);
+}
+
+.product-overview-qty-btn-icon {
+  width: 12px;
+  height: 8px;
+}
+
+.compare-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.compare-btn input {
+  appearance: none;
+  width: 16px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--primary-100);
+  position: relative;
+}
+
+.compare-btn input::after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
