@@ -323,10 +323,19 @@ ol {
 }
 
 .icon-btn-medium {
-  width: 50px;
+  width: 48px;
 }
 @media (max-width: 767px) {
   .icon-btn-medium {
+    width: 40px;
+  }
+}
+
+.icon-btn-big {
+  width: 50px;
+}
+@media (max-width: 767px) {
+  .icon-btn-big {
     width: 45px;
   }
 }
@@ -357,8 +366,6 @@ ol {
 }
 
 .icon-btn-content {
-  display: block;
-  position: relative;
   z-index: 2;
 }
 

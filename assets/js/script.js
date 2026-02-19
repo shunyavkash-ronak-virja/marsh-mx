@@ -304,26 +304,26 @@ if (productItemsWrapper.length) {
           ProductOpen JS
 ========================================*/
 // PRODUCT OVERVIEW
-
 document.addEventListener("DOMContentLoaded", function () {
   var main = new Splide(".product-overview-slider", {
     type: "fade",
-    rewind: true,
+    // rewind: true,
     pagination: false,
     arrows: false,
   });
 
   var thumbnails = new Splide("#product-overview-thumbnail", {
     fixedWidth: 108,
-    fixedHeight: 62,
+    fixedHeight: 110,
     gap: 10,
-    rewind: true,
+    // rewind: true,
     pagination: false,
     perPage: 3,
     breakpoints: {
-      600: {
-        // fixedWidth: 60,
-        // fixedHeight: 44,
+      575: {
+        perPage: 2,
+        fixedWidth: 88,
+        fixedHeight: 80,
       },
     },
   });
@@ -332,3 +332,25 @@ document.addEventListener("DOMContentLoaded", function () {
   main.mount();
   thumbnails.mount();
 });
+
+// MORE INFORMATION MODAL
+const moreInfoWrapper = document.querySelectorAll(".more-info-wrapper");
+if (moreInfoWrapper.length) {
+  const productMoreInfoBtn = document.querySelector(".product-overview-more-info");
+  const sideBarModal = document.querySelector(".side-bar-modal");
+  const sideBarModalColseBtn = document.querySelector(".more-info-modal-close-btn");
+  const moreInfoWrapper = document.querySelector(".more-info-wrapper");
+  console.log(moreInfoWrapper);
+
+  productMoreInfoBtn.addEventListener("click", () => {
+    sideBarModal.classList.toggle("active");
+  });
+
+  moreInfoWrapper.addEventListener("click", () => {
+    sideBarModal.classList.remove("active");
+  });
+
+  sideBarModalColseBtn.addEventListener("click", () => {
+    sideBarModal.classList.remove("active");
+  });
+}
