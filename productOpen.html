@@ -601,41 +601,41 @@
                     <p class="font-12 truncate line-clamp-3 product-overview-dec">
                         With the agility of a 250 and a 450-rivalling power-to-weight ratio, the FC 350 strikes a competitive balance between power and handling. This appeals to both professional and amateur riders alike, making for a more user-friendly riding… experience in all conditions. It is this versatility, paired with intelligent traction and launch control, which makes the FC 350 one of the most multitalented motocrossers on the market.
                     </p>
-                    <a class="font-12 font-black text-btn product-overview-more-info" href="javascript:void(0);">More Info</a>
-                    <div class="side-bar-modal">
-                        <div class="side-bar-modal-blog">
-                            <div class="more-info-wrapper">
-                                <div class="cursor-pointer bg-primary font-black icon-btn icon-btn-medium more-info-modal-close-btn">
-                                    <svg class="icon-btn-content more-info-modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
-                                        <path d="M18 6 6 18" />
-                                        <path d="m6 6 12 12" />
-                                    </svg>
-                                </div>
-                                <div class="more-info-content">
-                                    <h4 class="font-white text-uppercase more-info-modal">
-                                        <span class="font-primary">MORE</span>
-                                        INFORMATION
-                                    </h4>
-                                    <h5 class="font-25 font-white text-uppercase more-info-content-title">
-                                        DETAILS
-                                    </h5>
-                                    <p class="more-info-description">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                    </p>
-                                    <h5 class="font-25 font-white text-uppercase more-info-content-title">
-                                        SPECS
-                                    </h5>
-                                    <ul class="more-info-content-list">
-                                        <li class="more-info-content-list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</li>
-                                        <li class="more-info-content-list-item">nonumy eirmod tempor invidunt ut labore et dolore magna</li>
-                                        <li class="more-info-content-list-item">erat, sed diam voluptua. At vero eos et accusam et justo duo</li>
-                                        <li class="more-info-content-list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</li>
-                                        <li class="more-info-content-list-item">nonumy eirmod tempor invidunt ut labore et dolore magna</li>
-                                    </ul>
-                                    <a class="btn primary-btn more-info-modal-btn" href="javascript:void(0);">
-                                        <span>GET IN TOUCH</span>
-                                    </a>
-                                </div>
+                    <button class="font-12 font-black text-btn cursor-pointer border-none bg-transparent side-bar-btn product-overview-more-info" data-sidebar="more-info">
+                        More Info
+                    </button>
+                    <div class="sidebar" id="more-info">
+                        <div class="sidebar-wrapper scroll-bar more-info-wrapper">
+                            <button class="cursor-pointer font-black icon-btn icon-btn-medium border-none sidebar-close-btn bg-primary more-info-modal-close-btn">
+                                <svg class="icon-btn-content more-info-modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                    <path d="M18 6 6 18" />
+                                    <path d="m6 6 12 12" />
+                                </svg>
+                            </button>
+                            <div class="more-info-content">
+                                <h4 class="font-white text-uppercase more-info-modal">
+                                    <span class="font-primary">MORE</span>
+                                    INFORMATION
+                                </h4>
+                                <h5 class="font-25 font-white text-uppercase more-info-content-title">
+                                    DETAILS
+                                </h5>
+                                <p class="more-info-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                </p>
+                                <h5 class="font-25 font-white text-uppercase more-info-content-title">
+                                    SPECS
+                                </h5>
+                                <ul class="more-info-content-list">
+                                    <li class="more-info-content-list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</li>
+                                    <li class="more-info-content-list-item">nonumy eirmod tempor invidunt ut labore et dolore magna</li>
+                                    <li class="more-info-content-list-item">erat, sed diam voluptua. At vero eos et accusam et justo duo</li>
+                                    <li class="more-info-content-list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</li>
+                                    <li class="more-info-content-list-item">nonumy eirmod tempor invidunt ut labore et dolore magna</li>
+                                </ul>
+                                <a class="btn primary-btn more-info-modal-btn" href="javascript:void(0);">
+                                    <span>GET IN TOUCH</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -665,6 +665,63 @@
                         <span>CLICK TO COMPARE BIKES</span>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- Conversion section ----->
+    <section class="conversion-section">
+        <div class="container">
+            <div class="conversion-content">
+                <button class="h2 btn bg-black-btn cursor-pointer text-uppercase border-none conversion-btn">
+                    <span>FINANCE CALCULATOR</span>
+                </button>
+                <div class="modal">
+                    <div class="modal-wrapper">
+                        <div class="icon-btn icon-btn-small bg-black font-white cursor-pointer modal-close-btn">
+                            <svg class="icon-btn-content modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </div>
+                        <div class="mx-auto finance-modal-content">
+                            <p class="font-14 finance-modal-description">
+                                Providing you with finance options for your vehicle of choice. Together, we're here to help you choose the finance that suits you best. Change the sliders below to personalise your quote. We will be able to answer any questions you may have.
+                            </p>
+                            <a class="font-18 finance-modal-caption" href="javascript:void(0);">Find out more about our products</a>
+                            <form class="finance-modal-form">
+                                <button class="cursor-pointer bg-transparent finance-purchase-btn" type="submit">purchase plan</button>
+                                <div class="finance-value-wrapper">
+                                    <div class="finance-content">
+                                        <label class="finance-content-label">cash deposit</label>
+                                        <div class="finance-value-input">
+                                            <span class="font-14">£</span>
+                                            <input class="finance-num-input" type="number" value="0" min="0" max="2000">
+                                        </div>
+                                    </div>
+                                    <div class="finance-progress-wrapper">
+                                        <div class="icon-btn font-white finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </div>
+                                        <input class="finance-range-input" value="0" type="range">
+                                        <div class="icon-btn  font-white finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="h2 btn primary-btn cursor-pointer text-uppercase border-none conversion-btn">
+                    <span>PART EX MY BIKE</span>
+                </button>
             </div>
         </div>
     </section>

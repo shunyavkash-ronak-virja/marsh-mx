@@ -334,23 +334,42 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // MORE INFORMATION MODAL
-const moreInfoWrapper = document.querySelectorAll(".more-info-wrapper");
-if (moreInfoWrapper.length) {
-  const productMoreInfoBtn = document.querySelector(".product-overview-more-info");
-  const sideBarModal = document.querySelector(".side-bar-modal");
-  const sideBarModalColseBtn = document.querySelector(".more-info-modal-close-btn");
-  const moreInfoWrapper = document.querySelector(".more-info-wrapper");
-  console.log(moreInfoWrapper);
+const sidebar = document.querySelectorAll(".sidebar");
+if (sidebar.length) {
+  const sidebarBtns = document.querySelectorAll("[data-sidebar]");
+  const sidebarCloseBtns = document.querySelectorAll(".sidebar-close-btn");
+  const sidebar = document.querySelectorAll(".sidebar");
 
-  productMoreInfoBtn.addEventListener("click", () => {
-    sideBarModal.classList.toggle("active");
+  sidebarBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.dataset.sidebar;
+      sidebarOpen(id);
+    });
   });
 
-  moreInfoWrapper.addEventListener("click", () => {
-    sideBarModal.classList.remove("active");
+  sidebarCloseBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.closest(".sidebar").id;
+      sidebarClose(id);
+    });
   });
 
-  sideBarModalColseBtn.addEventListener("click", () => {
-    sideBarModal.classList.remove("active");
+  sidebar.forEach((sidebar) => {
+    sidebar.addEventListener("click", (event) => {
+      if (event.target.classList.contains("sidebar")) {
+        const id = sidebar.id;
+        sidebarClose(id);
+      }
+    });
   });
+
+  const sidebarOpen = (id) => {
+    const sidebar = document.querySelector(`#${id}`);
+    if (sidebar) sidebar.classList.add("active");
+  };
+
+  const sidebarClose = (id) => {
+    const sidebar = document.querySelector(`#${id}`);
+    if (sidebar) sidebar.classList.remove("active");
+  };
 }

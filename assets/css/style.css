@@ -952,8 +952,13 @@
   margin-top: 16px;
 }
 
+.product-overview-more-info::before,
+.product-overview-more-info::after {
+  border-color: var(--black);
+}
+
 /* --- START MORE INFO MODAL --- */
-.side-bar-modal {
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -966,17 +971,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-.side-bar-modal.active {
+.sidebar.active {
   opacity: 1;
   visibility: visible;
 }
 
-.more-info-wrapper {
+.sidebar-wrapper {
   width: 100%;
-  max-width: 680px;
   height: 100vh;
   margin-left: auto;
   overflow: auto;
+}
+
+.more-info-wrapper {
+  max-width: 680px;
   background: url(../images/sections/hero-section/modal-bg-layer.png), var(--black);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1038,11 +1046,6 @@
   margin-top: 54px;
 }
 /* --- END MORE INFO MODAL --- */
-
-.product-overview-more-info::before,
-.product-overview-more-info::after {
-  border-color: var(--black);
-}
 
 .product-overview-price-wrapper {
   display: flex;
@@ -1111,6 +1114,183 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* ----- Conversion section ----- */
+.conversion-section {
+  margin-top: -68px;
+  padding-bottom: 50px;
+}
+
+.conversion-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.conversion-btn {
+  width: 100%;
+  min-width: auto;
+  max-width: none;
+  font-family: var(--font-transducer);
+  font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  padding: 20px;
+  background: var(--black-28);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.modal-wrapper {
+  width: 100%;
+  max-width: 965px;
+  margin: auto;
+  background-color: var(--white);
+  padding: 20px;
+}
+
+.modal-close-btn {
+  justify-self: end;
+}
+
+.modal-close-btn-icon {
+  width: 64%;
+}
+
+.finance-modal-content {
+  max-width: 890px;
+}
+
+.finance-modal-description {
+  margin-block: 40px;
+  font-weight: 600;
+  color: var(--gray-600);
+}
+
+.finance-modal-caption {
+  color: var(--brown);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.finance-modal-caption::before {
+  content: ">";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.finance-purchase-btn {
+  min-width: 180px;
+  border: 1px solid var(--brown);
+  padding: 8px 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--gray-600);
+  margin-bottom: 20px;
+}
+
+.finance-value-wrapper {
+  border-top: 1px solid var(--silver);
+  padding-block: 30px 18px;
+}
+
+.finance-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.finance-content-label {
+  color: var(--black-50);
+  text-transform: capitalize;
+}
+.finance-value-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.finance-value-input span {
+  color: var(--gray-700);
+}
+
+.finance-num-input {
+  border: 2px solid var(--darkslategray);
+  padding: 10px;
+  color: var(--gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.finance-num-input:focus {
+  outline: none;
+  border-color: var(--black);
+}
+
+.finance-progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  margin-top: 18px;
+}
+
+.finance-progress-btn {
+  background-color: var(--gainsboro);
+}
+
+.finance-progress-btn-icon {
+  width: 50%;
+}
+
+.finance-progress-btn::after {
+  background-color: var(--black-15);
+}
+
+.finance-range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  accent-color: var(--brown);
+}
+
+.finance-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 36px;
+  aspect-ratio: 1;
+  background: var(--white);
+  border-radius: 100%;
+  cursor: pointer;
+  margin-top: -17px;
+  border: 1px solid var(--brown);
+  /* box-shadow: -700px 0 0 700px var(--brown); */
+}
+
+.finance-range-input::-webkit-slider-runnable-track {
+  /* width: 100%; */
+  height: 3px;
+  background: var(--gray-700);
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* ========================================

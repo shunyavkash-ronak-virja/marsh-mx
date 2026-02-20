@@ -420,6 +420,11 @@
   /* ----- Product Overview section ----- */
   .product-overview-section {
     margin-top: 82px;
+    padding-bottom: 72px;
+  }
+
+  .product-overview-section::before {
+    height: 80%;
   }
 
   .product-overview-wrapper {
@@ -502,6 +507,12 @@
     margin-bottom: 10px;
   }
   /* --- END MORE INFO MODAL --- */
+
+  /* ----- Conversion section ----- */
+  .conversion-section {
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
 
   /* ========================================
           Compare HTML
@@ -650,6 +661,10 @@
           ProductOpen HTML
 ========================================*/
   /* ----- Product Overview section ----- */
+  .product-overview-section {
+    padding-bottom: 52px;
+  }
+
   .product-overview-share-btn {
     min-width: 158px;
     padding: 6px;
@@ -685,6 +700,14 @@
   }
 
   /* --- END MORE INFO MODAL --- */
+
+  /* ----- Conversion section ----- */
+  .conversion-content {
+    width: auto;
+    margin-inline: -16px;
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -764,6 +787,10 @@
           ProductOpen HTML
 ========================================*/
   /* ----- Product Overview section ----- */
+  .product-overview-section {
+    padding-bottom: 28px;
+  }
+
   .product-overview-img {
     max-height: 360px;
   }
