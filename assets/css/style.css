@@ -1112,6 +1112,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* ========================================
           Compare HTML
 ========================================*/
@@ -1204,6 +1205,8 @@
 
 .compare-item-price-apr-wrapper {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: var(--font-transducer-black-exp);
   font-style: italic;
   line-height: 1.181;
@@ -1220,10 +1223,9 @@
 }
 
 .compare-item-specifics-tag {
-  margin-top: 30px;
+  margin-block: 30px;
   font-family: var(--font-transducer-exp);
   font-style: italic;
-  margin-bottom: 30px;
 }
 
 .compare-item-specifics-tag span {
