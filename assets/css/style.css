@@ -1119,7 +1119,7 @@
 /* ----- Compare section ----- */
 .compare-section {
   margin-top: 96px;
-  padding-block: 104px;
+  padding-block: 104px 140px;
 }
 
 .compare-main-content {
@@ -1261,4 +1261,9 @@
   color: var(--black);
   border-color: var(--black);
   margin-block: 24px 8px;
+}
+
+/* ----- Compare explore more section ----- */
+.compare-explore-more {
+  padding-block: 70px 105px;
 }

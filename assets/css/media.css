@@ -100,7 +100,7 @@
   /* ----- Compare section ----- */
   .compare-section {
     margin-top: 92px;
-    padding-block: 82px;
+    padding-block: 86px 115px;
   }
 
   .compare-item-wrapper {
@@ -524,6 +524,11 @@
   .compare-item-img-content {
     width: 468px;
     height: 288px;
+  }
+
+  /* ----- Compare explore more section ----- */
+  .compare-explore-more {
+    padding-block: 60px 76px;
   }
 }
 
