@@ -1,5 +1,5 @@
 @media (max-width: 1279px) {
-  /* ----- Hero section ----- */
+  /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 72% 0, 42% 100%, 0 100%);
   }
@@ -13,27 +13,27 @@
     padding-inline: 40px;
   }
 
-  /* ----- Two column section ----- */
+  /* ----- TWO COLUMN SECTION ----- */
   .champions-column-section {
     padding-block: 104px 72px;
   }
 
-  /* ----- Two column section ----- */
+  /* ----- TWO COLUMN SECTION ----- */
   .two-column-description {
     margin-block: 32px;
   }
 
-  /* ----- Cta banner section ----- */
+  /* ----- CTA BANNER SECTION ----- */
   .home-cta-banner {
     padding-block: 72px 42px;
   }
 
-  /* ----- Finance column section ----- */
+  /* ----- FINANCE COLUMN SECTION ----- */
   .finance-column-section {
     padding-block: 60px 110px;
   }
 
-  /* ----- Testimonial section ----- */
+  /* ----- TESTIMONIAL SECTION ----- */
   .testimonial-section {
     padding-block: 138px 120px;
   }
@@ -43,14 +43,14 @@
   }
 
   /*========================================
-          productCategory HTML
+          PRODUCTCATEGORY HTML
 ========================================*/
   /* ----- Category hero section ----- */
   .category-hero {
     margin-top: 92px;
   }
 
-  /* ----- Product category section ----- */
+  /* ----- PRODUCT CATEGORY SECTION ----- */
   .product-card-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 54px 18px;
@@ -70,9 +70,9 @@
   }
 
   /* ========================================
-          ProductOpen HTML
+          PRODUCTOPEN HTML
 ========================================*/
-  /* ----- Product Overview section ----- */
+  /* ----- PRODUCT OVERVIEW SECTION ----- */
   .product-overview-section {
     margin-top: 92px;
   }
@@ -95,9 +95,9 @@
   }
 
   /* ========================================
-          Compare HTML
+          COMPARE HTML
 ========================================*/
-  /* ----- Compare section ----- */
+  /* ----- COMPARE SECTION ----- */
   .compare-section {
     margin-top: 92px;
     padding-block: 86px 115px;
@@ -114,7 +114,7 @@
 }
 
 @media (max-width: 991px) {
-  /* ----- Hero section ----- */
+  /* ----- HERO SECTION ----- */
   .hero-section {
     height: auto;
     align-items: start;
@@ -140,7 +140,7 @@
     clip-path: none;
   }
 
-  /* ----- Featured slider section ----- */
+  /* ----- FEATURED SLIDER SECTION ----- */
   .home-featured-slider {
     padding-block: 76px 60px;
   }
@@ -163,7 +163,7 @@
     margin-top: 10px;
   }
 
-  /* ----- Explore more section ----- */
+  /* ----- EXPLORE MORE SECTION ----- */
   .home-explore-more {
     padding-block: 74px 105px;
   }
@@ -177,7 +177,7 @@
     margin-block: 50px 40px;
   }
 
-  /* ----- Two column section ----- */
+  /* ----- TWO COLUMN SECTION ----- */
   .champions-column-section {
     padding-block: 0 50px;
   }
@@ -215,22 +215,22 @@
     margin-block: 28px;
   }
 
-  /* ----- Cta banner section ----- */
+  /* ----- CTA BANNER SECTION ----- */
   .home-cta-banner {
     padding-top: 50px;
   }
 
-  /* ----- Shop by brand section ----- */
+  /* ----- SHOP BY BRAND SECTION ----- */
   .shop-by-brand {
     padding-block: 42px 50px;
   }
 
-  /* ----- Finance column section ----- */
+  /* ----- FINANCE COLUMN SECTION ----- */
   .finance-column-section {
     padding-block: 50px 80px;
   }
 
-  /* ----- Testimonial section ----- */
+  /* ----- TESTIMONIAL SECTION ----- */
   .testimonial-section {
     padding-block: 108px 90px;
   }
@@ -259,13 +259,13 @@
     bottom: -54px;
   }
 
-  /* ----- Cta blog section ----- */
+  /* ----- CTA BLOG SECTION ----- */
   .cta-blog-title .font-60 {
     font-size: 50px;
   }
 
   /* ========================================
-          productCategory HTML
+          PRODUCTCATEGORY HTML
 ========================================*/
   /* ----- Category hero section ----- */
   .category-hero {
@@ -277,7 +277,7 @@
     font-size: 42px;
   }
 
-  /* ----- Product category section ----- */
+  /* ----- PRODUCT CATEGORY SECTION ----- */
   .product-category-section {
     padding-block: 56px 80px;
   }
@@ -409,15 +409,15 @@
     max-width: 100%;
   }
 
-  /* ----- Explore more section ----- */
+  /* ----- EXPLORE MORE SECTION ----- */
   .category-explore-more {
     padding-block: 64px 60px;
   }
 
   /* ========================================
-          ProductOpen HTML
+          PRODUCTOPEN HTML
 ========================================*/
-  /* ----- Product Overview section ----- */
+  /* ----- PRODUCT OVERVIEW SECTION ----- */
   .product-overview-section {
     margin-top: 82px;
     padding-bottom: 72px;
@@ -490,8 +490,8 @@
     -webkit-line-clamp: 4;
   }
 
-  /* --- START MORE INFO MODAL --- */
-  .more-info-modal {
+  /* --- START MORE INFO SIDEBAR --- */
+  .more-info-sidebar {
     margin-bottom: 30px;
   }
 
@@ -506,18 +506,18 @@
   .more-info-content-list-item:not(:last-child) {
     margin-bottom: 10px;
   }
-  /* --- END MORE INFO MODAL --- */
+  /* --- END MORE INFO SIDEBAR --- */
 
-  /* ----- Conversion section ----- */
+  /* ----- CONVERSION SECTION ----- */
   .conversion-section {
     margin-top: 0;
     padding-bottom: 30px;
   }
 
   /* ========================================
-          Compare HTML
+          COMPARE HTML
 ========================================*/
-  /* ----- Compare section ----- */
+  /* ----- COMPARE SECTION ----- */
   .compare-section {
     margin-top: 82px;
   }
@@ -537,14 +537,14 @@
     height: 288px;
   }
 
-  /* ----- Compare explore more section ----- */
+  /* ----- COMPARE EXPLORE MORE SECTION ----- */
   .compare-explore-more {
     padding-block: 60px 76px;
   }
 }
 
 @media (max-width: 767px) {
-  /* ----- Hero section ----- */
+  /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 136% 0, 10% 100%, 0 100%);
   }
@@ -553,7 +553,7 @@
     clip-path: polygon(150% 0, 100% 0, 100% 100%, -38% 100%);
   }
 
-  /* ----- Featured slider section ----- */
+  /* ----- FEATURED SLIDER SECTION ----- */
   .home-featured-slider {
     padding-block: 60px 44px;
   }
@@ -586,24 +586,24 @@
     margin-top: 6px;
   }
 
-  /* ----- Explore more section ----- */
+  /* ----- EXPLORE MORE SECTION ----- */
   .explore-wrapper {
     width: 564px;
     height: 360px;
   }
 
-  /* ----- Two column section ----- */
+  /* ----- TWO COLUMN SECTION ----- */
   .two-column-description {
     font-size: 16px;
     line-height: 1.625;
   }
 
-  /* ----- Finance column section ----- */
+  /* ----- FINANCE COLUMN SECTION ----- */
   .finance-column-section {
     padding-bottom: 58px;
   }
 
-  /* ----- Testimonial section ----- */
+  /* ----- TESTIMONIAL SECTION ----- */
   .testimonial-section {
     padding-block: 78px 78px;
   }
@@ -618,14 +618,14 @@
   }
 
   /* ========================================
-          productCategory HTML
+          PRODUCTCATEGORY HTML
 ========================================*/
   /* ----- Category hero section ----- */
   .category-hero-description {
     margin-block: 18px 24px;
   }
 
-  /* ----- Product category section ----- */
+  /* ----- PRODUCT CATEGORY SECTION ----- */
   .product-category-section {
     padding-block: 48px 65px;
   }
@@ -658,9 +658,9 @@
   }
 
   /* ========================================
-          ProductOpen HTML
+          PRODUCTOPEN HTML
 ========================================*/
-  /* ----- Product Overview section ----- */
+  /* ----- PRODUCT OVERVIEW SECTION ----- */
   .product-overview-section {
     padding-bottom: 52px;
   }
@@ -688,7 +688,7 @@
     clip-path: polygon(82% 0, 100% 0, 100% 100%, -30% 100%);
   }
 
-  /* --- START MORE INFO MODAL --- */
+  /* --- START MORE INFO SIDEBAR --- */
   .more-info-wrapper {
     padding-left: 66px;
     background: var(--black);
@@ -699,26 +699,39 @@
     max-width: 100%;
   }
 
-  /* --- END MORE INFO MODAL --- */
+  /* --- END MORE INFO SIDEBAR --- */
 
-  /* ----- Conversion section ----- */
+  /* ----- CONVERSION SECTION ----- */
+  .conversion-section {
+    overflow: hidden;
+  }
+
   .conversion-content {
     width: auto;
     margin-inline: -16px;
     flex-direction: column;
     gap: 0;
   }
+
+  .finance-modal-description,
+  .finance-modal-caption {
+    margin-bottom: 30px;
+  }
+
+  .finance-modal-content {
+    max-width: 660px;
+  }
 }
 
 @media (max-width: 575px) {
-  /* ----- Hero section ----- */
+  /* ----- HERO SECTION ----- */
   .hero-btn-wrapper {
     flex-direction: column;
     align-items: start;
     gap: 18px;
   }
 
-  /* ----- Featured slider section ----- */
+  /* ----- FEATURED SLIDER SECTION ----- */
   .featured-slider-wrapper {
     width: 310px;
     padding-inline: 18px;
@@ -735,7 +748,7 @@
     height: 252px;
   }
 
-  /* ----- Explore more section ----- */
+  /* ----- EXPLORE MORE SECTION ----- */
   .explore-wrapper {
     width: 345px;
     height: 225px;
@@ -745,14 +758,14 @@
     font-size: 10px;
   }
 
-  /* ----- Shop by brand section ----- */
+  /* ----- SHOP BY BRAND SECTION ----- */
   .shop-brand-title {
     flex-direction: column;
     align-items: center;
     gap: 0;
   }
 
-  /* ----- Testimonial section ----- */
+  /* ----- TESTIMONIAL SECTION ----- */
   .testimonial-location {
     font-size: 14px;
   }
@@ -762,15 +775,15 @@
     width: 44px;
   }
 
-  /* ----- Cta blog section ----- */
+  /* ----- CTA BLOG SECTION ----- */
   .cta-blog-wrapper {
     padding: 14px;
   }
 
   /* ========================================
-          productCategory HTML
+          PRODUCTCATEGORY HTML
 ========================================*/
-  /* ----- Product category section ----- */
+  /* ----- PRODUCT CATEGORY SECTION ----- */
   .product-lists-wrapper {
     padding: 30px 23px;
   }
@@ -784,9 +797,9 @@
   }
 
   /* ========================================
-          ProductOpen HTML
+          PRODUCTOPEN HTML
 ========================================*/
-  /* ----- Product Overview section ----- */
+  /* ----- PRODUCT OVERVIEW SECTION ----- */
   .product-overview-section {
     padding-bottom: 28px;
   }
@@ -822,16 +835,20 @@
     width: 30px;
   }
 
-  /* --- START MORE INFO MODAL --- */
+  /* --- START MORE INFO SIDEBAR --- */
   .more-info-wrapper {
     padding-left: 26px;
   }
-  /* --- END MORE INFO MODAL --- */
+  /* --- END MORE INFO SIDEBAR --- */
 
+  /* ----- CONVERSION SECTION ----- */
+  .finance-modal-content {
+    max-width: 474px;
+  }
   /* ========================================
-          Compare HTML
+          COMPARE HTML
 ========================================*/
-  /* ----- Compare section ----- */
+  /* ----- COMPARE SECTION ----- */
   .compare-item-list {
     max-width: 100%;
   }
@@ -875,9 +892,9 @@
 
 @media (max-width: 424px) {
   /* ========================================
-          Compare HTML
+          COMPARE HTML
 ========================================*/
-  /* ----- Compare section ----- */
+  /* ----- COMPARE SECTION ----- */
   .compare-item-img-content {
     height: 200px;
   }

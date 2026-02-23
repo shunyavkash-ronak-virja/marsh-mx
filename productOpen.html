@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marsh-mx</title>
 
+    <!----- Nice select css ----->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
     <!----- Splide css ----->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -606,14 +609,14 @@
                     </button>
                     <div class="sidebar" id="more-info">
                         <div class="sidebar-wrapper scroll-bar more-info-wrapper">
-                            <button class="cursor-pointer font-black icon-btn icon-btn-medium border-none sidebar-close-btn bg-primary more-info-modal-close-btn">
-                                <svg class="icon-btn-content more-info-modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                            <button class="cursor-pointer font-black icon-btn icon-btn-medium border-none sidebar-close-btn bg-primary more-info-sidebar-close-btn">
+                                <svg class="icon-btn-content more-info-sidebar-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
                                     <path d="M18 6 6 18" />
                                     <path d="m6 6 12 12" />
                                 </svg>
                             </button>
                             <div class="more-info-content">
-                                <h4 class="font-white text-uppercase more-info-modal">
+                                <h4 class="font-white text-uppercase more-info-sidebar">
                                     <span class="font-primary">MORE</span>
                                     INFORMATION
                                 </h4>
@@ -633,7 +636,7 @@
                                     <li class="more-info-content-list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</li>
                                     <li class="more-info-content-list-item">nonumy eirmod tempor invidunt ut labore et dolore magna</li>
                                 </ul>
-                                <a class="btn primary-btn more-info-modal-btn" href="javascript:void(0);">
+                                <a class="btn primary-btn more-info-sidebar-btn" href="javascript:void(0);">
                                     <span>GET IN TOUCH</span>
                                 </a>
                             </div>
@@ -673,11 +676,11 @@
     <section class="conversion-section">
         <div class="container">
             <div class="conversion-content">
-                <button class="h2 btn bg-black-btn cursor-pointer text-uppercase border-none conversion-btn">
+                <button class="h2 btn bg-black-btn cursor-pointer text-uppercase border-none conversion-btn" data-modal="finance-modal">
                     <span>FINANCE CALCULATOR</span>
                 </button>
-                <div class="modal">
-                    <div class="modal-wrapper">
+                <div class="modal scroll-bar" id="finance-modal">
+                    <div class="modal-dialog modal-wrapper">
                         <div class="icon-btn icon-btn-small bg-black font-white cursor-pointer modal-close-btn">
                             <svg class="icon-btn-content modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
                                 <path d="M18 6 6 18"></path>
@@ -696,17 +699,63 @@
                                         <label class="finance-content-label">cash deposit</label>
                                         <div class="finance-value-input">
                                             <span class="font-14">£</span>
-                                            <input class="finance-num-input" type="number" value="0" min="0" max="2000">
+                                            <input class="finance-num-input" type="number" min="0" max="16000" step="800" value="0">
                                         </div>
                                     </div>
                                     <div class="finance-progress-wrapper">
-                                        <div class="icon-btn font-white finance-progress-btn">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
                                             <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
                                                 <path d="M5 12h14" />
                                             </svg>
                                         </div>
-                                        <input class="finance-range-input" value="0" type="range">
-                                        <div class="icon-btn  font-white finance-progress-btn">
+                                        <input class="finance-range-input" type="range" min="0" max="16000" step="800" value="0">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finance-value-wrapper">
+                                    <div class="finance-content">
+                                        <label class="finance-content-label">bolt-on accessories</label>
+                                        <div class="finance-value-input">
+                                            <span class="font-14">£</span>
+                                            <input class="finance-num-input" type="number" min="0" max="1600" step="100" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="finance-progress-wrapper">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </div>
+                                        <input class="finance-range-input" type="range" min="0" max="1600" step="100" value="0">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finance-value-wrapper">
+                                    <div class="finance-content">
+                                        <label class="finance-content-label">term</label>
+                                        <div class="finance-value-input">
+                                            <span class="font-14">months</span>
+                                            <input class="finance-num-input" type="number" min="12" max="60" step="1" value="12">
+                                        </div>
+                                    </div>
+                                    <div class="finance-progress-wrapper">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </div>
+                                        <input class="finance-range-input" type="range" min="12" max="60" step="1" value="12">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
                                             <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
                                                 <path d="M5 12h14" />
                                                 <path d="M12 5v14" />
@@ -718,10 +767,120 @@
                         </div>
                     </div>
                 </div>
-
-                <button class="h2 btn primary-btn cursor-pointer text-uppercase border-none conversion-btn">
+                <button class="h2 btn primary-btn cursor-pointer text-uppercase border-none conversion-btn" data-modal="part-ex">
                     <span>PART EX MY BIKE</span>
                 </button>
+                <div class="modal scroll-bar" id="part-ex">
+                    <div class="modal-dialog part-ex-wrapper">
+                        <div class="icon-btn icon-btn-small bg-black font-white cursor-pointer modal-close-btn">
+                            <svg class="icon-btn-content modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </div>
+                        <form class="mx-auto part-ex-content">
+                            <div class="text-center part-ex-head-content">
+                                <h2 class="font-black part-ex-head-title">I'D LIKE TO KNOW MORE</h2>
+                                <div class="part-ex-head-options">
+                                    <label class="font-14 cursor-pointer part-ex-option">
+                                        <input type="radio" class="cursor-pointer" name="part-option">
+                                        <span>Fill Out Contact Form</span>
+                                    </label>
+                                    <label class="font-14 cursor-pointer part-ex-option">
+                                        <input type="radio" class="cursor-pointer" name="part-option">
+                                        <span> Fill Out Contact Form </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="part-ex-contacts-wrapper">
+                                <div class="part-ex-contacts">
+                                    <input type="text" class="font-black text-field-input part-ex-input" placeholder="Your Name…">
+                                    <input type="email" class="font-black text-field-input part-ex-input" placeholder="Your Email…">
+                                    <input type="number" class="font-black text-field-input part-ex-input" placeholder="Your Number…">
+                                    <div class="contacts-input-wrapper">
+                                        <input type="date" class="font-black text-field-input part-ex-input" placeholder="Desired Date…">
+                                        <input type="time" class="font-black text-field-input part-ex-input" placeholder="Desired Time…">
+                                    </div>
+                                </div>
+                                <span class="font-12 font-black part-ex-contact-caption">*The time & date is not completely guaranteed.</span>
+                                <button class="btn primary-btn part-ex-form-btn" type="submit">
+                                    <span>SUBMIT FORM</span>
+                                </button>
+                            </div>
+
+                            <div class="bike-value-wrapper" style="display: none;">
+                                <div class="bike-value-author-content">
+                                    <input class="text-field-input part-ex-input bike-value-input" type="text" placeholder="Model Name…">
+                                    <select class="cursor-pointer part-ex-input bike-value-year-select bike-value-input" placeholder="Year…">
+                                        <option value="">Year…</option>
+                                        <option value="">2022</option>
+                                        <option value="">2023</option>
+                                        <option value="">2024</option>
+                                        <option value="">2025</option>
+                                    </select>
+                                    <input class="text-field-input part-ex-input bike-value-input" type="number" placeholder="Mileage…">
+                                </div>
+                                <div class="bike-value-input-content">
+                                    <div class="bike-value-input-wrapper">
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Image of the front</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Image of the rear</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                    </div>
+                                    <div class="bike-value-input-wrapper">
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Image of the right-side</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Image of the left-side</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                    </div>
+                                    <div class="bike-value-input-wrapper">
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Image of the engine</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Image of the hour meter</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="bike-value-outstanding-wrapper">
+                                    <div class="bike-value-input-wrapper">
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Service History & Logbook</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                            <span>Outstanding Finance…</span>
+                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
+                                        </label>
+                                    </div>
+                                    <div class="bike-value-input-wrapper">
+                                        <select class="cursor-pointer part-ex-input">
+                                            <option value="">Desired price</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="btn primary-btn part-ex-form-btn" type="submit">
+                                    <span>VALUE MY BIKE</span>
+                                </button>
+                            </div>
+
+                            <label class="mx-auto font-12 cursor-pointer part-ex-newsletters-input">
+                                <input type="checkbox" class="cursor-pointer checkbox-input">
+                                <span>Please select, to subscribe to our newsletters</span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -870,6 +1029,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Nice select js -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
 
     <!----- Splide js ----->
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">

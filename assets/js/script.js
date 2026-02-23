@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function () {
   thumbnails.mount();
 });
 
-// MORE INFORMATION MODAL
+// GLOBAL SIDEABR JS
 const sidebar = document.querySelectorAll(".sidebar");
 if (sidebar.length) {
   const sidebarBtns = document.querySelectorAll("[data-sidebar]");
@@ -373,3 +373,85 @@ if (sidebar.length) {
     if (sidebar) sidebar.classList.remove("active");
   };
 }
+
+// GLOBAL MODAL JS
+const modal = document.querySelectorAll(".modal");
+if (modal.length) {
+  const modalBtns = document.querySelectorAll("[data-modal]");
+  const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+  const modal = document.querySelectorAll(".modal");
+
+  modalBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.dataset.modal;
+      modalOpen(id);
+    });
+  });
+
+  modalCloseBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.closest(".modal").id;
+      modalClose(id);
+    });
+  });
+
+  modal.forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target.classList.contains("modal")) {
+        const id = modal.id;
+        modalClose(id);
+      }
+    });
+  });
+
+  const modalOpen = (id) => {
+    const modal = document.querySelector(`#${id}`);
+    if (modal) modal.classList.add("active");
+  };
+
+  const modalClose = (id) => {
+    const modal = document.querySelector(`#${id}`);
+    if (modal) modal.classList.remove("active");
+  };
+}
+
+// FINANCE MODAL JS
+document.querySelectorAll(".finance-value-wrapper").forEach((wrapper) => {
+  const range = wrapper.querySelector(".finance-range-input");
+  const numberInput = wrapper.querySelector(".finance-num-input");
+  const minusBtn = wrapper.querySelectorAll(".finance-progress-btn")[0];
+  const plusBtn = wrapper.querySelectorAll(".finance-progress-btn")[1];
+
+  const updateUI = () => {
+    const min = +range.min || 0;
+    const max = +range.max || 100;
+    const percent = ((range.value - min) / (max - min)) * 100;
+
+    range.style.setProperty("--value", percent + "%");
+    numberInput.value = range.value;
+  };
+
+  range.addEventListener("input", updateUI);
+
+  numberInput.addEventListener("input", () => {
+    range.value = numberInput.value;
+    updateUI();
+  });
+
+  plusBtn.addEventListener("click", () => {
+    range.stepUp();
+    updateUI();
+  });
+
+  minusBtn.addEventListener("click", () => {
+    range.stepDown();
+    updateUI();
+  });
+
+  updateUI();
+});
+
+// NICE SELECT JS
+$(document).ready(function () {
+  $("select").niceSelect();
+});
