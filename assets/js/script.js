@@ -339,6 +339,7 @@ if (sidebar.length) {
   const sidebarBtns = document.querySelectorAll("[data-sidebar]");
   const sidebarCloseBtns = document.querySelectorAll(".sidebar-close-btn");
   const sidebar = document.querySelectorAll(".sidebar");
+   
 
   sidebarBtns.forEach((button) => {
     button.addEventListener("click", () => {
@@ -366,11 +367,15 @@ if (sidebar.length) {
   const sidebarOpen = (id) => {
     const sidebar = document.querySelector(`#${id}`);
     if (sidebar) sidebar.classList.add("active");
+document.body.classList.add("body-hidden")
+
   };
 
   const sidebarClose = (id) => {
     const sidebar = document.querySelector(`#${id}`);
     if (sidebar) sidebar.classList.remove("active");
+document.body.classList.remove("body-hidden")
+
   };
 }
 
