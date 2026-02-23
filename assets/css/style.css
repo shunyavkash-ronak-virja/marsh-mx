@@ -1080,18 +1080,22 @@
 }
 
 .compare-btn input {
-  appearance: none;
   width: 16px;
   aspect-ratio: 1;
   border-radius: 100%;
-  background-color: var(--primary-100);
+  border: 1px solid var(--black);
+  appearance: none;
   position: relative;
 }
 
-.compare-btn input::after {
+.compare-btn input:checked{
+  background-color: var(--primary-100);
+}
+
+.compare-btn input:checked::after {
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
-  width: 70%;
-  height: 70%;
+  width: 82%;
+  height: 82%;
   position: absolute;
   top: 50%;
   left: 50%;
