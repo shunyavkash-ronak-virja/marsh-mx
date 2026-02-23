@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggleBtn && responsiveItemsWrapper) {
     toggleBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.toggle("active");
+    document.body.classList.add("body-hidden")
       initMenu();
     });
   }
@@ -68,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuCloseBtn && responsiveItemsWrapper) {
     menuCloseBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.remove("active");
+    document.body.classList.remove("body-hidden")
       resetMenu();
     });
   }
@@ -293,10 +295,12 @@ if (productItemsWrapper.length) {
 
   filterToggleBtn.addEventListener("click", () => {
     productListsWrapper.classList.toggle("active");
+    document.body.classList.add("body-hidden")
   });
 
   productListsCloseBtn.addEventListener("click", () => {
     productListsWrapper.classList.remove("active");
+    document.body.classList.remove("body-hidden")
   });
 }
 
@@ -412,11 +416,13 @@ if (modal.length) {
   const modalOpen = (id) => {
     const modal = document.querySelector(`#${id}`);
     if (modal) modal.classList.add("active");
+document.body.classList.add("body-hidden")
   };
 
   const modalClose = (id) => {
     const modal = document.querySelector(`#${id}`);
     if (modal) modal.classList.remove("active");
+document.body.classList.remove("body-hidden")
   };
 }
 
