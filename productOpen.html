@@ -551,7 +551,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="product-overview-thumbnail" class="splide" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+                    <div class="product-overview-thumbnail splide" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
                         <div class="product-overview-thumbnail-arrows splide__arrows splide__arrows--ltr">
                             <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide01-track">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.369 26.461">
@@ -567,17 +567,17 @@
                         <div class="product-overview-thumbnail-track splide__track">
                             <ul class="product-overview-thumbnail-list splide__list">
                                 <li class="product-overview-thumbnail-slide splide__slide">
-                                    <div class="product-overview-thumbnail">
+                                    <div class="product-overview-thumbnail-content">
                                         <img src="assets/images/sections/hero-section/hero-img-02.png" alt="hero-img">
                                     </div>
                                 </li>
                                 <li class="product-overview-thumbnail-slide splide__slide">
-                                    <div class="product-overview-thumbnail">
+                                    <div class="product-overview-thumbnail-content">
                                         <img src="assets/images/sections/hero-section/hero-img-03.png" alt="hero-img">
                                     </div>
                                 </li>
                                 <li class="product-overview-thumbnail-slide splide__slide">
-                                    <div class="product-overview-thumbnail">
+                                    <div class="product-overview-thumbnail-content">
                                         <img src="assets/images/sections/hero-section/hero-img-02.png" alt="hero-img">
                                     </div>
                                 </li>
@@ -778,109 +778,338 @@
                             </svg>
                         </div>
                         <form class="mx-auto part-ex-content">
-                            <div class="text-center part-ex-head-content">
+                            <div class="mx-auto text-center part-ex-head-content part-ex-contacts-modal">
                                 <h2 class="font-black part-ex-head-title">I'D LIKE TO KNOW MORE</h2>
                                 <div class="part-ex-head-options">
-                                    <label class="font-14 cursor-pointer part-ex-option">
+                                    <label class="font-14 cursor-pointer part-ex-option part-ex-contact">
                                         <input type="radio" class="cursor-pointer" name="part-option">
                                         <span>Fill Out Contact Form</span>
                                     </label>
-                                    <label class="font-14 cursor-pointer part-ex-option">
+                                    <label class="font-14 cursor-pointer part-ex-option part-ex-bike-value active">
                                         <input type="radio" class="cursor-pointer" name="part-option">
-                                        <span> Fill Out Contact Form </span>
+                                        <span>Value my bike</span>
                                     </label>
                                 </div>
-                            </div>
-                            <div class="part-ex-contacts-wrapper">
-                                <div class="part-ex-contacts">
-                                    <input type="text" class="font-black text-field-input part-ex-input" placeholder="Your Name…">
-                                    <input type="email" class="font-black text-field-input part-ex-input" placeholder="Your Email…">
-                                    <input type="number" class="font-black text-field-input part-ex-input" placeholder="Your Number…">
-                                    <div class="contacts-input-wrapper">
-                                        <input type="date" class="font-black text-field-input part-ex-input" placeholder="Desired Date…">
-                                        <input type="time" class="font-black text-field-input part-ex-input" placeholder="Desired Time…">
-                                    </div>
-                                </div>
-                                <span class="font-12 font-black part-ex-contact-caption">*The time & date is not completely guaranteed.</span>
-                                <button class="btn primary-btn part-ex-form-btn" type="submit">
-                                    <span>SUBMIT FORM</span>
-                                </button>
-                            </div>
+                                <div class="mx-auto part-ex-contacts-wrapper">
+                                    <div class="part-ex-contacts">
+                                        <input type="text" class="font-black text-field-input part-ex-input" placeholder="Your Name…" required>
 
-                            <div class="bike-value-wrapper" style="display: none;">
-                                <div class="bike-value-author-content">
-                                    <input class="text-field-input part-ex-input bike-value-input" type="text" placeholder="Model Name…">
-                                    <select class="cursor-pointer part-ex-input bike-value-year-select bike-value-input" placeholder="Year…">
-                                        <option value="">Year…</option>
-                                        <option value="">2022</option>
-                                        <option value="">2023</option>
-                                        <option value="">2024</option>
-                                        <option value="">2025</option>
-                                    </select>
-                                    <input class="text-field-input part-ex-input bike-value-input" type="number" placeholder="Mileage…">
+                                        <input type="email" class="font-black text-field-input part-ex-input" placeholder="Your Email…" required>
+
+                                        <input type="number" class="font-black text-field-input part-ex-input" placeholder="Your Number…" required>
+
+                                        <div class="contacts-input-wrapper">
+                                            <input type="date" class="font-black text-field-input part-ex-input" placeholder="Desired Date…" required>
+
+                                            <input type="time" class="font-black text-field-input part-ex-input" placeholder="Desired Time…" required>
+                                        </div>
+                                    </div>
+                                    <span class="font-12 font-black part-ex-contact-caption">
+                                        *The time & date is not completely guaranteed.
+                                    </span>
+                                    <button class="btn primary-btn cursor-pointer part-ex-form-btn" type="submit">
+                                        <span>SUBMIT FORM</span>
+                                    </button>
                                 </div>
-                                <div class="bike-value-input-content">
-                                    <div class="bike-value-input-wrapper">
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Image of the front</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Image of the rear</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                    </div>
-                                    <div class="bike-value-input-wrapper">
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Image of the right-side</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Image of the left-side</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                    </div>
-                                    <div class="bike-value-input-wrapper">
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Image of the engine</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Image of the hour meter</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                    </div>
+                                <label class="mx-auto font-12 cursor-pointer part-ex-newsletters-input">
+                                    <input type="checkbox" class="cursor-pointer checkbox-input">
+                                    <span>Please select, to subscribe to our newsletters</span>
+                                </label>
+                            </div>
+                            <div class="mx-auto part-ex-bike-value-modal">
+                                <h2 class="font-black part-ex-head-title">VALUE MY BIKE</h2>
+                                <div class="part-ex-head-options">
+                                    <label class="font-14 cursor-pointer part-ex-option part-ex-contact">
+                                        <input type="radio" class="cursor-pointer" name="part-option">
+                                        <span>Fill Out Contact Form</span>
+                                    </label>
+                                    <label class="font-14 cursor-pointer part-ex-option part-ex-bike-value active">
+                                        <input type="radio" class="cursor-pointer" name="part-option">
+                                        <span>Value my bike</span>
+                                    </label>
                                 </div>
-                                <div class="bike-value-outstanding-wrapper">
-                                    <div class="bike-value-input-wrapper">
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Service History & Logbook</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                        <label class="cursor-pointer part-ex-input bike-value-file-label">
-                                            <span>Outstanding Finance…</span>
-                                            <input class="bike-value-file-input" type="file" placeholder="Image of the front">
-                                        </label>
-                                    </div>
-                                    <div class="bike-value-input-wrapper">
-                                        <select class="cursor-pointer part-ex-input">
-                                            <option value="">Desired price</option>
+                                <div class="mx-auto bike-value-wrapper">
+                                    <div class="bike-value-author-content">
+                                        <input class="text-field-input part-ex-input bike-value-input" type="text" placeholder="Model Name…" required>
+                                        <select class="cursor-pointer select-box part-ex-input bike-value-year-select bike-value-input" required>
+                                            <option value="year">Year…</option>
+                                            <option value="year-01">2022</option>
+                                            <option value="year-02">2023</option>
+                                            <option value="year-03">2024</option>
+                                            <option value="year-04">2025</option>
                                         </select>
+                                        <input class="text-field-input part-ex-input bike-value-input" type="number" placeholder="Mileage…" required>
                                     </div>
+                                    <div class="bike-value-input-content">
+                                        <div class="bike-value-input-wrapper">
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Image of the front</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Image of the rear</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                        </div>
+                                        <div class="bike-value-input-wrapper">
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Image of the right-side</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Image of the left-side</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                        </div>
+                                        <div class="bike-value-input-wrapper">
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Image of the engine</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Image of the hour meter</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="bike-value-outstanding-wrapper">
+                                        <div class="bike-value-input-wrapper">
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Service History & Logbook</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                            <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                                <span>Outstanding Finance…</span>
+                                                <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                            </label>
+                                        </div>
+                                        <div class="bike-value-input-wrapper">
+                                            <select class="cursor-pointer select-box part-ex-price-menu part-ex-input" required>
+                                                <option value="price">Desired price</option>
+                                                <option value="price-01">£8,729.00</option>
+                                                <option value="price-02">£8,779.00</option>
+                                                <option value="price-03">£8,759.00</option>
+                                                <option value="price-04">£8,749.00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="btn primary-btn cursor-pointer part-ex-form-btn" type="submit">
+                                        <span>VALUE MY BIKE</span>
+                                    </button>
                                 </div>
-                                <button class="btn primary-btn part-ex-form-btn" type="submit">
-                                    <span>VALUE MY BIKE</span>
-                                </button>
+                                <label class="mx-auto font-12 cursor-pointer part-ex-newsletters-input">
+                                    <input type="checkbox" class="cursor-pointer checkbox-input">
+                                    <span>Please select, to subscribe to our newsletters</span>
+                                </label>
                             </div>
-
-                            <label class="mx-auto font-12 cursor-pointer part-ex-newsletters-input">
-                                <input type="checkbox" class="cursor-pointer checkbox-input">
-                                <span>Please select, to subscribe to our newsletters</span>
-                            </label>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!----- Bike specifics section ----->
+    <section class="overflow-hidden bike-specifics-section">
+        <div class="container">
+            <h2 class="h4 font-black bike-specifics-title">BIKE <span>SPECIFICS</span></h2>
+            <div class="bike-specifics-wrapper ">
+                <!-- <div class="test-01 bike-specifics-lists">
+                    <div class="test-02 bike-specifics-item">
+                        <span class="font-25 font-black text-btn text-uppercase bike-specifics-content-caption">ENGINE DETAILS</span>
+                        <div></div>
+                    </div>
+                    <div class="test-02">
+                        <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                            ENGINE TYPE
+                        </span>
+                        <p class="font-18 bike-specifics-content-description">
+                            Liquid-cooled 4-stroke single DOHC
+                        </p>
+                    </div>
+                    <div class="test-02">
+                        <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                            ENGINE SIZE
+                        </span>
+                        <p class="font-18 bike-specifics-content-description">
+                            249.4cc
+                        </p>
+                    </div>
+                </div>
+                <div class="test-01 bike-specifics-lists">
+                    <div class="test-02 bike-specifics-item">
+                        <span class="font-25 font-black text-btn text-uppercase bike-specifics-content-caption">DIMENSIONS & WEIGHT</span>
+                        <div></div>
+                    </div>
+                    <div class="test-02">
+                        <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                            KERB WEIGHT
+                        </span>
+                        <p class="font-18 bike-specifics-content-description">
+                            104kg
+                        </p>
+                    </div>
+                    <div class="test-02">
+                        <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                            FUEL CAPACITY
+                        </span>
+                        <p class="font-18 bike-specifics-content-description">
+                            6.3 litres
+                        </p>
+                    </div>
+                </div> -->
+
+                <div class="bike-specifics-titles">
+                    <span class="font-25 font-black text-btn text-uppercase bike-specifics-content-caption">ENGINE DETAILS</span>
+                    <div></div>
+                    <span class="font-25 font-black text-btn text-uppercase bike-specifics-content-caption">DIMENSIONS & WEIGHT</span>
+                    <div></div>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        ENGINE TYPE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        Liquid-cooled 4-stroke single DOHC
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        KERB WEIGHT
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        104kg
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        ENGINE SIZE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        249.4cc
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        FUEL CAPACITY
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        6.3 litres
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        MAX.POWER OUTPUT
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        N/A
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        LENGTH / WIDTH / HEIGHT
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        27.8º
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        MAX. TORQUE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        N/A
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        WHEELBASE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        1,477mm
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        BORE & STROKE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        79mm x 50.9mm
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        SEAT HEIGHT (STD / LOW POSITION)
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        961mm
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        FRAME TYPE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        Aluminium twin tube
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        GROUND CLEARANCE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        333mm
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        MAX.POWER OUTPUT
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        N/A
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        LENGTH / WIDTH / HEIGHT
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        27.8º
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        MAX. TORQUE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        N/A
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        WHEELBASE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        1,477mm
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        BORE & STROKE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        79mm x 50.9mm
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        SEAT HEIGHT (STD / LOW POSITION)
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        961mm
+                    </p>
+                </div>
+                <div class="bike-specifics-content">
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        FRAME TYPE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        Aluminium twin tube
+                    </p>
+                    <span class="font-25 font-black text-uppercase bike-specifics-content-title">
+                        GROUND CLEARANCE
+                    </span>
+                    <p class="font-18 bike-specifics-content-description">
+                        333mm
+                    </p>
+                </div>
+            </div>
+            <a class="btn primary-btn bike-specifics-btn" href="javascript:void(0)">
+                <span class="read-more-btn">READ MORE +</span>
+                <span class="less-btn">less -</span>
+            </a>
         </div>
     </section>
 
@@ -966,23 +1195,23 @@
                         </button>
                     </form>
                     <div class="footer-social-media-wrapper">
-                        <div class="icon-btn icon-btn-medium icon-btn-primary">
+                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
                             <svg class="icon-btn-content footer-media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.046 17.237">
                                 <path id="Path_17428" data-name="Path 17428" d="M349.745,246.886v2.372H348v2.9h1.738v8.623h3.571v-8.622h2.4s.228-1.392.334-2.912h-2.715v-1.987a.843.843,0,0,1,.775-.695h1.946v-3.021h-2.644c-3.747,0-3.659,2.9-3.659,3.338Z" transform="translate(-348.004 -243.546)" fill="currentColor" />
                             </svg>
-                        </div>
-                        <div class="icon-btn icon-btn-medium icon-btn-primary">
+                        </a>
+                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
                             <svg class="icon-btn-content footer-media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.111 14.712">
                                 <path id="Path_17427" data-name="Path 17427" d="M464.465,247.107a7.427,7.427,0,0,1-2.133.587,3.741,3.741,0,0,0,1.634-2.057,7.41,7.41,0,0,1-2.365.9,3.715,3.715,0,0,0-6.422,2.542,3.877,3.877,0,0,0,.1.846,10.55,10.55,0,0,1-7.66-3.881,3.715,3.715,0,0,0,1.15,4.957,3.66,3.66,0,0,1-1.679-.463v.045a3.725,3.725,0,0,0,2.978,3.647,3.832,3.832,0,0,1-.978.126,3.769,3.769,0,0,1-.7-.065,3.729,3.729,0,0,0,3.47,2.581,7.468,7.468,0,0,1-4.615,1.586,8.012,8.012,0,0,1-.884-.049,10.567,10.567,0,0,0,16.265-8.9l-.011-.481a7.491,7.491,0,0,0,1.857-1.924Z" transform="translate(-446.355 -245.367)" fill="currentColor" />
                             </svg>
-                        </div>
-                        <div class="icon-btn icon-btn-medium icon-btn-primary">
+                        </a>
+                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
                             <svg class="icon-btn-content footer-media-icon" id="Group_4617" data-name="Group 4617" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.968">
                                 <path id="Path_17390" data-name="Path 17390" d="M572.72,243.552h-7.155a4.41,4.41,0,0,0-4.406,4.407v7.154a4.411,4.411,0,0,0,4.406,4.407h7.155a4.411,4.411,0,0,0,4.407-4.407v-7.154a4.411,4.411,0,0,0-4.407-4.407m2.99,11.558a2.993,2.993,0,0,1-2.99,2.99h-7.155a2.993,2.993,0,0,1-2.99-2.99v-7.154a2.993,2.993,0,0,1,2.99-2.99h7.155a2.993,2.993,0,0,1,2.99,2.99Z" transform="translate(-561.159 -243.552)" fill="currentColor" />
                                 <path id="Path_17391" data-name="Path 17391" d="M575.839,254.116a4.114,4.114,0,1,0,4.115,4.115h0a4.119,4.119,0,0,0-4.115-4.114m0,6.812a2.7,2.7,0,1,1,2.7-2.7,2.7,2.7,0,0,1-2.7,2.7" transform="translate(-567.854 -250.247)" fill="currentColor" />
                                 <path id="Path_17392" data-name="Path 17392" d="M592.867,250.838a1.039,1.039,0,1,0,.734.3,1.039,1.039,0,0,0-.734-.3" transform="translate(-580.596 -248.17)" fill="currentColor" />
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

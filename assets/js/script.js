@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggleBtn && responsiveItemsWrapper) {
     toggleBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.toggle("active");
-    document.body.classList.add("body-hidden")
+      document.body.classList.add("body-hidden");
       initMenu();
     });
   }
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuCloseBtn && responsiveItemsWrapper) {
     menuCloseBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.remove("active");
-    document.body.classList.remove("body-hidden")
+      document.body.classList.remove("body-hidden");
       resetMenu();
     });
   }
@@ -136,7 +136,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ================================
 // BODY SCROLL JS
+// ================================
 document.addEventListener("DOMContentLoaded", function () {
   const headerWrapper = document.querySelector("header");
   addEventListener("scroll", () => {
@@ -148,7 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// ================================
 // FOOTER SLIDER
+// ================================
 if (document.querySelector(".footer-slider.splide")) {
   new Splide(".footer-slider", {
     type: "loop",
@@ -160,7 +164,9 @@ if (document.querySelector(".footer-slider.splide")) {
   }).mount(window.splide.Extensions);
 }
 
+// ================================
 // FEATURED SLIDER
+// ================================
 const featuredSlider = document.querySelectorAll(".featured-slider");
 if (featuredSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
@@ -185,7 +191,9 @@ if (featuredSlider.length) {
   });
 }
 
+// ================================
 // EXPLORE MORE SLIDER
+// ================================
 const exploreSlider = document.querySelectorAll(".explore-slider");
 if (exploreSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
@@ -220,7 +228,9 @@ if (exploreSlider.length) {
   });
 }
 
+// ================================
 // SHOP BY BRAND SLIDER
+// ================================
 if (document.querySelector(".shop-brand-slider.splide")) {
   new Splide(".shop-brand-slider", {
     type: "loop",
@@ -241,7 +251,9 @@ if (document.querySelector(".shop-brand-slider.splide")) {
   }).mount(window.splide.Extensions);
 }
 
+// ================================
 // TESTIMONIAL SLIDER
+// ================================
 const testimonialSlider = document.querySelectorAll(".testimonial-slider");
 if (testimonialSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
@@ -261,7 +273,9 @@ if (testimonialSlider.length) {
 /* ========================================
           productCategory JS
 ========================================*/
+// ================================
 // PRODUCT CATEGORY LISTS
+// ================================
 const productListsWrapper = document.querySelectorAll(".product-lists-wrapper");
 if (productListsWrapper.length) {
   const productListsItemTitle = document.querySelectorAll(".product-lists-item-title");
@@ -275,7 +289,9 @@ if (productListsWrapper.length) {
   });
 }
 
+// ================================
 // FILTER BOX JS
+// ================================
 const filterDropDown = document.querySelectorAll(".filter-drop-down");
 if (filterDropDown.length) {
   const filterDropDown = document.querySelector(".filter-drop-down");
@@ -285,8 +301,9 @@ if (filterDropDown.length) {
     filterDropDown.classList.toggle("active");
   });
 }
-
+// ================================
 // FILTER TOGGLE JS
+// ================================
 const productItemsWrapper = document.querySelectorAll(".product-items-wrapper");
 if (productItemsWrapper.length) {
   const filterToggleBtn = document.querySelector(".filter-toggle-btn");
@@ -295,55 +312,61 @@ if (productItemsWrapper.length) {
 
   filterToggleBtn.addEventListener("click", () => {
     productListsWrapper.classList.toggle("active");
-    document.body.classList.add("body-hidden")
+    document.body.classList.add("body-hidden");
   });
 
   productListsCloseBtn.addEventListener("click", () => {
     productListsWrapper.classList.remove("active");
-    document.body.classList.remove("body-hidden")
+    document.body.classList.remove("body-hidden");
   });
 }
 
 /* ========================================
           ProductOpen JS
 ========================================*/
+// ================================
 // PRODUCT OVERVIEW
-document.addEventListener("DOMContentLoaded", function () {
-  var main = new Splide(".product-overview-slider", {
-    type: "fade",
-    // rewind: true,
-    pagination: false,
-    arrows: false,
-  });
+// ================================
+const productOverviewWrapper = document.querySelectorAll(".product-overview-wrapper");
+if (productOverviewWrapper.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var main = new Splide(".product-overview-slider.splide", {
+      type: "fade",
+      rewind: true,
+      pagination: false,
+      arrows: false,
+    });
 
-  var thumbnails = new Splide("#product-overview-thumbnail", {
-    fixedWidth: 108,
-    fixedHeight: 110,
-    gap: 10,
-    // rewind: true,
-    pagination: false,
-    perPage: 3,
-    breakpoints: {
-      575: {
-        perPage: 2,
-        fixedWidth: 88,
-        fixedHeight: 80,
+    var thumbnails = new Splide(".product-overview-thumbnail.splide", {
+      fixedWidth: 108,
+      fixedHeight: 110,
+      gap: 10,
+      rewind: true,
+      pagination: false,
+      perPage: 3,
+      breakpoints: {
+        575: {
+          perPage: 2,
+          fixedWidth: 88,
+          fixedHeight: 80,
+        },
       },
-    },
+    });
+
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
   });
+}
 
-  main.sync(thumbnails);
-  main.mount();
-  thumbnails.mount();
-});
-
+// ================================
 // GLOBAL SIDEABR JS
+// ================================
 const sidebar = document.querySelectorAll(".sidebar");
 if (sidebar.length) {
   const sidebarBtns = document.querySelectorAll("[data-sidebar]");
   const sidebarCloseBtns = document.querySelectorAll(".sidebar-close-btn");
   const sidebar = document.querySelectorAll(".sidebar");
-   
 
   sidebarBtns.forEach((button) => {
     button.addEventListener("click", () => {
@@ -371,19 +394,19 @@ if (sidebar.length) {
   const sidebarOpen = (id) => {
     const sidebar = document.querySelector(`#${id}`);
     if (sidebar) sidebar.classList.add("active");
-document.body.classList.add("body-hidden")
-
+    document.body.classList.add("body-hidden");
   };
 
   const sidebarClose = (id) => {
     const sidebar = document.querySelector(`#${id}`);
     if (sidebar) sidebar.classList.remove("active");
-document.body.classList.remove("body-hidden")
-
+    document.body.classList.remove("body-hidden");
   };
 }
 
+// ================================
 // GLOBAL MODAL JS
+// ================================
 const modal = document.querySelectorAll(".modal");
 if (modal.length) {
   const modalBtns = document.querySelectorAll("[data-modal]");
@@ -416,17 +439,19 @@ if (modal.length) {
   const modalOpen = (id) => {
     const modal = document.querySelector(`#${id}`);
     if (modal) modal.classList.add("active");
-document.body.classList.add("body-hidden")
+    document.body.classList.add("body-hidden");
   };
 
   const modalClose = (id) => {
     const modal = document.querySelector(`#${id}`);
     if (modal) modal.classList.remove("active");
-document.body.classList.remove("body-hidden")
+    document.body.classList.remove("body-hidden");
   };
 }
 
+// ================================
 // FINANCE MODAL JS
+// ================================
 document.querySelectorAll(".finance-value-wrapper").forEach((wrapper) => {
   const range = wrapper.querySelector(".finance-range-input");
   const numberInput = wrapper.querySelector(".finance-num-input");
@@ -462,7 +487,38 @@ document.querySelectorAll(".finance-value-wrapper").forEach((wrapper) => {
   updateUI();
 });
 
+// ================================
 // NICE SELECT JS
-$(document).ready(function () {
-  $("select").niceSelect();
-});
+// ================================
+const select = document.querySelectorAll("select");
+if (select.length) {
+  $(document).ready(function () {
+    $("select").niceSelect();
+  });
+}
+
+// ================================
+// PART EX TAB
+// ================================
+const partExContent = document.querySelectorAll(".part-ex-content");
+if (partExContent.length) {
+  const partExContact = document.querySelectorAll(".part-ex-contact");
+  const partExBikeValue = document.querySelectorAll(".part-ex-bike-value");
+  const partExContactsWrapper = document.querySelectorAll(".part-ex-contacts-wrapper");
+  const partExBikeValueWrapper = document.querySelectorAll(".bike-value-wrapper");
+  const partExWrapper = document.querySelectorAll(".part-ex-wrapper");
+}
+
+// ================================
+// BIKE SPECIFICS JS
+// ================================
+const bikeSpecificsWrapper = document.querySelectorAll(".bike-specifics-wrapper");
+if (bikeSpecificsWrapper.length) {
+  const bikeSpecificsWrapper = document.querySelector(".bike-specifics-wrapper");
+  const bikeSpecificsBtn = document.querySelector(".bike-specifics-btn");
+
+  bikeSpecificsBtn.addEventListener("click", () => {
+    bikeSpecificsWrapper.classList.toggle("active");
+    bikeSpecificsBtn.classList.toggle("active");
+  });
+}
