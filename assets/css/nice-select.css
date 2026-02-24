@@ -8,8 +8,8 @@
   font-weight: normal;
   position: relative;
   text-align: left !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -18,32 +18,6 @@
   width: auto;
 }
 
-.nice-select:after {
-  border-bottom: 2px solid #999;
-  border-right: 2px solid #999;
-  content: "";
-  display: block;
-  height: 5px;
-  margin-top: -4px;
-  pointer-events: none;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform-origin: 66% 66%;
-  -ms-transform-origin: 66% 66%;
-  transform-origin: 66% 66%;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  width: 5px;
-}
-.nice-select.open:after {
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
 .nice-select.open .list {
   opacity: 1;
   pointer-events: auto;
@@ -108,7 +82,7 @@
     all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
     opacity 0.15s ease-out;
   transition:
-    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    all 0.3s cubic-bezier(0.5, 0, 0, 1.25),
     opacity 0.15s ease-out;
   z-index: 9;
 }
