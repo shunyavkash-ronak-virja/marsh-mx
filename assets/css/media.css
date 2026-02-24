@@ -86,7 +86,7 @@
     width: 40%;
   }
 
-  #product-overview-thumbnail {
+  .product-overview-thumbnail {
     width: 86%;
   }
 
@@ -447,7 +447,7 @@
     margin-inline: auto;
   }
 
-  #product-overview-thumbnail {
+  .product-overview-thumbnail {
     width: 56%;
   }
 
@@ -514,6 +514,11 @@
     padding-bottom: 30px;
   }
 
+  /* ----- BIKE SPECIFICS SECTION ----- */
+  .bike-specifics-titles,
+  .bike-specifics-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -680,7 +685,7 @@
     max-width: 100%;
   }
 
-  #product-overview-thumbnail {
+  .product-overview-thumbnail {
     width: 68%;
   }
 
@@ -814,7 +819,7 @@
     padding-inline: 30px 16px;
   }
 
-  #product-overview-thumbnail {
+  .product-overview-thumbnail {
     width: 80%;
   }
 
