@@ -113,7 +113,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.body-hidden{
+.body-hidden {
   overflow: hidden;
 }
 
@@ -194,6 +194,25 @@ button {
   outline: none;
 }
 
+/* ----- Selectbox input ----- */
+.select-box {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--white-300);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-box::after {
+  content: url('data:image/svg+xml,<svg class="product-overview-qty-btn-icon" viewBox="0 0 80 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M78.8186 1.33331H1.18143L40 39.6666L78.8186 1.33331Z" fill="black"></path></svg>');
+  width: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-box.open::after {
+  transform: rotate(180deg);
+}
 /* ----- Checkbox input ----- */
 .checkbox-input {
   width: 20px;
