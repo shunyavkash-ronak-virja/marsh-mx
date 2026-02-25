@@ -498,15 +498,47 @@ if (select.length) {
 }
 
 // ================================
+// PART EX MODAL
+// ================================
+const partExButtons = document.querySelectorAll(".part-ex-option[data-modal]");
+if (partExButtons.length) {
+  const partExModals = [
+    document.getElementById("part-ex-contact"),
+    document.getElementById("part-ex-bike-value"),
+  ];
+
+  partExButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.dataset.modal;
+      partExModals.forEach((modal) => {
+        modal.classList.remove("active");
+      });
+      const targetModal = document.getElementById(targetId);
+      if (targetModal) {
+        targetModal.classList.add("active");
+      }
+      const allRadios = document.querySelectorAll('input[name="part-option"]');
+      allRadios.forEach((radio) => {
+        radio.checked = false;
+      });
+      const activeRadio = targetModal.querySelector(
+        'input[name="part-option"][data-modal="' + targetId + '"]',
+      );
+      const radioInsideBtn = btn.querySelector('input[type="radio"]');
+      if (radioInsideBtn) {
+        radioInsideBtn.checked = true;
+      }
+    });
+  });
+}
+
+// ================================
 // PART EX TAB
 // ================================
 const partExContent = document.querySelectorAll(".part-ex-content");
 if (partExContent.length) {
-  const partExContact = document.querySelectorAll(".part-ex-contact");
-  const partExBikeValue = document.querySelectorAll(".part-ex-bike-value");
-  const partExContactsWrapper = document.querySelectorAll(".part-ex-contacts-wrapper");
-  const partExBikeValueWrapper = document.querySelectorAll(".bike-value-wrapper");
-  const partExWrapper = document.querySelectorAll(".part-ex-wrapper");
+  const partExContact = document.querySelectorAll("#part-ex-contact");
+  const partExBikeValue = document.querySelectorAll("#part-ex-bike-value");
 }
 
 // ================================

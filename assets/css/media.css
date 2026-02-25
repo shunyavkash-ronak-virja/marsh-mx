@@ -514,11 +514,35 @@
     padding-bottom: 30px;
   }
 
+  .part-ex-head-title {
+    font-size: 45px;
+  }
+
   /* ----- BIKE SPECIFICS SECTION ----- */
+
   .bike-specifics-titles,
   .bike-specifics-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* ----- FEATURES CARD SECTION ----- */
+  .features-card-section {
+    padding-block: 48px 50px;
+  }
+
+  .features-card-title {
+    font-size: 25px;
+    margin-bottom: 46px;
+  }
+
+  .features-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-card-caption {
+    font-size: 32px;
+  }
+
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -726,6 +750,48 @@
   .finance-modal-content {
     max-width: 660px;
   }
+
+  .part-ex-content-dialog {
+    max-width: 100%;
+    padding: 24px 24px 52px;
+  }
+
+  .part-ex-wrapper .icon-btn-small {
+    width: 52px;
+  }
+
+  .part-ex-content-wrapper {
+    max-width: 100%;
+  }
+
+  .part-ex-head-title {
+    margin-top: 20px;
+  }
+
+  .part-ex-contacts {
+    margin-bottom: 38px;
+  }
+
+  .part-ex-contact-caption {
+    margin-bottom: 24px;
+  }
+
+  .part-ex-newsletters-input {
+    margin-top: 25px;
+  }
+
+  .part-ex-bike-value-wrapper {
+    max-width: 100%;
+  }
+
+  /* ----- FEATURES CARD SECTION ----- */
+  .features-card-section {
+    padding-bottom: 30px;
+  }
+
+  .features-cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 575px) {
@@ -850,6 +916,33 @@
   .finance-modal-content {
     max-width: 474px;
   }
+
+  .contacts-input-wrapper,
+  .bike-value-author-content,
+  .bike-value-input-wrapper {
+    flex-direction: column;
+  }
+
+  .bike-value-input,
+  .bike-value-file-label,
+  .part-ex-price-menu {
+    width: 100%;
+  }
+
+  .bike-value-input-content,
+  .bike-value-outstanding-wrapper {
+    margin-top: 20px;
+  }
+
+  .bike-value-year-select {
+    max-width: 100%;
+  }
+
+  /* ----- FEATURES CARD SECTION ----- */
+  .features-card-section {
+    padding-bottom: 24px;
+  }
+
   /* ========================================
           COMPARE HTML
 ========================================*/
