@@ -513,6 +513,7 @@ if (partExButtons.length) {
       partExModals.forEach((modal) => {
         modal.classList.remove("active");
       });
+
       const targetModal = document.getElementById(targetId);
       if (targetModal) {
         targetModal.classList.add("active");
@@ -552,5 +553,15 @@ if (bikeSpecificsWrapper.length) {
   bikeSpecificsBtn.addEventListener("click", () => {
     bikeSpecificsWrapper.classList.toggle("active");
     bikeSpecificsBtn.classList.toggle("active");
+  });
+}
+
+// ================================
+// FANCYBOX JS
+// ================================
+const fancybox = document.querySelectorAll("[ -fancybox]");
+if (fancybox.length) {
+  document.addEventListener("DOMContentLoaded", () => {
+    Fancybox.bind("[data-fancybox]", {});
   });
 }
