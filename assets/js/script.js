@@ -256,7 +256,7 @@ if (document.querySelector(".shop-brand-slider.splide")) {
 // ================================
 document.addEventListener("DOMContentLoaded", function () {
   const sliders = document.querySelectorAll(
-    ".testimonial-slider.splide, .testimonial-v2-slider.splide"
+    ".testimonial-slider.splide, .testimonial-v2-slider.splide",
   );
 
   sliders.forEach((slider) => {
@@ -561,7 +561,7 @@ if (bikeSpecificsWrapper.length) {
 // ================================
 // FANCYBOX JS
 // ================================
-const fancybox = document.querySelectorAll("[ -fancybox]");
+const fancybox = document.querySelectorAll("[data-fancybox]");
 if (fancybox.length) {
   document.addEventListener("DOMContentLoaded", () => {
     Fancybox.bind("[data-fancybox]", {});
