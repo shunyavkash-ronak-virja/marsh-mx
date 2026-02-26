@@ -44,17 +44,6 @@
   padding-left: 4%;
 }
 
-.hero-title {
-  font-family: var(--font-transducer-exp);
-  font-style: italic;
-  font-weight: 400;
-  color: var(--primary-100);
-
-  span {
-    font-family: var(--font-transducer-black-exp);
-  }
-}
-
 .hero-dec {
   max-width: 481px;
   margin-block: 22px 30px;
@@ -140,20 +129,6 @@
 
 .featured-slider-content {
   color: var(--gray-100);
-}
-
-.featured-content-title,
-.featured-content-caption {
-  font-style: italic;
-}
-
-.featured-content-title {
-  font-family: var(--font-transducer-black-exp);
-}
-
-.featured-content-caption {
-  font-family: var(--font-transducer);
-  font-weight: 500;
 }
 
 .featured-content-price {
@@ -255,18 +230,6 @@
   max-width: 566px;
 }
 
-.two-column-title {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-transducer-black-exp);
-  font-style: italic;
-
-  span {
-    font-family: var(--font-transducer);
-    font-weight: 500;
-  }
-}
-
 .two-column-description {
   max-width: 502px;
   margin-block: 44px;
@@ -309,15 +272,9 @@
 
 .shop-brand-title {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 14px;
-  font-family: var(--font-transducer-black-exp);
-  font-style: italic;
-
-  span {
-    font-family: var(--font-transducer);
-    font-weight: 500;
-  }
 }
 
 .shop-brand-slider {
@@ -726,24 +683,11 @@
   object-position: bottom;
 }
 
-.product-card-title,
-.product-card-caption {
-  font-style: italic;
-}
-
-.product-card-title {
-  font-family: var(--font-transducer-black-exp);
-}
-
-.product-card-caption,
 .product-card-price {
   font-family: var(--font-transducer);
-}
-
-.product-card-price {
   font-weight: 400;
   color: var(--gray-100);
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .cta-content-banner {
@@ -1073,13 +1017,14 @@
   height: 8px;
 }
 
-.compare-btn {
+.compare-bike-btn {
+  max-width: max-content;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.compare-btn input {
+.compare-bike-btn input {
   width: 16px;
   aspect-ratio: 1;
   border-radius: 100%;
@@ -1088,11 +1033,11 @@
   position: relative;
 }
 
-.compare-btn input:checked {
+.compare-bike-btn input:checked {
   background-color: var(--primary-100);
 }
 
-.compare-btn input:checked::after {
+.compare-bike-btn input:checked::after {
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
   width: 82%;
   height: 82%;
@@ -1455,14 +1400,7 @@
 }
 
 .bike-specifics-title {
-  font-style: italic;
-  font-family: var(--font-transducer-black-exp);
   margin-bottom: 46px;
-}
-
-.bike-specifics-title span {
-  font-family: var(--font-transducer-exp);
-  font-weight: 400;
 }
 
 .bike-specifics-wrapper {
@@ -1587,14 +1525,7 @@
 }
 
 .features-card-title {
-  font-family: var(--font-transducer-black-exp);
-  font-style: italic;
   margin-bottom: 50px;
-}
-
-.features-card-title span {
-  font-family: var(--font-transducer-exp);
-  font-weight: 400;
 }
 
 .features-cards-wrapper {
@@ -1634,22 +1565,66 @@
 }
 
 .product-video-content {
-  width: 100%;
   height: 602px;
   position: relative;
 }
 
 .product-video-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  transform: translate(-50%, -50%);
   border: 1px solid var(--primary-200-60);
   background-color: var(--gray-200-60);
   color: var(--primary-100);
+  padding: 28px;
+}
+
+.product-video-btn-icon {
+  width: 24px;
+  height: 26px;
+  display: block;
+}
+
+.product-video-btn-text {
+  padding-top: 1.6px;
+}
+
+/* ----- PROMOTIONAL CTA SECTION ----- */
+.promotional-cta-section {
+  padding-block: 82px;
+}
+
+.promotional-cta-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.promotional-cta-card {
+  height: 308px;
+  position: relative;
+}
+
+.promotional-cta-dialog {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
+  background-color: var(--black-42);
+}
+
+.promotional-cta-content {
+  max-width: 472px;
 }
 
 /* ========================================
@@ -1726,14 +1701,10 @@
 }
 
 .compare-item-title {
-  font-style: italic;
-  font-family: var(--font-transducer-exp);
-  font-weight: 400;
   margin-top: 6px;
 }
 
 .compare-item-title span {
-  font-family: var(--font-transducer-black-exp);
   display: block;
 }
 
@@ -1746,14 +1717,11 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-family: var(--font-transducer-black-exp);
-  font-style: italic;
   line-height: 1.181;
   margin-bottom: 30px;
 }
 
 .compare-item-price-apr-wrapper span {
-  font-family: var(--font-transducer-exp);
   margin-inline: 6px 24px;
 }
 
@@ -1763,12 +1731,6 @@
 
 .compare-item-specifics-tag {
   margin-block: 30px;
-  font-family: var(--font-transducer-exp);
-  font-style: italic;
-}
-
-.compare-item-specifics-tag span {
-  font-family: var(--font-transducer-black-exp);
 }
 
 .compare-specifics-list-item:nth-child(odd) {
@@ -1793,7 +1755,7 @@
 }
 
 .compare-btn {
-  max-width: max-content;
+  min-width: 100%;
 }
 
 .compare-get-in-touch {

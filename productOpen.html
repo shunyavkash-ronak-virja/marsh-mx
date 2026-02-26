@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marsh-mx</title>
 
+    <!----- Fancybox css ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
     <!----- Nice select css ----->
     <link rel="stylesheet" href="assets/css/nice-select.css">
 
@@ -662,7 +665,7 @@
                             <span>add to basket</span>
                         </a>
                     </div>
-                    <a class="font-12 text-uppercase font-black compare-btn" href="compare.html">
+                    <a class="font-12 text-uppercase font-black compare-bike-btn" href="compare.html">
                         <input class="cursor-pointer" type="radio" name="compare" id="compare-bikes">
                         <label class="cursor-pointer" for="compare-bikes">CLICK TO COMPARE BIKES</label>
                     </a>
@@ -781,7 +784,7 @@
                             <h2 class="font-black part-ex-head-title">I'D LIKE TO KNOW MORE</h2>
                             <div class="part-ex-head-options">
                                 <label class="font-14 cursor-pointer part-ex-option part-ex-contact" data-modal="part-ex-contact">
-                                    <input type="radio" class="cursor-pointer" name="part-option">
+                                    <input type="radio" class="cursor-pointer" name="part-option" checked>
                                     <span>Fill Out Contact Form</span>
                                 </label>
                                 <label class="font-14 cursor-pointer part-ex-option part-ex-bike-value" data-modal="part-ex-bike-value">
@@ -827,7 +830,7 @@
                                     <span>Fill Out Contact Form</span>
                                 </label>
                                 <label class="font-14 cursor-pointer part-ex-option part-ex-bike-value" data-modal="part-ex-bike-value">
-                                    <input type="radio" class="cursor-pointer" name="part-option">
+                                    <input type="radio" class="cursor-pointer" name="part-option" checked>
                                     <span>Value my bike</span>
                                 </label>
                             </div>
@@ -913,7 +916,7 @@
     <!----- Bike specifics section ----->
     <section class="overflow-hidden bike-specifics-section">
         <div class="container">
-            <h2 class="h4 font-black bike-specifics-title">BIKE <span>SPECIFICS</span></h2>
+            <h2 class="h4 font-black title bike-specifics-title">BIKE <span>SPECIFICS</span></h2>
             <div class="bike-specifics-wrapper ">
                 <!-- <div class="test-01 bike-specifics-lists">
                     <div class="test-02 bike-specifics-item">
@@ -1117,8 +1120,8 @@
     <!----- Features card section ----->
     <section class="features-card-section">
         <div class="container">
-            <h2 class="h4 font-black features-card-title">
-                KEY <span>FEATURES</span>
+            <h2 class="h4 font-black title features-card-title">
+                KEY<span>FEATURES</span>
             </h2>
             <div class="features-cards-wrapper">
                 <div class="features-card-content">
@@ -1156,12 +1159,38 @@
     <section class="overflow-hidden product-video-section">
         <div class="product-video-content">
             <img class="img-cover" src="assets/images/sections/product-video-section/product-video-img-01.png" alt="product-video-img">
-            <a class="btn product-video-btn" href="javascript:void(0);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26">
-                    <path id="Polygon_35" data-name="Polygon 35" d="M13,0,26,23H0Z" transform="translate(23) rotate(90)" fill="currentColor" />
-                </svg>
-                <span>PLAY VIDEO</span>
+            <a class="btn secondary-btn product-video-btn" data-fancybox href="assets/images/sections/product-video-section/product-video-01.mp4">
+                <span>
+                    <svg class="product-video-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 26">
+                        <path id="Polygon_35" data-name="Polygon 35" d="M13,0,26,23H0Z" transform="translate(23) rotate(90)" fill="currentColor" />
+                    </svg>
+                </span>
+                <span class="product-video-btn-text">PLAY VIDEO</span>
             </a>
+        </div>
+    </section>
+
+    <!----- Promotional CTA section ----->
+    <section class="promotional-cta-section">
+        <div class="container">
+            <div class="promotional-cta-wrapper">
+                <div class="promotional-cta-card">
+                    <div class="promotional-cta-img-content">
+                        <img class="img-cover" src="assets/images/sections/cta-section/cta-img-03.png" alt="cta-img">
+                    </div>
+                    <div class="promotional-cta-dialog">
+                        <div class="font-white promotional-cta-content">
+                            <h5 class="title promotional-cta-title"> FINANCE <span>AVAILABLE</span></h5>
+                            <p class="truncate line-clamp-2 promotional-cta-description">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            </p>
+                            <a class="btn primary-btn" href="javascript:void(0);">
+                                <span>LEARN MORE</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1309,6 +1338,9 @@
             </div>
         </div>
     </footer>
+
+    <!----- Fancybox js ----->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <!-- Nice select js -->
     <script src="assets/js/jquery.js"></script>

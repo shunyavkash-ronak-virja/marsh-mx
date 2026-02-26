@@ -543,6 +543,14 @@
     font-size: 32px;
   }
 
+  /* ----- PRODUCT VIDEO SECTION ----- */
+  .product-video-section {
+    padding-block: 50px 60px;
+  }
+
+  .product-video-content {
+    height: 500px;
+  }
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -792,6 +800,15 @@
   .features-cards-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* ----- PRODUCT VIDEO SECTION ----- */
+  .product-video-content {
+    height: 400px;
+  }
+
+  .product-video-section {
+    padding-block: 30px 40px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -832,7 +849,6 @@
   /* ----- SHOP BY BRAND SECTION ----- */
   .shop-brand-title {
     flex-direction: column;
-    align-items: center;
     gap: 0;
   }
 
@@ -897,12 +913,12 @@
     right: 0;
   }
 
-  .compare-btn {
+  .compare-bike-btn {
     font-size: 14px;
     line-height: 2;
   }
 
-  .compare-btn input {
+  .compare-bike-btn input {
     width: 30px;
   }
 
@@ -941,6 +957,15 @@
   /* ----- FEATURES CARD SECTION ----- */
   .features-card-section {
     padding-bottom: 24px;
+  }
+
+  /* ----- PRODUCT VIDEO SECTION ----- */
+  .product-video-section {
+    padding-block: 24px 6px;
+  }
+
+  .product-video-content {
+    height: 270px;
   }
 
   /* ========================================

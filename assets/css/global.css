@@ -179,6 +179,21 @@ button {
   border: none;
 }
 
+.display-block {
+  display: block;
+}
+
+/* ----- title ----- */
+.title {
+  font-family: var(--font-transducer-black-exp);
+  font-style: italic;
+}
+
+.title span {
+  font-family: var(--font-transducer-exp);
+  font-weight: 400;
+}
+
 /* ----- Text input ----- */
 .text-field-input {
   width: 100%;
