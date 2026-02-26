@@ -1624,7 +1624,13 @@
 }
 
 .promotional-cta-content {
-  max-width: 472px;
+  max-width: 502px;
+  padding-left: 30px;
+}
+
+.promotional-cta-description {
+  font-weight: 200;
+  margin-block: 16px 22px;
 }
 
 /* ========================================

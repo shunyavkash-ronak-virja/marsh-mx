@@ -551,6 +551,36 @@
   .product-video-content {
     height: 500px;
   }
+
+  /* ----- PROMOTIONAL CTA SECTION ----- */
+  .promotional-cta-section {
+    padding-block: 60px;
+    overflow: hidden;
+  }
+
+  .promotional-cta-card {
+    height: 388px;
+  }
+
+  .promotional-cta-wrapper {
+    width: auto;
+    margin-inline: -20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .promotional-cta-dialog {
+    padding: 14px;
+  }
+
+  .promotional-cta-content {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    padding-left: 0;
+  }
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -809,6 +839,15 @@
   .product-video-section {
     padding-block: 30px 40px;
   }
+
+  /* ----- PROMOTIONAL CTA SECTION ----- */
+  .promotional-cta-section {
+    padding-block: 40px;
+  }
+
+  .promotional-cta-content {
+    max-width: 470px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -966,6 +1005,15 @@
 
   .product-video-content {
     height: 270px;
+  }
+
+  /* ----- PROMOTIONAL CTA SECTION ----- */
+  .promotional-cta-section {
+    padding-block: 6px;
+  }
+
+  .promotional-cta-content {
+    max-width: 312px;
   }
 
   /* ========================================
