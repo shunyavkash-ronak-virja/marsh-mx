@@ -233,7 +233,6 @@
 .two-column-description {
   max-width: 502px;
   margin-block: 44px;
-  color: var(--black-200);
 }
 
 /* ----- CTA BANNER SECTION ----- */
@@ -608,7 +607,6 @@
 .filter-drop-down {
   max-width: 194px;
   max-height: 135px;
-  color: var(--black-200);
   border-radius: 14px;
   filter: drop-shadow(0 3px 6px var(--black-6));
   padding: 22px 19px 12px;
@@ -859,7 +857,6 @@
 
 .product-overview-label {
   width: 100vw;
-  color: var(--black-200);
   padding-block: 12px;
 }
 
@@ -888,7 +885,6 @@
 }
 
 .product-overview-dec {
-  color: var(--black-200);
   line-height: 1.6;
 }
 
@@ -978,7 +974,6 @@
   align-items: end;
   gap: 12px;
   margin-top: 18px;
-  color: var(--black-200);
 }
 
 .product-overview-price-wrapper span {
@@ -1252,7 +1247,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--black-200);
   line-height: normal;
 }
 
@@ -1724,6 +1718,22 @@
   background: var(--primary-100);
 }
 
+/* ----- TWO COLUMN SECTION ----- */
+.product-open-column-section {
+  padding-block: 188px 98px;
+}
+
+.product-open-column-caption {
+  color: var(--white-300);
+  font-family: var(--font-transducer);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.product-open-column-section .two-column-description {
+  margin-block: 24px 34px;
+}
+
 /* ========================================
           COMPARE HTML
 ========================================*/
@@ -1841,10 +1851,6 @@
 .specifics-list-title {
   font-family: var(--font-transducer);
   font-weight: 400;
-}
-
-.specifics-list-description {
-  color: var(--black-200);
 }
 
 .compare-btn {

@@ -111,6 +111,11 @@
     width: 406px;
     height: 268px;
   }
+
+  /* ----- TWO COLUMN SECTION ----- */
+  .product-open-column-section {
+    padding-block: 148px 70px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -196,6 +201,7 @@
     max-width: none;
     width: calc(100% + 36px);
     max-height: 816px;
+    overflow: hidden;
   }
 
   .two-column-img {
@@ -596,6 +602,11 @@
     margin-block: 32px 58px;
   }
 
+  /* ----- TWO COLUMN SECTION ----- */
+  .product-open-column-section {
+    padding-block: 108px 54px;
+  }
+
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -872,6 +883,11 @@
   .testimonial-v2-content {
     font-size: 28px;
   }
+
+  /* ----- TWO COLUMN SECTION ----- */
+  .product-open-column-section {
+    padding-block: 68px 48px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1038,6 +1054,11 @@
 
   .promotional-cta-content {
     max-width: 312px;
+  }
+
+  /* ----- TWO COLUMN SECTION ----- */
+  .product-open-column-section {
+    padding-top: 26px;
   }
 
   /* ========================================
