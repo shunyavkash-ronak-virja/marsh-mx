@@ -254,10 +254,13 @@ if (document.querySelector(".shop-brand-slider.splide")) {
 // ================================
 // TESTIMONIAL SLIDER
 // ================================
-const testimonialSlider = document.querySelectorAll(".testimonial-slider");
-if (testimonialSlider.length) {
-  document.addEventListener("DOMContentLoaded", function () {
-    const splide = new Splide(".testimonial-slider.splide", {
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(
+    ".testimonial-slider.splide, .testimonial-v2-slider.splide"
+  );
+
+  sliders.forEach((slider) => {
+    new Splide(slider, {
       type: "loop",
       autoplay: true,
       arrows: false,
@@ -265,10 +268,9 @@ if (testimonialSlider.length) {
       perMove: 1,
       speed: 800,
       interval: 5000,
-    });
-    splide.mount();
+    }).mount();
   });
-}
+});
 
 /* ========================================
           productCategory JS

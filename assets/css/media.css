@@ -554,7 +554,7 @@
 
   /* ----- PROMOTIONAL CTA SECTION ----- */
   .promotional-cta-section {
-    padding-block: 60px;
+    padding-block: 60px 102px;
     overflow: hidden;
   }
 
@@ -581,6 +581,21 @@
     margin-inline: auto;
     padding-left: 0;
   }
+
+  /* ----- TESTIMONIAL V2 SECTION ----- */
+  .testimonial-v2-section {
+    padding-block: 60px 118px;
+  }
+
+  .testimonial-v2-slider {
+    max-width: 100%;
+  }
+
+  .testimonial-v2-content {
+    font-size: 30px;
+    margin-block: 32px 58px;
+  }
+
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -842,11 +857,20 @@
 
   /* ----- PROMOTIONAL CTA SECTION ----- */
   .promotional-cta-section {
-    padding-block: 40px;
+    padding-block: 40px 67px;
   }
 
   .promotional-cta-content {
     max-width: 470px;
+  }
+
+  /* ----- TESTIMONIAL V2 SECTION ----- */
+  .testimonial-v2-item {
+    max-width: 100%;
+  }
+
+  .testimonial-v2-content {
+    font-size: 28px;
   }
 }
 
@@ -1009,7 +1033,7 @@
 
   /* ----- PROMOTIONAL CTA SECTION ----- */
   .promotional-cta-section {
-    padding-block: 6px;
+    padding-block: 6px 12px;
   }
 
   .promotional-cta-content {

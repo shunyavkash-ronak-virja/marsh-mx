@@ -343,7 +343,7 @@
   padding: 0;
 }
 
-.testimonial-slider .splide__pagination li {
+.splide__pagination li {
   display: flex;
   line-height: 0;
 }
@@ -1596,7 +1596,7 @@
 
 /* ----- PROMOTIONAL CTA SECTION ----- */
 .promotional-cta-section {
-  padding-block: 82px;
+  padding-block: 82px 162px;
 }
 
 .promotional-cta-wrapper {
@@ -1631,6 +1631,97 @@
 .promotional-cta-description {
   font-weight: 200;
   margin-block: 16px 22px;
+}
+
+/* ----- TESTIMONIAL V2 SECTION ----- */
+.testimonial-v2-section {
+  padding-block: 88px 132px;
+}
+
+.testimonial-v2-slider {
+  max-width: 900px;
+}
+
+.testimonial-v2-item {
+  max-width: 766px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-v2-avatar {
+  width: 110px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.testimonial-v2-author-name {
+  font-family: var(--font-transducer);
+  font-weight: 500;
+}
+
+.testimonial-v2-author-name,
+.testimonial-v2-author-account {
+  line-height: 1;
+}
+
+.testimonial-v2-author-account {
+  font-family: var(--font-transducer-exp);
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-v2-author-account:hover {
+  color: var(--primary-100);
+}
+
+.testimonial-v2-content {
+  font-family: var(--font-transducer-exp);
+  font-style: italic;
+  margin-block: 42px 68px;
+}
+
+.testimonial-v2-slider .splide__pagination {
+  gap: 6px;
+  padding: 0;
+  bottom: -8px;
+}
+
+.testimonial-v2-slider .splide__pagination__page {
+  margin: 0;
+  border-radius: 0;
+  height: 2px;
+  width: 48px;
+  padding-block: 8px;
+  opacity: 1;
+  background: transparent;
+}
+
+.testimonial-v2-slider .splide__pagination__page.is-active {
+  transform: scale(1);
+}
+
+.testimonial-v2-slider .splide__pagination__page:hover {
+  opacity: 1;
+}
+
+.testimonial-v2-slider .splide__pagination__page::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 48px;
+  background: var(--primary-100-32);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-v2-slider .splide__pagination__page:hover::after,
+.testimonial-v2-slider .splide__pagination__page.is-active::after {
+  background: var(--primary-100);
 }
 
 /* ========================================
@@ -1708,10 +1799,6 @@
 
 .compare-item-title {
   margin-top: 6px;
-}
-
-.compare-item-title span {
-  display: block;
 }
 
 .compare-item-img-content {
