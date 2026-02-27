@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marsh-mx</title>
+
     <!----- Favicon ----->
     <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 
@@ -663,17 +664,78 @@
                                 </svg>
                             </span>
                         </a>
-                        <a class="btn  primary-btn product-overview-basket" href="javascript:void(0);">
+                        <a class="btn primary-btn product-overview-basket" data-sidebar="mini-basket" href="javascript:void(0);">
                             <span>add to basket</span>
                         </a>
+                        <div class="sidebar active" id="mini-basket">
+                            <div class="sidebar-wrapper scroll-bar mini-basket-sidebar">
+                                <div class="mini-basket-wrapper">
+                                    <div class="mini-basket-title-wrapper">
+                                        <h3 class="font-black mini-basket-title">Added Products [1]</h3>
+                                        <button class="border-none cursor-pointer sidebar-close-btn mini-basket-close-btn">
+                                            <svg class="mini-basket-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M18 6 6 18"></path>
+                                                <path d="m6 6 12 12"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="mini-basket-item-wrapper">
+                                        <div class="mini-basket-item">
+                                            <div class="mini-basket-item-img-content">
+                                                <img class="img-cover" src="assets/images/sections/bike-images/bike-img-01.png" alt="bike-img">
+                                            </div>
+                                            <div class="mini-basket-item-content">
+                                                <div class="font-18 mini-basket-item-title">
+                                                    Husqvarna
+                                                    <span class="display-block">FC 350 2022</span>
+                                                </div>
+                                                <h6 class="font-black mini-basket-item-qty">QTY 1</h6>
+                                            </div>
+                                            <svg class="font-black cursor-pointer mini-basket-item-cancel-btn lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M18 6 6 18"></path>
+                                                <path d="m6 6 12 12"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="mini-basket-summary-wrapper">
+                                        <div class="h4 font-black mini-basket-summary">
+                                            <span>SUBTOTAL</span>
+                                            <span>£XX.XX</span>
+                                        </div>
+                                        <form class="">
+                                            <input class="text-field-input mini-basket-promo-code-input" type="text" placeholder="Add promo code?" required>
+                                            <button class="btn bg-black-btn cursor-pointer mini-basket-btn" type="submit">
+                                                <span>ADD CODE</span>
+                                            </button>
+                                        </form>
+                                        <a class="btn secondary-btn mini-basket-btn mini-basket-view-bag-btn" href="javascript:void(0);">
+                                            <span>VIEW BAG</span>
+                                        </a>
+                                        <a class="btn primary-btn mini-basket-btn" href="javascript:void(0);">
+                                            <span>CONTINUE TO CHECKOUT</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mini-basket-blog-wrapper">
+                                    <img class="img-cover" src="assets/images/sections/two-column-section/two-column-img-03.png" alt="mini-basket-blog-img">
+                                    <div class="mini-basket-content">
+                                        <h5 class="font-15 font-white title">
+                                            HAVE YOU SEEN
+                                            <span class="display-block">THE KAWASAKI KX450</span>
+                                        </h5>
+                                        <a class="btn primary-btn mini-basket-btn" href="javascript:void(0);">
+                                            <span>VIEW PRODUCT</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="font-12 text-uppercase font-black compare-bike-btn" href="compare.html">
+                                <input class="cursor-pointer" type="radio" name="compare" id="compare-bikes">
+                                <label class="cursor-pointer" for="compare-bikes">CLICK TO COMPARE BIKES</label>
+                            </a>
+                        </div>
                     </div>
-                    <a class="font-12 text-uppercase font-black compare-bike-btn" href="compare.html">
-                        <input class="cursor-pointer" type="radio" name="compare" id="compare-bikes">
-                        <label class="cursor-pointer" for="compare-bikes">CLICK TO COMPARE BIKES</label>
-                    </a>
                 </div>
-            </div>
-        </div>
     </section>
 
     <!----- Conversion section ----->

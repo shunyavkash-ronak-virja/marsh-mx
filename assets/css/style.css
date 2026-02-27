@@ -1012,6 +1012,130 @@
   height: 8px;
 }
 
+/* --- START BASKET SIDEBAR --- */
+.mini-basket-sidebar {
+  max-width: 435px;
+  background-color: var(--white);
+}
+
+.mini-basket-wrapper {
+  min-height: 100%;
+  padding-block: 30px 0;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-basket-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.mini-basket-title {
+  font-family: var(--font-transducer);
+  font-weight: 400;
+}
+
+.mini-basket-close-btn {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.mini-basket-item-wrapper {
+  flex-grow: 1;
+}
+
+.mini-basket-item {
+  padding-block: 14px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--white-300);
+}
+
+.mini-basket-item:first-child {
+  border-top: 1px solid var(--white-300);
+}
+
+.mini-basket-item-img-content {
+  width: 86px;
+  height: 110px;
+}
+
+.mini-basket-item-content {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.mini-basket-item-title {
+  font-weight: 400;
+}
+
+.mini-basket-item-qty {
+  font-family: var(--font-transducer);
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.mini-basket-item-cancel-btn {
+  width: 20px;
+  height: 20px;
+  align-self: start;
+}
+
+.mini-basket-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-transducer);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.mini-basket-promo-code-input {
+  padding-block: 10px;
+  border-color: var(--gray-300);
+  margin-bottom: 20px;
+}
+
+.mini-basket-btn {
+  min-width: 100%;
+  padding-block: 26px;
+}
+
+.mini-basket-view-bag-btn {
+  color: var(--black);
+  border-color: black;
+  margin-block: 8px;
+}
+
+.mini-basket-blog-wrapper {
+  height: 266px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.mini-basket-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--black-15);
+  padding-inline: 42px 38px;
+}
+
+.mini-basket-content .mini-basket-btn {
+  margin-top: 16px;
+}
+
+/* --- END BASKET SIDEBAR --- */
+
 .compare-bike-btn {
   max-width: max-content;
   display: flex;
@@ -1910,3 +2034,7 @@
 .compare-explore-more {
   padding-block: 70px 105px;
 }
+
+/* ========================================
+          OUT OF STOCK/RESERV HTML
+========================================*/
