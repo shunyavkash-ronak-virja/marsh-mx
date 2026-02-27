@@ -658,6 +658,13 @@
   .compare-explore-more {
     padding-block: 60px 76px;
   }
+
+  /* ========================================
+          OUT OF STOCK/RESERV HTML
+========================================*/
+  .stock-reserve-content {
+    max-width: 414px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1159,6 +1166,13 @@
   .specifics-list-description {
     font-size: 16px;
     line-height: 1.75;
+  }
+
+  /* ========================================
+          OUT OF STOCK/RESERV HTML
+========================================*/
+  .stock-reserve-content {
+    max-width: 100%;
   }
 }
 

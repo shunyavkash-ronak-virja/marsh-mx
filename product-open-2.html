@@ -9,6 +9,9 @@
     <!----- Favicon ----->
     <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 
+    <!----- Nice select css ----->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
     <!----- Splide css ----->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -218,7 +221,9 @@
                                     <img class="img-cover" src="assets/images/sections/header/mega-menu-blog-img.png" alt="mega-menu-img">
                                     <div class="mega-menu-img-content">
                                         <h2 class="font-white mega-menu-img-content-title">LATEST ARRIVALS</h2>
-                                        <a class="btn secondary-btn" href="javascript:void(0);">EXPLORE BIKES</a>
+                                        <a class="btn secondary-btn" href="javascript:void(0);">
+                                            <span>EXPLORE BIKES</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -600,7 +605,7 @@
                         <div>HUSQVARNA</div>
                         <span>FC 350 2022</span>
                     </h2>
-                    <p class="font-12 truncate line-clamp-3 product-overview-dec">
+                    <p class="font-12 truncate line-clamp-2 product-overview-dec">
                         With the agility of a 250 and a 450-rivalling power-to-weight ratio, the FC 350 strikes a competitive balance between power and handling. This appeals to both professional and amateur riders alike, making for a more user-friendly riding… experience in all conditions. It is this versatility, paired with intelligent traction and launch control, which makes the FC 350 one of the most multitalented motocrossers on the market.
                     </p>
                     <button class="font-12 font-black text-btn cursor-pointer border-none bg-transparent side-bar-btn product-overview-more-info" data-sidebar="more-info">
@@ -646,11 +651,274 @@
                         or
                         <span class="font-25">£599.99</span>
                     </div>
-
+                    <div class="stock-reserve-content">
+                        <select class="select-box cursor-pointer product-stock-select">
+                            <option value="product-stock-item-01" selected>SELECTION [OUT OF STOCK]</option>
+                            <option value="product-stock-item-02">product-stock-item-02</option>
+                            <option value="product-stock-item-03">product-stock-item-03</option>
+                            <option value="product-stock-item-04">product-stock-item-04</option>
+                        </select>
+                        <form>
+                            <input class="text-field-input stock-reserve-input" type="text" placeholder="Enter e-mail address" required>
+                            <button class="btn primary-btn cursor-pointer stock-reserve-content-btn">
+                                <span>SIGN UP TO BE NOTIFIED</span>
+                            </button>
+                        </form>
+                        <a class="btn bg-black-btn stock-reserve-content-btn stock-reserve-item-deposit-btn" href="javascript:void(0);">
+                            <span>RESERVE ITEM WITH DEPOSIT</span>
+                        </a>
+                        <p class="stock-reserve-delivery-caption">We Aim To Deliver To You Door On 12/22/22</p>
+                        <a class="font-12 text-btn stock-reserve-conditions-btn" href="javascript:void(0);">
+                            See Terms & Conditions
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!----- Conversion section ----->
+    <section class="conversion-section">
+        <div class="container">
+            <div class="conversion-content">
+                <button class="h2 btn bg-black-btn cursor-pointer text-uppercase border-none conversion-btn" data-modal="finance-modal">
+                    <span>FINANCE CALCULATOR</span>
+                </button>
+                <div class="modal" id="finance-modal">
+                    <div class="modal-dialog modal-wrapper">
+                        <div class="icon-btn icon-btn-small bg-black font-white cursor-pointer modal-close-btn">
+                            <svg class="icon-btn-content modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </div>
+                        <div class="mx-auto finance-modal-content">
+                            <p class="font-14 finance-modal-description">
+                                Providing you with finance options for your vehicle of choice. Together, we're here to help you choose the finance that suits you best. Change the sliders below to personalise your quote. We will be able to answer any questions you may have.
+                            </p>
+                            <a class="font-18 finance-modal-caption" href="javascript:void(0);">Find out more about our products</a>
+                            <form class="finance-modal-form">
+                                <button class="cursor-pointer bg-transparent finance-purchase-btn" type="submit">purchase plan</button>
+                                <div class="finance-value-wrapper">
+                                    <div class="finance-content">
+                                        <label class="finance-content-label">cash deposit</label>
+                                        <div class="finance-value-input">
+                                            <span class="font-14">£</span>
+                                            <input class="finance-num-input" type="number" min="0" max="16000" step="800" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="finance-progress-wrapper">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </div>
+                                        <input class="finance-range-input" type="range" min="0" max="16000" step="800" value="0">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finance-value-wrapper">
+                                    <div class="finance-content">
+                                        <label class="finance-content-label">bolt-on accessories</label>
+                                        <div class="finance-value-input">
+                                            <span class="font-14">£</span>
+                                            <input class="finance-num-input" type="number" min="0" max="1600" step="100" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="finance-progress-wrapper">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </div>
+                                        <input class="finance-range-input" type="range" min="0" max="1600" step="100" value="0">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finance-value-wrapper">
+                                    <div class="finance-content">
+                                        <label class="finance-content-label">term</label>
+                                        <div class="finance-value-input">
+                                            <span class="font-14">months</span>
+                                            <input class="finance-num-input" type="number" min="12" max="60" step="1" value="12">
+                                        </div>
+                                    </div>
+                                    <div class="finance-progress-wrapper">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-minus-icon lucide-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </div>
+                                        <input class="finance-range-input" type="range" min="12" max="60" step="1" value="12">
+                                        <div class="icon-btn font-white cursor-pointer finance-progress-btn">
+                                            <svg class="icon-btn-content finance-progress-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="h2 btn primary-btn cursor-pointer text-uppercase border-none conversion-btn" data-modal="part-ex-contact">
+                    <span>PART EX MY BIKE</span>
+                </button>
+                <div class="modal " id="part-ex-contact">
+                    <div class="modal-dialog  part-ex-wrapper part-ex-content-dialog">
+                        <div class="icon-btn icon-btn-small bg-black font-white cursor-pointer modal-close-btn">
+                            <svg class="icon-btn-content modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </div>
+                        <form class="mx-auto text-center part-ex-content-wrapper">
+                            <h2 class="font-black part-ex-head-title">I'D LIKE TO KNOW MORE</h2>
+                            <div class="part-ex-head-options">
+                                <label class="font-14 cursor-pointer part-ex-option part-ex-contact" data-modal="part-ex-contact">
+                                    <input type="radio" class="cursor-pointer" name="part-option" checked>
+                                    <span>Fill Out Contact Form</span>
+                                </label>
+                                <label class="font-14 cursor-pointer part-ex-option part-ex-bike-value" data-modal="part-ex-bike-value">
+                                    <input type="radio" class="cursor-pointer" name="part-option">
+                                    <span>Value my bike</span>
+                                </label>
+                            </div>
+                            <div class="part-ex-contacts">
+                                <input type="text" class="font-black text-field-input part-ex-input" placeholder="Your Name…" required>
+                                <input type="email" class="font-black text-field-input part-ex-input" placeholder="Your Email…" required>
+                                <input type="number" class="font-black text-field-input part-ex-input" placeholder="Your Number…" required>
+                                <div class="contacts-input-wrapper">
+                                    <input type="date" class="font-black text-field-input part-ex-input" placeholder="Desired Date…" required>
+                                    <input type="time" class="font-black text-field-input part-ex-input" placeholder="Desired Time…" required>
+                                </div>
+                            </div>
+                            <span class="font-12 font-black part-ex-contact-caption">
+                                *The time & date is not completely guaranteed.
+                            </span>
+                            <button class="btn primary-btn cursor-pointer part-ex-form-btn" type="submit">
+                                <span>SUBMIT FORM</span>
+                            </button>
+                            <label class="mx-auto font-12 cursor-pointer part-ex-newsletters-input">
+                                <input type="checkbox" class="cursor-pointer checkbox-input">
+                                <span>Please select, to subscribe to our newsletters</span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal" id="part-ex-bike-value">
+                    <div class="modal-dialog part-ex-wrapper part-ex-bike-value-dialog">
+                        <div class="icon-btn icon-btn-small bg-black font-white cursor-pointer modal-close-btn">
+                            <svg class="icon-btn-content modal-close-btn-icon lucide lucide-x-icon lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </div>
+                        <form class="mx-auto text-center part-ex-bike-value-wrapper">
+                            <h2 class="font-black part-ex-head-title">VALUE MY BIKE</h2>
+                            <div class="part-ex-head-options">
+                                <label class="font-14 cursor-pointer part-ex-option part-ex-contact" data-modal="part-ex-contact">
+                                    <input type="radio" class="cursor-pointer" name="part-option">
+                                    <span>Fill Out Contact Form</span>
+                                </label>
+                                <label class="font-14 cursor-pointer part-ex-option part-ex-bike-value" data-modal="part-ex-bike-value">
+                                    <input type="radio" class="cursor-pointer" name="part-option" checked>
+                                    <span>Value my bike</span>
+                                </label>
+                            </div>
+                            <div class="bike-value-author-content">
+                                <input class="text-field-input part-ex-input bike-value-input" type="text" placeholder="Model Name…" required>
+                                <select class="cursor-pointer select-box part-ex-input bike-value-year-select bike-value-input" required>
+                                    <option value="year" selected>Year…</option>
+                                    <option value="year-01">2022</option>
+                                    <option value="year-02">2023</option>
+                                    <option value="year-03">2024</option>
+                                    <option value="year-04">2025</option>
+                                </select>
+                                <input class="text-field-input part-ex-input bike-value-input" type="number" placeholder="Mileage…" required>
+                            </div>
+                            <div class="bike-value-input-content">
+                                <div class="bike-value-input-wrapper">
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Image of the front</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Image of the rear</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                </div>
+                                <div class="bike-value-input-wrapper">
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Image of the right-side</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Image of the left-side</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                </div>
+                                <div class="bike-value-input-wrapper">
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Image of the engine</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Image of the hour meter</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="bike-value-outstanding-wrapper">
+                                <div class="bike-value-input-wrapper">
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Service History & Logbook</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                    <label class="cursor-pointer part-ex-input bike-value-file-label">
+                                        <span>Outstanding Finance…</span>
+                                        <input class="bike-value-file-input" type="file" placeholder="Image of the front" required>
+                                    </label>
+                                </div>
+                                <div class="bike-value-input-wrapper">
+                                    <select class="cursor-pointer select-box part-ex-price-menu part-ex-input" required>
+                                        <option value="price">Desired price</option>
+                                        <option value="price-01" selected>£8,729.00</option>
+                                        <option value="price-02">£8,779.00</option>
+                                        <option value="price-03">£8,759.00</option>
+                                        <option value="price-04">£8,749.00</option>
+                                    </select>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <button class="btn primary-btn cursor-pointer part-ex-form-btn" type="submit">
+                                <span>VALUE MY BIKE</span>
+                            </button>
+                            <label class="mx-auto font-12 cursor-pointer part-ex-newsletters-input">
+                                <input type="checkbox" class="cursor-pointer checkbox-input">
+                                <span>Please select, to subscribe to our newsletters</span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nice select js -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
 
     <!----- Splide js ----->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>

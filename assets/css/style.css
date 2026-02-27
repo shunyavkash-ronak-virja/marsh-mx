@@ -2038,3 +2038,43 @@
 /* ========================================
           OUT OF STOCK/RESERV HTML
 ========================================*/
+.stock-reserve-content {
+  margin-top: 20px;
+}
+
+.product-stock-select {
+  width: 100%;
+  border: 1px solid var(--black);
+  padding: 26px;
+  font-size: 14px;
+  margin-bottom: 14px;
+  font-family: var(--font-transducer);
+  font-weight: 800;
+}
+
+.stock-reserve-input {
+  border-color: var(--gray-300);
+  margin-bottom: 8px;
+}
+
+.stock-reserve-input + .btn,
+.stock-reserve-item-deposit-btn {
+  min-width: 100%;
+}
+
+.stock-reserve-content-btn {
+  padding-block: 26px;
+}
+
+.stock-reserve-item-deposit-btn {
+  margin-top: 10px;
+}
+
+.stock-reserve-delivery-caption {
+  margin-block: 36px 28px;
+}
+
+.stock-reserve-conditions-btn::after,
+.stock-reserve-conditions-btn::before {
+  border-color: var(--black-200);
+}
