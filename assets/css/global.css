@@ -133,6 +133,7 @@ body {
 a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 img {
@@ -228,6 +229,18 @@ button {
 
 .select-box.open::after {
   transform: rotate(180deg);
+}
+
+.select-box .list {
+  padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.select-box .option {
+  padding-block: 6px;
+  padding-inline: 28px;
 }
 /* ----- Checkbox input ----- */
 .checkbox-input {
