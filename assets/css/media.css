@@ -116,6 +116,11 @@
   .product-open-column-section {
     padding-block: 148px 70px;
   }
+
+  /* ----- FREQUENTLY BOUGHT SECTION ----- */
+  .frequently-bought-section {
+    padding-block: 70px 136px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -160,7 +165,7 @@
   }
 
   .primary-slider-arrows .splide__arrow {
-    top: -18%;
+    top: -95px;
     transform: translateY(18%) skew(-14deg, 0);
   }
 
@@ -607,6 +612,19 @@
     padding-block: 108px 54px;
   }
 
+  /* ----- FREQUENTLY BOUGHT SECTION ----- */
+  .frequently-bought-section {
+    padding-block: 54px 126px;
+  }
+
+  .frequently-bought-slider {
+    max-width: 100%;
+  }
+
+  .frequently-bought-slider .splide__arrow {
+    top: -104px;
+  }
+
   /* ========================================
           COMPARE HTML
 ========================================*/
@@ -888,6 +906,20 @@
   .product-open-column-section {
     padding-block: 68px 48px;
   }
+
+  /* ----- FREQUENTLY BOUGHT SECTION ----- */
+  .frequently-bought-section {
+    padding-block: 48px 116px;
+    overflow: hidden;
+  }
+
+  .frequently-bought-slider .splide__arrow {
+    top: -90px;
+  }
+
+  .frequently-bought-track {
+    overflow: visible;
+  }
 }
 
 @media (max-width: 575px) {
@@ -906,7 +938,7 @@
   }
 
   .primary-slider-arrows .splide__arrow {
-    top: -24%;
+    top: -82px;
     transform: translateY(15%) skew(-14deg, 0);
   }
 

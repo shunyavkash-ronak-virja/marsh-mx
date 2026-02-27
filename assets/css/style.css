@@ -74,7 +74,7 @@
 }
 
 .primary-slider-arrows .splide__arrow {
-  top: -16%;
+  top: -98px;
   width: 56px;
   height: 46px;
   opacity: 1;
@@ -1732,6 +1732,49 @@
 
 .product-open-column-section .two-column-description {
   margin-block: 24px 34px;
+}
+
+/* ----- FREQUENTLY BOUGHT SECTION ----- */
+.frequently-bought-section {
+  padding-block: 98px 146px;
+}
+
+.frequently-bought-slider {
+  max-width: 1136px;
+}
+
+.frequently-bought-title {
+  margin-bottom: 44px;
+}
+
+.frequently-bought-wrapper {
+  height: 436px;
+  background-color: var(--white-200);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.frequently-bought-img {
+  min-height: 266px;
+  max-height: 266px;
+  object-fit: contain;
+}
+
+.frequently-bought-price {
+  margin-top: 8px;
+  font-family: var(--font-transducer);
+  font-weight: 400;
+}
+
+.frequently-bought-btn {
+  margin-top: 28px;
+  justify-self: center;
+}
+
+.frequently-bought-slider .splide__arrow {
+  top: -106px;
 }
 
 /* ========================================

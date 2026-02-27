@@ -567,3 +567,31 @@ if (fancybox.length) {
     Fancybox.bind("[data-fancybox]", {});
   });
 }
+
+// ================================
+// FREQUENTLY BOUGHT JS
+// ================================
+const frequentlyBought = document.querySelectorAll(".frequently-bought-slider");
+if (frequentlyBought.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".frequently-bought-slider.splide", {
+      type: "slide",
+      gap: 28,
+      pagination: false,
+      perPage: 3,
+      perMove: 1,
+      speed: 800,
+      interval: 5000,
+      breakpoints: {
+        991: {
+          perPage: 2,
+        },
+        575: {
+          perPage: 1,
+          arrows: false,
+        },
+      },
+    });
+    splide.mount();
+  });
+}
