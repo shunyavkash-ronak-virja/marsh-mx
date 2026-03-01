@@ -124,6 +124,7 @@ body {
   margin-inline: auto;
   padding-inline: 18px;
 }
+
 @media (max-width: 767px) {
   .container {
     padding-inline: 14px;
@@ -242,6 +243,7 @@ button {
   padding-block: 6px;
   padding-inline: 28px;
 }
+
 /* ----- Checkbox input ----- */
 .checkbox-input {
   width: 20px;
@@ -307,10 +309,12 @@ button {
   font-weight: 700;
   overflow: hidden;
   position: relative;
+
   span {
     z-index: 2;
   }
 }
+
 @media (max-width: 767px) {
   .btn {
     min-width: 198px;
@@ -321,6 +325,7 @@ button {
 .btn-big {
   min-width: 260px;
 }
+
 @media (max-width: 767px) {
   .btn-big {
     min-width: 216px;
@@ -409,6 +414,7 @@ button {
 .icon-btn-small {
   width: 45px;
 }
+
 @media (max-width: 767px) {
   .icon-btn-small {
     width: 40px;
@@ -418,6 +424,7 @@ button {
 .icon-btn-medium {
   width: 48px;
 }
+
 @media (max-width: 767px) {
   .icon-btn-medium {
     width: 40px;
@@ -427,25 +434,34 @@ button {
 .icon-btn-big {
   width: 50px;
 }
+
 @media (max-width: 767px) {
   .icon-btn-big {
     width: 45px;
   }
 }
 
-.icon-btn::after {
+.icon-btn::after,
+.icon-btn-primary::after {
   content: "";
   width: 100%;
   height: 0;
-  background-color: var(--black-100-47);
   position: absolute;
   left: 0;
   top: 0;
   transition: all 0.3s ease-in-out;
 }
 
+.icon-btn::after {
+  background-color: var(--black-100-47);
+}
+
 .icon-btn:hover::after {
   height: 100%;
+}
+
+.icon-btn-primary::after {
+  background-color: var(--white-16);
 }
 
 .icon-btn-black {
@@ -529,13 +545,17 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   font-size: 55px;
   line-height: 1.163;
 }
+
 @media (max-width: 991px) {
+
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 48px;
   }
 }
+
 @media (max-width: 767px) {
+
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
@@ -550,13 +570,17 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-family: var(--font-transducer);
   font-weight: 400;
 }
+
 @media (max-width: 991px) {
+
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
   }
 }
+
 @media (max-width: 767px) {
+
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 35px;
@@ -574,13 +598,17 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
   font-size: 30px;
   line-height: 1.166;
 }
+
 @media (max-width: 991px) {
+
   .h4,
   h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 22px;
   }
 }
+
 @media (max-width: 767px) {
+
   .h4,
   h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 15px;
@@ -645,6 +673,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 40px;
   line-height: var(--line-height-1_2);
 }
+
 @media (max-width: 991px) {
   .font-40 {
     font-size: 30px;
@@ -655,16 +684,19 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 60px;
   line-height: var(--line-height-1_2);
 }
+
 @media (max-width: 991px) {
   .font-60 {
     font-size: 48px;
   }
 }
+
 @media (max-width: 767px) {
   .font-60 {
     font-size: 38px;
   }
 }
+
 @media (max-width: 575px) {
   .font-60 {
     font-size: 30px;

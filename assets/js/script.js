@@ -171,19 +171,15 @@ const featuredSlider = document.querySelectorAll(".featured-slider");
 if (featuredSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
     const splide = new Splide(".featured-slider.splide", {
-      type: "loop",
       autoplay: true,
       gap: 32,
-      fixedWidth: "auto",
+      autoWidth: true,
       pagination: false,
-      perPage: 2,
-      perMove: 1,
-      speed: 800,
+      perMove: 2,
       interval: 5000,
       breakpoints: {
         767: {
           gap: 26,
-          perPage: 1,
         },
       },
     });
@@ -235,9 +231,9 @@ if (document.querySelector(".shop-brand-slider.splide")) {
   new Splide(".shop-brand-slider", {
     type: "loop",
     gap: 60,
-    pagination: !1,
-    perPage: 8,
-    arrows: !1,
+    pagination: false,
+    focus: 'center',
+    arrows: false,
     autoWidth: true,
     autoScroll: { speed: 0.7 },
     breakpoints: {

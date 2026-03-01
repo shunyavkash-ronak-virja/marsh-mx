@@ -67,6 +67,10 @@ footer {
   gap: 22px;
 }
 
+.footer-contact-item:hover .icon-btn::after {
+  height: 100%;
+}
+
 .footer-contact-item:not(:last-child) {
   margin-bottom: 20px;
 }

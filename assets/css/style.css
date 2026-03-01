@@ -111,20 +111,33 @@
   flex-shrink: 0;
 }
 
+.splide__arrow[disabled] {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
 .featured-track {
   overflow: visible;
 }
 
+.featured-slide {
+  width: calc(100% / 2.19143);
+}
+
 .featured-slider-wrapper {
-  width: 605px;
   background-color: var(--white-200);
-  padding-inline: 56px;
+  padding-inline: 58px;
   padding-bottom: 32px;
 }
 
 .featured-slider-img-content {
-  width: 492px;
-  height: 454px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.9266;
+}
+
+.featured-slider-img-content .img-cover {
+  object-fit: contain;
 }
 
 .featured-slider-content {
@@ -287,12 +300,6 @@
 .shop-brand-content {
   max-width: 200px;
   max-height: 120px;
-}
-
-.shop-brand-content img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 /* ----- FINANCE COLUMN SECTION ----- */
@@ -472,12 +479,13 @@
 }
 
 .product-items-wrapper {
-  width: 18%;
-  max-width: 224px;
-  min-width: 224px;
+  width: 224px;
+  max-height: calc(100vh - 120px);
   position: sticky;
   top: 120px;
   left: 0;
+  flex-shrink: 0;
+  overflow-y: auto;
 }
 
 .product-category-links {
@@ -598,10 +606,10 @@
 }
 
 .product-blog-content {
-  width: 82%;
   max-width: 995px;
   position: relative;
   padding-top: 66px;
+  flex-grow: 1;
 }
 
 .filter-drop-down {
@@ -671,14 +679,18 @@
 }
 
 .product-card {
-  width: 310px;
-  padding: 18px;
   background-color: var(--white-100);
 }
 
 .product-card-img {
-  height: 240px;
-  object-position: bottom;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 1 / 0.735;
+}
+
+.product-card-contents {
+  padding: 0 18px 18px;
 }
 
 .product-card-price {
@@ -810,8 +822,8 @@
   justify-content: center;
 }
 
-.splide__track--nav > .splide__list > .splide__slide,
-.splide__track--nav > .splide__list > .splide__slide.is-active {
+.splide__track--nav>.splide__list>.splide__slide,
+.splide__track--nav>.splide__list>.splide__slide.is-active {
   border: none;
 }
 
@@ -960,6 +972,7 @@
   list-style-type: disc;
   padding-left: 16px;
 }
+
 .more-info-content-list-item:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -967,6 +980,7 @@
 .more-info-sidebar-btn {
   margin-top: 54px;
 }
+
 /* --- END MORE INFO SIDEBAR --- */
 
 .product-overview-price-wrapper {
@@ -1254,6 +1268,7 @@
   color: var(--black-50);
   text-transform: capitalize;
 }
+
 .finance-value-input {
   display: flex;
   align-items: center;
@@ -1303,13 +1318,11 @@
   -webkit-appearance: none;
   appearance: none;
   outline: none;
-  background: linear-gradient(
-    to right,
-    var(--brown) 0%,
-    var(--brown) var(--value),
-    var(--gray-700) var(--value),
-    var(--gray-700) 100%
-  );
+  background: linear-gradient(to right,
+      var(--brown) 0%,
+      var(--brown) var(--value),
+      var(--gray-700) var(--value),
+      var(--gray-700) 100%);
   border-radius: 6px;
   cursor: pointer;
 }
@@ -1328,6 +1341,7 @@
   margin-top: -17px;
   border: 1px solid var(--brown);
 }
+
 /* ----- END FINANCE MODAL ----- */
 
 /* ----- START PART EX  MODAL ----- */
@@ -1510,6 +1524,7 @@
   gap: 10px;
   margin-top: 28px;
 }
+
 /* ----- END PART EX  MODAL ----- */
 
 /* ----- BIKE SPECIFICS SECTION ----- */
@@ -1934,6 +1949,7 @@
 }
 
 .compare-item-list {
+  width: 100%;
   max-width: 544px;
   background-color: var(--white-200);
   filter: drop-shadow(0 0 20px var(--black-102));
@@ -1979,8 +1995,12 @@
 }
 
 .compare-item-img-content {
-  width: 508px;
-  height: 324px;
+  width: 100%;
+  aspect-ratio: 1 / 0.638;
+}
+
+.compare-item-img-content .img-cover {
+  object-fit: contain;
 }
 
 .compare-item-price-apr-wrapper {
@@ -2057,7 +2077,7 @@
   margin-bottom: 8px;
 }
 
-.stock-reserve-input + .btn,
+.stock-reserve-input+.btn,
 .stock-reserve-item-deposit-btn {
   min-width: 100%;
 }
