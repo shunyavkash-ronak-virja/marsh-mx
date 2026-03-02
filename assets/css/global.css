@@ -318,7 +318,7 @@ button {
 @media (max-width: 767px) {
   .btn {
     min-width: 198px;
-    padding: 24px;
+    padding: 24px 18px;
   }
 }
 
@@ -547,7 +547,6 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 48px;
@@ -555,7 +554,6 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
@@ -572,7 +570,6 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
@@ -580,7 +577,6 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 35px;
@@ -600,7 +596,6 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h4,
   h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 22px;
@@ -608,7 +603,6 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h4,
   h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 15px;

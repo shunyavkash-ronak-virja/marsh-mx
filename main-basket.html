@@ -9,9 +9,6 @@
     <!----- Favicon ----->
     <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 
-    <!----- Splide css ----->
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-
     <!----- Custom css ----->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -521,514 +518,115 @@
         </div>
     </header>
 
-    <!----- Hero section ----->
-    <section class="overflow-hidden hero-section">
+    <!----- Main basket section ----->
+    <section class="main-basket-section">
         <div class="container">
-            <div class="hero-main-wrapper">
-                <div class="hero-content-wrapper">
-                    <h1 class="font-white title hero-title">
-                        <span class="font-primary">EUROPE'S LARGEST</span>
-                        OFF ROAD CENTRE
-                    </h1>
-                    <p class="font-white hero-dec">
-                        Welcome to Marsh MX, Europe's largest off road bike centre, providing you with a first class,
-                        friendly service for all your off-road biking needs!
-                    </p>
-                    <div class="hero-btn-wrapper">
-                        <a class="btn primary-btn" href="javascript:void(0);">
-                            <span>VIEW PRODUCT</span></a>
-                        <a class="btn secondary-btn" href="javascript:void(0);">
-                            <span>SHOP ALL</span>
-                        </a>
+            <h2 class="h3 font-black mx-auto main-basket-title">YOUR BASKET [1]</h2>
+            <div class="mx-auto main-basket-wrapper">
+                <div class="main-basket-content">
+                    <div class="main-basket-items">
+                        <div class="main-basket-item-wrapper">
+                            <div class="main-basket-item">
+                                <h6 class="main-basket-item-title">PRODUCT</h6>
+                            </div>
+                            <div class="main-basket-item">
+                                <h6 class="main-basket-item-title">QTY</h6>
+                            </div>
+                            <div class="main-basket-item">
+                                <h6 class="main-basket-item-title">PRICE</h6>
+                            </div>
+                        </div>
+                        <div class="main-basket-item-wrapper">
+                            <div class="main-basket-item-product-wrapper">
+                                <div class="main-basket-item-img-content">
+                                    <img class="img-cover" src="assets/images/sections/bike-images/bike-img-01.png" alt="basket-item-img">
+                                </div>
+                                <div class="main-basket-item-product-description">
+                                    <p class="font-18">
+                                        Husqvarna
+                                        <span class="display-block">FC 350 2022</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main-basket-item-qty">
+                                <div class="font-25 main-basket-item-title main-basket-item-qty-responsive-tag">
+                                    QTY
+                                </div>
+                                <div class="main-basket-item-qty-contents">
+                                    <div class="cursor-pointer main-basket-item-qty-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus">
+                                            <path d="M5 12h14" />
+                                        </svg>
+                                    </div>
+                                    <input class="text-center" type="number" min="1" max="9" value="1">
+                                    <div class="cursor-pointer main-basket-item-qty-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus">
+                                            <path d="M5 12h14" />
+                                            <path d="M12 5v14" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-basket-item-price-content">
+                                <div class="font-18 main-basket-item-price">
+                                    £XX.XX
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="main-basket-more-feachure">
+                        <a href="javascript:void(0);">Continue Shopping</a>
+                        <a href="javascript:void(0);">Update basket</a>
+                    </div>
+                    <form class="main-basket-promo-code-content">
+                        <input class="text-field-input" type="text" placeholder="Add promo code?" required>
+                        <button class="btn bg-black-btn cursor-pointer" type="submit">
+                            <span>ADD CODE</span>
+                        </button>
+                    </form>
                 </div>
-                <div class="hero-media">
-                    <img class="img-cover" src="assets/images/sections/hero-section/hero-image.jpg" alt="hero-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----- Featured slider section ----->
-    <section class="overflow-hidden home-featured-slider">
-        <div class="container">
-            <h2 class="font-black">FEATURED BIKES</h2>
-            <div class="featured-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="primary-slider-arrows splide__arrows splide__arrows--ltr">
-                    <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide01-track">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.732 21.742">
-                            <path id="Path_16024" data-name="Path 16024" d="M6.655.013,3.048,6.062,0,11.2,3.049,16.3l3.262,5.454h6.075L6.1,11.2,12.732.013Z" transform="translate(12.732 21.755) rotate(180)" fill="currentColor" />
-                        </svg>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 12.732 21.742">
-                            <path id="Path_16024" data-name="Path 16024" d="M6.655.013,3.048,6.062,0,11.2,3.049,16.3l3.262,5.454h6.075L6.1,11.2,12.732.013Z" transform="translate(12.732 21.755) rotate(180)" fill="currentColor" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="featured-track splide__track">
-                    <ul class="featured-list splide__list">
-                        <li class="featured-slide splide__slide">
-                            <a class="featured-slider-wrapper" href="product-open.html">
-                                <div class="mx-auto featured-slider-img-content">
-                                    <img class="img-cover" src="assets/images/sections/featured-section/featured-img-01.png" alt="featured-img">
-                                </div>
-                                <div class="featured-slider-content">
-                                    <h4 class="title">HUSQVARNA
-                                        <span class="display-block">FC 350 2022</span>
-                                    </h4>
-                                    <h4 class="featured-content-price">RRP: £8,749.00</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="featured-slide splide__slide">
-                            <a class="featured-slider-wrapper" href="product-open.html">
-                                <div class="mx-auto featured-slider-img-content">
-                                    <img class="img-cover" src="assets/images/sections/featured-section/featured-img-02.png" alt="featured-img">
-                                </div>
-                                <div class="featured-slider-content">
-                                    <h4 class="title">HONDA
-                                        <span class="display-block">CRF250R 2022</span>
-                                    </h4>
-                                    <h4 class="featured-content-price">RRP: £8,049.00</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="featured-slide splide__slide">
-                            <a class="featured-slider-wrapper" href="product-open.html">
-                                <div class="mx-auto featured-slider-img-content">
-                                    <img class="img-cover" src="assets/images/sections/featured-section/featured-img-01.png" alt="featured-img">
-                                </div>
-                                <div class="featured-slider-content">
-                                    <h4 class="title">HUSQVARNA
-                                        <span class="display-block">FC 350 2022</span>
-                                    </h4>
-                                    <h4 class="featured-content-price">RRP: £8,749.00</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="featured-slide splide__slide">
-                            <a class="featured-slider-wrapper" href="product-open.html">
-                                <div class="mx-auto featured-slider-img-content">
-                                    <img class="img-cover" src="assets/images/sections/featured-section/featured-img-02.png" alt="featured-img">
-                                </div>
-                                <div class="featured-slider-content">
-                                    <h4 class="title featured-content-title">HONDA
-                                        <span class="display-block">CRF250R 2022</span>
-                                    </h4>
-                                    <h4 class="featured-content-price">RRP: £8,049.00</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="featured-slide splide__slide">
-                            <a class="featured-slider-wrapper" href="product-open.html">
-                                <div class="mx-auto featured-slider-img-content">
-                                    <img class="img-cover" src="assets/images/sections/featured-section/featured-img-01.png" alt="featured-img">
-                                </div>
-                                <div class="featured-slider-content">
-                                    <h4 class="title">HUSQVARNA
-                                        <span class="display-block">FC 350 2022</span>
-                                    </h4>
-                                    <h4 class="featured-content-price">RRP: £8,749.00</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="featured-slide splide__slide">
-                            <a class="featured-slider-wrapper" href="product-open.html">
-                                <div class="mx-auto featured-slider-img-content">
-                                    <img class="img-cover" src="assets/images/sections/featured-section/featured-img-02.png" alt="featured-img">
-                                </div>
-                                <div class="featured-slider-content">
-                                    <h4 class="title featured-content-title">HONDA
-                                        <span class="display-block">CRF250R 2022</span>
-                                    </h4>
-                                    <h4 class="featured-content-price">RRP: £8,049.00</h4>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----- Explore more section ----->
-    <section class="overflow-hidden home-explore-more">
-        <div class="container">
-            <h2 class="text-uppercase font-white text-center">EXPLORE BIKES</h2>
-            <div class="explore-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="explore-track splide__track">
-                    <ul class="explore-list splide__list">
-                        <li class="explore-slide splide__slide">
-                            <div class="explore-wrapper">
-                                <img class="img-cover" src="assets/images/sections/explore-section/explore-img-01.png" alt="explore-img">
-                                <h3 class="font-60 font-white explore-media-title">MOTOCROSS</h3>
-                                <a class="btn primary-btn btn-big explore-media-btn" href="javascript:void(0);">
-                                    <span>EXPLORE MOTOCROSS</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="explore-slide splide__slide">
-                            <div class="explore-wrapper">
-                                <img class="img-cover" src="assets/images/sections/explore-section/explore-img-02.png" alt="explore-img">
-                                <h3 class="font-60 font-white explore-media-title">KIDS</h3>
-                                <a class="btn primary-btn btn-big explore-media-btn" href="javascript:void(0);">
-                                    <span>EXPLORE MOTOCROSS</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="explore-slide splide__slide">
-                            <div class="explore-wrapper">
-                                <img class="img-cover" src="assets/images/sections/explore-section/explore-img-03.png" alt="explore-img">
-                                <h3 class="font-60 font-white explore-media-title">ENDURO</h3>
-                                <a class="btn primary-btn btn-big explore-media-btn" href="javascript:void(0);">
-                                    <span>EXPLORE MOTOCROSS</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----- Two column section ----->
-    <section class="overflow-hidden two-column-bg-left-layer champions-column-section">
-        <div class="container">
-            <div class="two-column-wrapper">
-                <div class="two-column-img-content">
-                    <img class="img-cover two-column-img" src="assets/images/sections/two-column-section/two-column-img-01.png" alt="two-column-img">
-                </div>
-                <div class="two-column-content">
-                    <h2 class="font-40 font-black title">
-                        A HOME FOR
-                        <span class="display-block">CHAMPIONS</span>
-                    </h2>
-                    <p class="font-18 two-column-description">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    </p>
-                    <a class="btn primary-btn" href="javascript:void(0);">
-                        <span>VIEW FULL STORY</span>
+                <div class="main-basket-summary">
+                    <div class="main-basket-summary-item main-basket-summary-content">
+                        <h6 class="main-basket-summary-title">DELIVERY</h6>
+                        <h6 class="main-basket-summary-price">£X.XX</h6>
+                    </div>
+                    <div class="main-basket-summary-item">
+                        <h6 class="main-basket-summary-title">SUBTOTAL</h6>
+                        <h6 class="main-basket-summary-price">£X.XX</h6>
+                    </div>
+                    <div class="main-basket-summary-item main-basket-total-summary">
+                        <h4 class="main-basket-summary-title">TOTAL</h4>
+                        <h4 class="main-basket-summary-price">£X.XX</h4>
+                    </div>
+                    <a class="btn primary-btn main-basket-summary-btn" href="javascript:void(0);">
+                        <span>CONTINUE TO CHECKOUT</span>
+                    </a>
+                    <a class="btn main-basket-summary-btn main-basket-paypal-btn" href="javascript:void(0);">
+                        <span>
+                            CHECKOUT VIA
+                            <img class="main-basket-paypal-btn-img" src="assets/images/icons/paypal-logo.png" alt="paypal-img">
+                        </span>
                     </a>
                 </div>
             </div>
-        </div>
     </section>
 
-    <!----- Cta banner section ----->
-    <section class="cta-banner-section home-cta-banner">
-        <div class="cta-banner-wrapper">
-            <img class="img-cover cta-banner-img" src="assets/images/sections/cta-section/cta-img-01.png" alt="cta-banner-img">
-            <div class="text-center cta-banner-content">
-                <h2 class="font-40 font-white cta-banner-title">PARTS FINDER</h2>
+    <!----- cta banner section ----->
+    <section class="overflow-hidden cta-banner-v2">
+        <img class="img-cover" src="assets/images/sections/cta-section/cta-img-02-big.png" alt="cta-img">
+        <div class="cta-banner-v2-content">
+            <div class="cta-banner-v2-wrapper">
+                <H4 class="font-white title">
+                    BEFORE YOU LEAVE,
+                    <span> WHY NOT VIEW OUR </span>
+                </H4>
                 <a class="btn primary-btn" href="javascript:void(0);">
-                    <span>LEARN MORE</span>
+                    <span>ENDURO RANGE</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!----- Shop by brand section ----->
-    <section class="shop-by-brand">
-        <div class="container">
-            <h2 class="font-40 font-black title shop-brand-title">
-                SHOP BY
-                <span>BRAND</span>
-            </h2>
-        </div>
-        <div class="shop-brand-slider splide" role="group" aria-label="Splide Basic HTML Example">
-            <div class="shop-brand-track splide__track">
-                <ul class="shop-brand-list splide__list">
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-01.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-02.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-03.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-04.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-05.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-06.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-07.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-08.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-01.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-02.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-03.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-04.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-05.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-06.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-07.png" alt="shop-brand-img">
-                    </li>
-                    <li class="shop-brand-slide splide__slide">
-                        <img class="shop-brand-content" src="assets/images/sections/shop-by-brand-section/brand-img-08.png" alt="shop-brand-img">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!----- Two column section ----->
-    <section class="overflow-hidden two-column-bg-right-layer finance-column-section">
-        <div class="container">
-            <div class="two-column-wrapper">
-                <div class="two-column-img-content">
-                    <img class="img-cover two-column-img" src="assets/images/sections/two-column-section/two-column-img-02.png" alt="two-column-img">
-                </div>
-                <div class="two-column-content">
-                    <h2 class="font-40 font-black title">
-                        FINANCE YOUR
-                        <span class="display-block">DREAM BIKE</span>
-                    </h2>
-                    <p class="font-18 two-column-description">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    </p>
-                    <a class="btn primary-btn" href="javascript:void(0);">
-                        <span>VIEW FULL STORY</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----- Testimonial section ----->
-    <section class="testimonial-section">
-        <div class="container">
-            <img class="img-cover testimonial-img" src="assets/images/sections/testimonial-section/testimonial-bg-img.png" alt="testimonial-img">
-            <div class="mx-auto testimonial-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="testimonial-track splide__track">
-                    <ul class="testimonial-list splide__list">
-                        <li class="testimonial-slide splide__slide">
-                            <div class="mx-auto text-center testimonial-content-wrapper">
-                                <span class="font-primary testimonial-content-tag">"</span>
-                                <h4 class="font-primary testimonial-content">
-                                    MARSH MX HAVE A GREAT RANGE OF BIKES AND GEAR.
-                                    <span class="font-white">
-                                        IT'S WELL WORTH A LOOK IF YOU'RE IN THE AREA.
-                                    </span>
-                                </h4>
-                                <p class="font-18 font-white testimonial-location">Client, Location</p>
-                            </div>
-                        </li>
-                        <li class="testimonial-slide splide__slide">
-                            <div class="mx-auto text-center testimonial-content-wrapper">
-                                <span class="font-primary testimonial-content-tag">"</span>
-                                <h4 class="font-primary testimonial-content">
-                                    MARSH MX HAVE A GREAT RANGE OF BIKES AND GEAR.
-                                    <span class="font-white">
-                                        IT'S WELL WORTH A LOOK IF YOU'RE IN THE AREA.
-                                    </span>
-                                </h4>
-                                <p class="font-18 font-white testimonial-location">Client, Location</p>
-                            </div>
-                        </li>
-                        <li class="testimonial-slide splide__slide">
-                            <div class="mx-auto text-center testimonial-content-wrapper">
-                                <span class="font-primary testimonial-content-tag">"</span>
-                                <h4 class="font-primary testimonial-content">
-                                    MARSH MX HAVE A GREAT RANGE OF BIKES AND GEAR.
-                                    <span class="font-white">
-                                        IT'S WELL WORTH A LOOK IF YOU'RE IN THE AREA.
-                                    </span>
-                                </h4>
-                                <p class="font-18 font-white testimonial-location">Client, Location</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----- Cta blog section ----->
-    <section class="cta-blog-section">
-        <img class="img-cover" src="assets/images/sections/cta-section/cta-img-02.png" alt="cta-blog-img">
-        <div class="cta-blog-wrapper">
-            <h2 class="font-white text-center cta-blog-title">
-                NOT WHAT YOU'RE LOOKING FOR?
-                <span class="font-60">WE CAN HELP</span>
-            </h2>
-            <a class="btn primary-btn" href="javascript:void(0);"><span>GET IN TOUCH</span></a>
-        </div>
-    </section>
-
-    <!----- Footer ----->
-    <footer class="overflow-hidden">
-        <div class="container">
-            <h2 class="h4 font-white mx-auto footer-ig-link-wrapper">FOLLOW US ON INSTAGRAM
-                <a class="font-primary footer-ig-link" href="javascript:void(0);"> @MARSHMX</a>
-            </h2>
-            <div class="footer-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="footer-track splide__track">
-                    <ul class="footer-list splide__list">
-                        <li class="footer-slide splide__slide">
-                            <div class="footer-slide-img-content">
-                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-01.png" alt="footer-slide-img">
-                            </div>
-                        </li>
-                        <li class="footer-slide splide__slide">
-                            <div class="footer-slide-img-content">
-                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-02.png" alt="footer-slide-img">
-                            </div>
-                        </li>
-                        <li class="footer-slide splide__slide">
-                            <div class="footer-slide-img-content">
-                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-03.png" alt="footer-slide-img">
-                            </div>
-                        </li>
-                        <li class="footer-slide splide__slide">
-                            <div class="footer-slide-img-content">
-                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-04.png" alt="footer-slide-img">
-                            </div>
-                        </li>
-                        <li class="footer-slide splide__slide">
-                            <div class="footer-slide-img-content">
-                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-05.png" alt="footer-slide-img">
-                            </div>
-                        </li>
-                        <li class="footer-slide splide__slide">
-                            <div class="footer-slide-img-content">
-                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-06.png" alt="footer-slide-img">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-content-wrapper">
-                <div class="footer-content">
-                    <h3 class="h2 font-white footer-contact-title">CONTACT DETAILS</h3>
-                    <a class="font-white footer-contact-item" href="tel:+01685385201">
-                        <div class="icon-btn icon-btn-medium icon-btn-primary">
-                            <svg class="icon-btn-content footer-icon-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.436 14.217">
-                                <path id="Path_17454" data-name="Path 17454" d="M160.754,10.42c-.989-1.413-1.921-2.4-.821-3.44l.713-.77c.247-.266.367-.544.246-.8L159.57,2.648c-.121-.254-.5-.184-.834-.042l-1.911.813c-1.529,1.071.6,6.132,2.107,8.277s5.528,5.882,7.057,4.811l1.417-1.517c.247-.265.443-.6.246-.8L165.507,12a.726.726,0,0,0-.834-.041l-.968.406c-1.354.679-1.962-.535-2.951-1.948Z" transform="translate(-156.298 -2.478)" fill="currentColor" fill-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <span class="font-18 footer-contact-content">01685385201</span>
-                    </a>
-                    <a class="font-white footer-contact-item" href="mailto:onlinesales@marshmx.co.uk">
-                        <div class="icon-btn icon-btn-medium icon-btn-primary">
-                            <svg class="icon-btn-content footer-icon-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.75 12.679">
-                                <path id="noun-email-5065067" d="M105.793,105.363A1.886,1.886,0,0,1,106.9,105h13.946a1.887,1.887,0,0,1,1.089.347L114.4,110.3a.956.956,0,0,1-1.049,0Zm9.3,6a2.223,2.223,0,0,1-2.438,0l-7.585-4.956a1.873,1.873,0,0,0-.074.495v8.875a1.9,1.9,0,0,0,1.9,1.9h13.946a1.9,1.9,0,0,0,1.9-1.9V106.9a1.878,1.878,0,0,0-.081-.52Z" transform="translate(-105 -105)" fill="currentColor" />
-                            </svg>
-                        </div>
-                        <span class="font-18 footer-contact-content">ONLINESALES@MARSHMX.CO.UK</span>
-                    </a>
-                    <div class="font-white footer-contact-item contact-location">
-                        <div class="icon-btn icon-btn-medium icon-btn-primary">
-                            <svg class="icon-btn-content footer-icon-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.837 24.49">
-                                <path id="Path_17388" data-name="Path 17388" d="M7.831,24.214a.764.764,0,0,0,1.176,0,54.109,54.109,0,0,0,5.04-7.392c1.536-2.765,2.79-5.844,2.79-8.4A8.418,8.418,0,1,0,0,8.418c0,2.56,1.254,5.64,2.79,8.4a54.133,54.133,0,0,0,5.04,7.392ZM8.419,3.827A4.592,4.592,0,1,0,13.01,8.418,4.595,4.595,0,0,0,8.419,3.827" fill="currentColor" fill-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <span class="font-18 footer-contact-content">
-                            MARSHMX, UNIT 1, CYFARTHA INDUSTRIAL ESTATE, MERTHYR TYDFIL, CF4 78PE
-                            <a class="text-btn font-12 text-uppercase footer-contact-location" href="javascrip:void(0);">GET DIRECTIONS</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="footer-update-wrapper">
-                    <h3 class="h2 font-white footer-form-title">SIGN UP & STAY UPDATED</h3>
-                    <form class="footer-sign-up-form">
-                        <input class="font-white text-field-input font-14" type="email" placeholder="ENTER EMAIL ADDRESS..." required>
-                        <button class="btn primary-btn cursor-pointer footer-sign-up-btn" type="submit">
-                            <span>SIGN ME UP</span>
-                        </button>
-                    </form>
-                    <div class="footer-social-media-wrapper">
-                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
-                            <svg class="icon-btn-content footer-media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.046 17.237">
-                                <path id="Path_17428" data-name="Path 17428" d="M349.745,246.886v2.372H348v2.9h1.738v8.623h3.571v-8.622h2.4s.228-1.392.334-2.912h-2.715v-1.987a.843.843,0,0,1,.775-.695h1.946v-3.021h-2.644c-3.747,0-3.659,2.9-3.659,3.338Z" transform="translate(-348.004 -243.546)" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
-                            <svg class="icon-btn-content footer-media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.111 14.712">
-                                <path id="Path_17427" data-name="Path 17427" d="M464.465,247.107a7.427,7.427,0,0,1-2.133.587,3.741,3.741,0,0,0,1.634-2.057,7.41,7.41,0,0,1-2.365.9,3.715,3.715,0,0,0-6.422,2.542,3.877,3.877,0,0,0,.1.846,10.55,10.55,0,0,1-7.66-3.881,3.715,3.715,0,0,0,1.15,4.957,3.66,3.66,0,0,1-1.679-.463v.045a3.725,3.725,0,0,0,2.978,3.647,3.832,3.832,0,0,1-.978.126,3.769,3.769,0,0,1-.7-.065,3.729,3.729,0,0,0,3.47,2.581,7.468,7.468,0,0,1-4.615,1.586,8.012,8.012,0,0,1-.884-.049,10.567,10.567,0,0,0,16.265-8.9l-.011-.481a7.491,7.491,0,0,0,1.857-1.924Z" transform="translate(-446.355 -245.367)" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
-                            <svg class="icon-btn-content footer-media-icon" id="Group_4617" data-name="Group 4617" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.968">
-                                <path id="Path_17390" data-name="Path 17390" d="M572.72,243.552h-7.155a4.41,4.41,0,0,0-4.406,4.407v7.154a4.411,4.411,0,0,0,4.406,4.407h7.155a4.411,4.411,0,0,0,4.407-4.407v-7.154a4.411,4.411,0,0,0-4.407-4.407m2.99,11.558a2.993,2.993,0,0,1-2.99,2.99h-7.155a2.993,2.993,0,0,1-2.99-2.99v-7.154a2.993,2.993,0,0,1,2.99-2.99h7.155a2.993,2.993,0,0,1,2.99,2.99Z" transform="translate(-561.159 -243.552)" fill="currentColor" />
-                                <path id="Path_17391" data-name="Path 17391" d="M575.839,254.116a4.114,4.114,0,1,0,4.115,4.115h0a4.119,4.119,0,0,0-4.115-4.114m0,6.812a2.7,2.7,0,1,1,2.7-2.7,2.7,2.7,0,0,1-2.7,2.7" transform="translate(-567.854 -250.247)" fill="currentColor" />
-                                <path id="Path_17392" data-name="Path 17392" d="M592.867,250.838a1.039,1.039,0,1,0,.734.3,1.039,1.039,0,0,0-.734-.3" transform="translate(-580.596 -248.17)" fill="currentColor" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content-wrapper footer-platforms">
-                <div class="footer-content">
-                    <p class="font-white font-12 text-uppercase finance-media-title">OUR FINANCE PARTNERS</p>
-                    <div class="finance-media-wrapper">
-                        <div class="finance-img-content">
-                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-01.png" alt="finance-img">
-                        </div>
-                        <div class="finance-img-content">
-                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-02.png" alt="finance-img">
-                        </div>
-                        <div class="finance-img-content">
-                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-03.png" alt="finance-img">
-                        </div>
-                        <div class="finance-img-content">
-                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-04.png" alt="finance-img">
-                        </div>
-                    </div>
-                    <div class="the-curious-tag">
-                        <img class="the-curious-img" src="assets/images/sections/footer/the-curious.png" alt="the-curious">
-                    </div>
-                </div>
-                <div class="footer-link-wrapper">
-                    <div class="font-12 text-uppercase footer-links-content">
-                        <p class="font-white ">USEFUL LINKS</p>
-                        <a class="footer-link" href="javascript:void(0);">WORKSHOP</a>
-                        <a class="footer-link" href="javascript:void(0);">OUR RETURNS POLICY</a>
-                        <a class="footer-link" href="javascript:void(0);">DELIVERY INFORMATION</a>
-                        <a class="footer-link" href="javascript:void(0);">TERMS & CONDITIONS</a>
-                        <a class="footer-link" href="javascript:void(0);">PRIVACY POLICY</a>
-                    </div>
-                    <div class="font-12 text-uppercase footer-links-content">
-                        <p class="font-white ">MORE ABOUT US</p>
-                        <a class="footer-link" href="javascript:void(0);">VACANCIES</a>
-                        <a class="footer-link" href="javascript:void(0);">ACCOUNT</a>
-                        <a class="footer-link" href="javascript:void(0);">BASKET</a>
-                        <a class="footer-link" href="javascript:void(0);">CONTACT US</a>
-                        <a class="footer-link" href="javascript:void(0);">FAQS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!----- Splide js ----->
-    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <!----- Custom js ----->
     <script src="assets/js/script.js"></script>

@@ -1,5 +1,4 @@
 @media (max-width: 1279px) {
-
   /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 72% 0, 42% 100%, 0 100%);
@@ -107,10 +106,17 @@
   .frequently-bought-section {
     padding-block: 70px 136px;
   }
+
+  /* ========================================
+          MAIN BASKET HTML
+========================================*/
+  /* ----- MAIN BASKET SECTION ----- */
+  .main-basket-section {
+    padding-block: 134px 48px;
+  }
 }
 
 @media (max-width: 991px) {
-
   /* ----- HERO SECTION ----- */
   .hero-section {
     height: auto;
@@ -639,10 +645,64 @@
   .stock-reserve-content {
     max-width: 414px;
   }
+
+  /* ========================================
+          MAIN BASKET HTML
+========================================*/
+  /* ----- MAIN BASKET SECTION ----- */
+  .main-basket-section {
+    padding-block: 124px 32px;
+  }
+
+  .main-basket-wrapper {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .main-basket-content {
+    max-width: 100%;
+  }
+
+  .main-basket-more-feachure {
+    padding-block: 20px;
+  }
+
+  .main-basket-summary {
+    border: none;
+  }
+
+  .main-basket-summary-item h6 {
+    font-size: 30px;
+  }
+
+  .main-basket-total-summary h4 {
+    font-size: 40px;
+  }
+
+  .main-basket-total-summary {
+    margin-block: 10px 46px;
+  }
+
+  /* ----- CTA BANNER SECTION ----- */
+  .cta-banner-v2 {
+    height: 228px;
+  }
+
+  .cta-banner-v2-wrapper {
+    text-align: center;
+  }
+
+  .cta-banner-v2-content {
+    padding-inline: 36px;
+  }
+
+  .cta-banner-v2-wrapper .title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767px) {
-
   /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 136% 0, 10% 100%, 0 100%);
@@ -891,10 +951,19 @@
   .frequently-bought-track {
     overflow: visible;
   }
+
+  /* ----- CTA BANNER SECTION ----- */
+  .cta-banner-v2 {
+    height: 360px;
+  }
+
+  .cta-banner-v2-wrapper {
+    flex-direction: column;
+    gap: 26px;
+  }
 }
 
 @media (max-width: 575px) {
-
   /* ----- HERO SECTION ----- */
   .hero-btn-wrapper {
     flex-direction: column;
@@ -1124,5 +1193,56 @@
 ========================================*/
   .stock-reserve-content {
     max-width: 100%;
+  }
+
+  /* ========================================
+          MAIN BASKET HTML
+========================================*/
+  /* ----- MAIN BASKET SECTION ----- */
+  .main-basket-item-wrapper {
+    grid-template-columns: 2fr;
+  }
+
+  .main-basket-item-wrapper .main-basket-item:not(:first-child),
+  .main-basket-item-wrapper .main-basket-item-price-content:last-child {
+    display: none;
+  }
+
+  .main-basket-item-qty-responsive-tag {
+    display: block;
+  }
+
+  .main-basket-item-qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .main-basket-more-feachure {
+    justify-content: space-between;
+  }
+
+  .main-basket-promo-code-content {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .main-basket-promo-code-content button {
+    min-width: 100%;
+  }
+
+  .main-basket-summary {
+    width: 100%;
+  }
+
+  /* ----- CTA BANNER SECTION ----- */
+  .cta-banner-v2-wrapper .title span {
+    display: block;
+  }
+
+  .cta-banner-v2 {
+    height: 424px;
   }
 }

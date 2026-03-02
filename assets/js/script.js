@@ -171,7 +171,6 @@ const featuredSlider = document.querySelectorAll(".featured-slider");
 if (featuredSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
     const splide = new Splide(".featured-slider.splide", {
-      autoplay: true,
       gap: 32,
       autoWidth: true,
       pagination: false,
@@ -232,7 +231,7 @@ if (document.querySelector(".shop-brand-slider.splide")) {
     type: "loop",
     gap: 60,
     pagination: false,
-    focus: 'center',
+    focus: "center",
     arrows: false,
     autoWidth: true,
     autoScroll: { speed: 0.7 },
