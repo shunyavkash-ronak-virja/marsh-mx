@@ -2434,3 +2434,49 @@
   margin-top: 30px;
 }
 
+/* ========================================
+          ORDER COMPLETE HTML
+========================================*/
+/* ----- ORDER COMPLETE SECTION ( DESKTOP ) ----- */
+.order-complete-section {
+  min-height: 100vh;
+  padding-top: 96px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.order-complete-content {
+  max-width: 608px;
+  padding-left: 4%;
+}
+
+.order-complete-description {
+  max-width: 426px;
+  font-weight: 200;
+  margin-block: 27px 35px;
+}
+
+.order-complete-btn-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.order-complete-btn {
+  width: 100%;
+  min-width: 270px;
+  padding: 26px 10px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.order-complete-img-content {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  clip-path: polygon(48% 0, 100% 0, 100% 100%, 20% 100%);
+}

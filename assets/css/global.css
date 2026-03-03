@@ -78,6 +78,11 @@
   --font-acumin-pro-semicondensed: "Acumin Pro SemiCondensed";
 }
 
+.font-transducer-400 {
+  font-family: var(--font-transducer);
+  font-weight: 400;
+}
+
 .bg-primary {
   background: var(--primary-100);
 }

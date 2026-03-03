@@ -9,8 +9,8 @@
     <!----- Favicon ----->
     <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 
-    <!----- Nice select css ----->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!----- Splide css ----->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
     <!----- Custom css ----->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -521,176 +521,178 @@
         </div>
     </header>
 
-
-    <!----- Checkout section ----->
-    <section class="checkout-section">
+    <!----- Order complete section ( Desktop ) ----->
+    <section class="overflow-hidden order-complete-section">
         <div class="container">
-            <div class="mx-auto checkout-main-wrapper">
-                <form class="checkout-form-details">
-                    <div class="checkout-tab-items">
-                        <label class="font-12 cursor-pointer radio-primary">
-                            <span>Delivery Details</span>
-                            <input class="cursor-pointer" type="radio" name="checkout-tab" checked>
-                        </label>
-                        <label class="font-12 cursor-pointer radio-primary">
-                            <span>Review & Payments</span>
-                            <input class="cursor-pointer" type="radio" name="checkout-tab">
-                        </label>
-                    </div>
-                    <h2 class="font-black checkout-form-title">DELIVERY ADDRESS</h2>
-                    <input class="text-field-input-black text-field-input" type="email" placeholder="Email Address…">
-                    <div class="checkout-input-wrapper">
-                        <input class="text-field-input-black text-field-input" type="text" placeholder="First Name…">
-                        <input class="text-field-input-black text-field-input" type="text" placeholder="Last Name…">
-                    </div>
-                    <div class="checkout-input-wrapper">
-                        <input class="text-field-input-black text-field-input" type="text" placeholder="House Number*…">
-                        <input class="text-field-input-black text-field-input" type="text" placeholder="Postcode*…">
-                    </div>
-                    <div class="checkout-input-wrapper">
-                        <select class="cursor-pointer select-box ">
-                            <option value="address-01" selected>Select Address</option>
-                            <option value="address-02">Address...1</option>
-                            <option value="address-03">Address...2</option>
-                            <option value="address-04">Address...3</option>
-                            <option value="address-05">Address...4</option>
-                        </select>
-                        <input class="text-field-input-black text-field-input" type="number" placeholder="Phone Number*…">
-                    </div>
-                    <div class="font-12 toggle-wrapper">
-                        <p class="toggle-description">Is your billing address the same as the delivery</p>
-                        <div class="toggle-option-wrapper">
-                            <span>Yes</span>
-                            <label class="cursor-pointer toggle-btn">
-                                <input type="checkbox" id="toggleBtn" name="toggle-btn">
-                                <span class="slider"></span>
-                            </label>
-                            <span>No</span>
-                        </div>
-                    </div>
-                    <h3 class="font-black checkout-delivery-title">DELIVERY DETAILS</h3>
-                    <div class="checkout-delivery-options">
-                        <label class="font-14 cursor-pointer font-white text-uppercase checkout-delivery-option">
-                            <input class="cursor-pointer secondary-checkbox-input" type="checkbox">
-                            DELIVERY OPTION 1
-                        </label>
-                        <label class="font-14 cursor-pointer font-white text-uppercase checkout-delivery-option">
-                            <input class="cursor-pointer secondary-checkbox-input" type="checkbox">
-                            DELIVERY OPTION 2
-                        </label>
-                    </div>
-                    <a class="btn primary-btn" href="javascript:void(0);">
-                        <span>PROCEED TO PAYMENT</span>
-                    </a>
-                    <a class="btn paypal-btn" href="javascript:void(0);">
-                        <span>
-                            CHECKOUT VIA
-                            <img class="paypal-btn-img" src="assets/images/icons/paypal-logo.png" alt="paypal-img">
-                        </span>
-                    </a>
-                </form>
-                <div class="checkout-item-content">
-                    <div class="checkout-item-title-wrapper">
-                        <h3 class="h2 font-black checkout-item-title">YOUR ORDER</h3>
-                        <span class="h6">AMEND</span>
-                    </div>
-                    <p class="font-12 checkout-item-description">
-                        <span>Disclaimer:</span>
-                        Delivery can take up to 1 week on products other than bikes. You will be contacted by our sales team to arrange bike delivery.
-                    </p>
-                    <div class="main-basket-content">
-                        <div class="main-basket-items">
-                            <div class="main-basket-item-wrapper">
-                                <div class="main-basket-item">
-                                    <h6 class="main-basket-item-title">PRODUCT</h6>
-                                </div>
-                                <div class="main-basket-item">
-                                    <h6 class="main-basket-item-title">QTY</h6>
-                                </div>
-                                <div class="main-basket-item">
-                                    <h6 class="main-basket-item-title">PRICE</h6>
-                                </div>
-                            </div>
-                            <div class="main-basket-item-wrapper">
-                                <div class="main-basket-item-product-wrapper">
-                                    <div class="main-basket-item-img-content">
-                                        <img class="img-cover" src="assets/images/sections/bike-images/bike-img-01.png" alt="basket-item-img">
-                                    </div>
-                                    <div class="main-basket-item-product-description">
-                                        <p class="font-18">
-                                            Husqvarna
-                                            <span class="display-block">FC 350 2022</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="main-basket-item-qty">
-                                    <div class="font-25 main-basket-item-title main-basket-item-qty-responsive-tag">
-                                        QTY
-                                    </div>
-                                    <div class="main-basket-item-qty-contents">
-                                        <div class="cursor-pointer main-basket-item-qty-btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus">
-                                                <path d="M5 12h14"></path>
-                                            </svg>
-                                        </div>
-                                        <input class="text-center" type="number" min="1" max="9" value="1">
-                                        <div class="cursor-pointer main-basket-item-qty-btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus">
-                                                <path d="M5 12h14"></path>
-                                                <path d="M12 5v14"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-basket-item-price-content">
-                                    <div class="font-18 main-basket-item-price">
-                                        £XX.XX
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="font-12 main-basket-more-feachure">
-                            <a href="javascript:void(0);">Continue Shopping</a>
-                            <a href="javascript:void(0);">Update basket</a>
-                        </div>
-                        <form class="main-basket-promo-code-content">
-                            <input class="text-field-input-black text-field-input" type="text" placeholder="Add promo code?" required="">
-                            <button class="btn bg-black-btn cursor-pointer" type="submit">
-                                <span>ADD CODE</span>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="checkout-item-summary">
-                        <div class="main-basket-summary-item main-basket-summary-content">
-                            <h6 class="main-basket-summary-title">DELIVERY</h6>
-                            <h6 class="main-basket-summary-price">£X.XX</h6>
-                        </div>
-                        <div class="main-basket-summary-item">
-                            <h6 class="main-basket-summary-title">SUBTOTAL</h6>
-                            <h6 class="main-basket-summary-price">£X.XX</h6>
-                        </div>
-                        <div class="main-basket-summary-item main-basket-total-summary">
-                            <h4 class="main-basket-summary-title">TOTAL</h4>
-                            <h4 class="main-basket-summary-price">£X.XX</h4>
-                        </div>
-                        <a class="btn primary-btn main-basket-summary-btn" href="javascript:void(0);">
-                            <span>CONTINUE TO CHECKOUT</span>
+            <div class="order-complete-wrapper">
+                <div class="text-center order-complete-content">
+                    <h1 class="font-transducer-400 font-black order-complete-title">ORDER COMPLETE!</h1>
+                    <p class="mx-auto order-complete-description">Your order number is #1234 and will be with you soon, you will receive a confirmation email very shortly.</p>
+                    <div class="order-complete-btn-wrapper">
+                        <a class="btn primary-btn font-14 order-complete-btn" href="javascript:void(0);">
+                            <span>CONTINUE TO HOMEPAGE</span>
                         </a>
-                        <a class="btn main-basket-summary-btn paypal-btn" href="javascript:void(0);">
-                            <span>
-                                CHECKOUT VIA
-                                <img class="paypal-btn-img" src="assets/images/icons/paypal-logo.png" alt="paypal-img">
-                            </span>
+                        <a class="btn bg-black-btn font-14 order-complete-btn" href="javascript:void(0);">
+                            <span>VIEW MY ORDER</span>
                         </a>
                     </div>
+                </div>
+                <div class="order-complete-img-content">
+                    <img class="img-cover order-complete-img" src="assets/images/sections/bike-images/two-column-img-03.png" alt="order-complete-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Nice select js -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
+    <!----- Footer ----->
+    <footer class="overflow-hidden">
+        <div class="container">
+            <h2 class="h4 font-white mx-auto footer-ig-link-wrapper">FOLLOW US ON INSTAGRAM
+                <a class="font-primary footer-ig-link" href="javascript:void(0);"> @MARSHMX</a>
+            </h2>
+            <div class="footer-slider splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="footer-track splide__track">
+                    <ul class="footer-list splide__list">
+                        <li class="footer-slide splide__slide">
+                            <div class="footer-slide-img-content">
+                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-01.png" alt="footer-slide-img">
+                            </div>
+                        </li>
+                        <li class="footer-slide splide__slide">
+                            <div class="footer-slide-img-content">
+                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-02.png" alt="footer-slide-img">
+                            </div>
+                        </li>
+                        <li class="footer-slide splide__slide">
+                            <div class="footer-slide-img-content">
+                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-03.png" alt="footer-slide-img">
+                            </div>
+                        </li>
+                        <li class="footer-slide splide__slide">
+                            <div class="footer-slide-img-content">
+                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-04.png" alt="footer-slide-img">
+                            </div>
+                        </li>
+                        <li class="footer-slide splide__slide">
+                            <div class="footer-slide-img-content">
+                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-05.png" alt="footer-slide-img">
+                            </div>
+                        </li>
+                        <li class="footer-slide splide__slide">
+                            <div class="footer-slide-img-content">
+                                <img class="img-cover" src="assets/images/sections/footer/footer-slide-img-06.png" alt="footer-slide-img">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-content-wrapper">
+                <div class="footer-content">
+                    <h3 class="h2 font-white footer-contact-title">CONTACT DETAILS</h3>
+                    <a class="font-white footer-contact-item" href="tel:+01685385201">
+                        <div class="icon-btn icon-btn-medium icon-btn-primary">
+                            <svg class="icon-btn-content footer-icon-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.436 14.217">
+                                <path id="Path_17454" data-name="Path 17454" d="M160.754,10.42c-.989-1.413-1.921-2.4-.821-3.44l.713-.77c.247-.266.367-.544.246-.8L159.57,2.648c-.121-.254-.5-.184-.834-.042l-1.911.813c-1.529,1.071.6,6.132,2.107,8.277s5.528,5.882,7.057,4.811l1.417-1.517c.247-.265.443-.6.246-.8L165.507,12a.726.726,0,0,0-.834-.041l-.968.406c-1.354.679-1.962-.535-2.951-1.948Z" transform="translate(-156.298 -2.478)" fill="currentColor" fill-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span class="font-18 footer-contact-content">01685385201</span>
+                    </a>
+                    <a class="font-white footer-contact-item" href="mailto:onlinesales@marshmx.co.uk">
+                        <div class="icon-btn icon-btn-medium icon-btn-primary">
+                            <svg class="icon-btn-content footer-icon-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.75 12.679">
+                                <path id="noun-email-5065067" d="M105.793,105.363A1.886,1.886,0,0,1,106.9,105h13.946a1.887,1.887,0,0,1,1.089.347L114.4,110.3a.956.956,0,0,1-1.049,0Zm9.3,6a2.223,2.223,0,0,1-2.438,0l-7.585-4.956a1.873,1.873,0,0,0-.074.495v8.875a1.9,1.9,0,0,0,1.9,1.9h13.946a1.9,1.9,0,0,0,1.9-1.9V106.9a1.878,1.878,0,0,0-.081-.52Z" transform="translate(-105 -105)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span class="font-18 footer-contact-content">ONLINESALES@MARSHMX.CO.UK</span>
+                    </a>
+                    <div class="font-white footer-contact-item contact-location">
+                        <div class="icon-btn icon-btn-medium icon-btn-primary">
+                            <svg class="icon-btn-content footer-icon-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.837 24.49">
+                                <path id="Path_17388" data-name="Path 17388" d="M7.831,24.214a.764.764,0,0,0,1.176,0,54.109,54.109,0,0,0,5.04-7.392c1.536-2.765,2.79-5.844,2.79-8.4A8.418,8.418,0,1,0,0,8.418c0,2.56,1.254,5.64,2.79,8.4a54.133,54.133,0,0,0,5.04,7.392ZM8.419,3.827A4.592,4.592,0,1,0,13.01,8.418,4.595,4.595,0,0,0,8.419,3.827" fill="currentColor" fill-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span class="font-18 footer-contact-content">
+                            MARSHMX, UNIT 1, CYFARTHA INDUSTRIAL ESTATE, MERTHYR TYDFIL, CF4 78PE
+                            <a class="text-btn font-12 text-uppercase footer-contact-location" href="javascrip:void(0);">GET DIRECTIONS</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-update-wrapper">
+                    <h3 class="h2 font-white footer-form-title">SIGN UP & STAY UPDATED</h3>
+                    <form class="footer-sign-up-form">
+                        <input class="font-white text-field-input font-14" type="email" placeholder="ENTER EMAIL ADDRESS..." required>
+                        <button class="btn primary-btn cursor-pointer footer-sign-up-btn" type="submit">
+                            <span>SIGN ME UP</span>
+                        </button>
+                    </form>
+                    <div class="footer-social-media-wrapper">
+                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
+                            <svg class="icon-btn-content footer-media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.046 17.237">
+                                <path id="Path_17428" data-name="Path 17428" d="M349.745,246.886v2.372H348v2.9h1.738v8.623h3.571v-8.622h2.4s.228-1.392.334-2.912h-2.715v-1.987a.843.843,0,0,1,.775-.695h1.946v-3.021h-2.644c-3.747,0-3.659,2.9-3.659,3.338Z" transform="translate(-348.004 -243.546)" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
+                            <svg class="icon-btn-content footer-media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.111 14.712">
+                                <path id="Path_17427" data-name="Path 17427" d="M464.465,247.107a7.427,7.427,0,0,1-2.133.587,3.741,3.741,0,0,0,1.634-2.057,7.41,7.41,0,0,1-2.365.9,3.715,3.715,0,0,0-6.422,2.542,3.877,3.877,0,0,0,.1.846,10.55,10.55,0,0,1-7.66-3.881,3.715,3.715,0,0,0,1.15,4.957,3.66,3.66,0,0,1-1.679-.463v.045a3.725,3.725,0,0,0,2.978,3.647,3.832,3.832,0,0,1-.978.126,3.769,3.769,0,0,1-.7-.065,3.729,3.729,0,0,0,3.47,2.581,7.468,7.468,0,0,1-4.615,1.586,8.012,8.012,0,0,1-.884-.049,10.567,10.567,0,0,0,16.265-8.9l-.011-.481a7.491,7.491,0,0,0,1.857-1.924Z" transform="translate(-446.355 -245.367)" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a class="icon-btn icon-btn-medium icon-btn-primary" href="javascript:void(0);">
+                            <svg class="icon-btn-content footer-media-icon" id="Group_4617" data-name="Group 4617" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.968">
+                                <path id="Path_17390" data-name="Path 17390" d="M572.72,243.552h-7.155a4.41,4.41,0,0,0-4.406,4.407v7.154a4.411,4.411,0,0,0,4.406,4.407h7.155a4.411,4.411,0,0,0,4.407-4.407v-7.154a4.411,4.411,0,0,0-4.407-4.407m2.99,11.558a2.993,2.993,0,0,1-2.99,2.99h-7.155a2.993,2.993,0,0,1-2.99-2.99v-7.154a2.993,2.993,0,0,1,2.99-2.99h7.155a2.993,2.993,0,0,1,2.99,2.99Z" transform="translate(-561.159 -243.552)" fill="currentColor" />
+                                <path id="Path_17391" data-name="Path 17391" d="M575.839,254.116a4.114,4.114,0,1,0,4.115,4.115h0a4.119,4.119,0,0,0-4.115-4.114m0,6.812a2.7,2.7,0,1,1,2.7-2.7,2.7,2.7,0,0,1-2.7,2.7" transform="translate(-567.854 -250.247)" fill="currentColor" />
+                                <path id="Path_17392" data-name="Path 17392" d="M592.867,250.838a1.039,1.039,0,1,0,.734.3,1.039,1.039,0,0,0-.734-.3" transform="translate(-580.596 -248.17)" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content-wrapper footer-platforms">
+                <div class="footer-content">
+                    <p class="font-white font-12 text-uppercase finance-media-title">OUR FINANCE PARTNERS</p>
+                    <div class="finance-media-wrapper">
+                        <div class="finance-img-content">
+                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-01.png" alt="finance-img">
+                        </div>
+                        <div class="finance-img-content">
+                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-02.png" alt="finance-img">
+                        </div>
+                        <div class="finance-img-content">
+                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-03.png" alt="finance-img">
+                        </div>
+                        <div class="finance-img-content">
+                            <img class="img-cover finance-img" src="assets/images/sections/footer/finance-image-04.png" alt="finance-img">
+                        </div>
+                    </div>
+                    <div class="the-curious-tag">
+                        <img class="the-curious-img" src="assets/images/sections/footer/the-curious.png" alt="the-curious">
+                    </div>
+                </div>
+                <div class="footer-link-wrapper">
+                    <div class="font-12 text-uppercase footer-links-content">
+                        <p class="font-white ">USEFUL LINKS</p>
+                        <a class="footer-link" href="javascript:void(0);">WORKSHOP</a>
+                        <a class="footer-link" href="javascript:void(0);">OUR RETURNS POLICY</a>
+                        <a class="footer-link" href="javascript:void(0);">DELIVERY INFORMATION</a>
+                        <a class="footer-link" href="javascript:void(0);">TERMS & CONDITIONS</a>
+                        <a class="footer-link" href="javascript:void(0);">PRIVACY POLICY</a>
+                    </div>
+                    <div class="font-12 text-uppercase footer-links-content">
+                        <p class="font-white ">MORE ABOUT US</p>
+                        <a class="footer-link" href="javascript:void(0);">VACANCIES</a>
+                        <a class="footer-link" href="javascript:void(0);">ACCOUNT</a>
+                        <a class="footer-link" href="javascript:void(0);">BASKET</a>
+                        <a class="footer-link" href="javascript:void(0);">CONTACT US</a>
+                        <a class="footer-link" href="javascript:void(0);">FAQS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!----- Splide js ----->
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <!----- Custom js ----->
     <script src="assets/js/script.js"></script>
