@@ -212,14 +212,70 @@ button {
   outline: none;
 }
 
+.text-field-input-black {
+  border-color: var(--black);
+}
+/* ----- End Text input ----- */
+
+/* ----- Radio input ----- */
+.radio-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: normal;
+}
+
+.radio-primary input[type="radio"] {
+  appearance: none;
+  outline: none;
+  width: 16px;
+  aspect-ratio: 1;
+  border: 1px solid var(--black);
+  border-radius: 100%;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-primary input[type="radio"]::before {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
+  width: 80%;
+  height: 80%;
+  color: var(--black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-primary input[type="radio"]:checked {
+  background-color: var(--primary-100);
+  border-color: transparent;
+}
+
+.radio-primary input[type="radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.radio-primary span {
+  padding-top: 4px;
+}
+/* ----- End Radio input ----- */
+
 /* ----- Selectbox input ----- */
 .select-box {
+  max-width: 100%;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--white-300);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-block: 10px;
 }
 
 .select-box::after {
@@ -243,33 +299,71 @@ button {
   padding-block: 6px;
   padding-inline: 28px;
 }
+/* ----- End Selectbox input ----- */
 
 /* ----- Checkbox input ----- */
-.checkbox-input {
+.checkbox-input,
+.secondary-checkbox-input {
   width: 20px;
   aspect-ratio: 1;
-  border: 1px solid var(--black);
-  border-radius: 4px;
   position: relative;
   appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.checkbox-input {
+  border: 1px solid var(--black);
+  border-radius: 4px;
 }
 
 .checkbox-input::after {
   content: "";
   width: 78%;
   aspect-ratio: 1;
+  background-color: var(--black);
+  border-radius: 2px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background-color: var(--black);
-  border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
 
 .checkbox-input:checked::after {
   transform: translate(-50%, -50%) scale(1);
 }
+
+.secondary-checkbox-input {
+  border: 1px solid var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-checkbox-input:checked {
+  background-color: var(--white);
+}
+
+.secondary-checkbox-input::after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5" /></svg>');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-checkbox-input:checked::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ----- End Checkbox input ----- */
 
 .truncate {
   display: -webkit-box;
@@ -397,6 +491,41 @@ button {
 
 .bg-black-btn:hover {
   color: var(--black);
+}
+
+.paypal-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.paypal-btn::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--black);
+}
+
+.paypal-btn:hover::before {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.paypal-btn span {
+  display: flex;
+  align-items: end;
+}
+
+.paypal-btn-img {
+  width: 74px;
+  height: 20px;
+  margin-left: 6px;
 }
 
 .icon-btn {
