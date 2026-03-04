@@ -540,18 +540,45 @@ if (partExContent.length) {
 }
 
 // ================================
-// BIKE SPECIFICS JS
+//  BIKE SPECIFICS JS
 // ================================
-const bikeSpecificsWrapper = document.querySelectorAll(".bike-specifics-wrapper");
-if (bikeSpecificsWrapper.length) {
-  const bikeSpecificsWrapper = document.querySelector(".bike-specifics-wrapper");
-  const bikeSpecificsBtn = document.querySelector(".bike-specifics-btn");
+const bikeWrapper = document.querySelector(".bike-specifics-wrapper");
+const bikeCols = document.querySelectorAll(".bike-specifics-col");
 
-  bikeSpecificsBtn.addEventListener("click", () => {
-    bikeSpecificsWrapper.classList.toggle("active");
-    bikeSpecificsBtn.classList.toggle("active");
+function applyClasses() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row) => {
+    row.classList.remove("is-even");
   });
+
+  const maxRowCount = Math.max(
+    ...Array.from(bikeCols).map(
+      (col) => col.querySelectorAll(".bike-specifics-row").length,
+    ),
+  );
+
+  bikeWrapper.style.setProperty("--total-row", maxRowCount);
+
+  if (isMobile) {
+    bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
+      if ((index + 1) % 2 === 0) {   // ✅ EVEN
+        row.classList.add("is-even");
+      }
+    });
+  } else {
+    bikeCols.forEach((col) => {
+      col.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
+        if ((index + 1) % 2 === 0) {   // ✅ EVEN
+          row.classList.add("is-even");
+        }
+      });
+    });
+  }
 }
+
+applyClasses();
+window.addEventListener("resize", applyClasses);
 
 // ================================
 // FANCYBOX JS

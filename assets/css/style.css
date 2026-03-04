@@ -822,8 +822,8 @@
   justify-content: center;
 }
 
-.splide__track--nav > .splide__list > .splide__slide,
-.splide__track--nav > .splide__list > .splide__slide.is-active {
+.splide__track--nav>.splide__list>.splide__slide,
+.splide__track--nav>.splide__list>.splide__slide.is-active {
   border: none;
 }
 
@@ -1318,13 +1318,11 @@
   -webkit-appearance: none;
   appearance: none;
   outline: none;
-  background: linear-gradient(
-    to right,
-    var(--brown) 0%,
-    var(--brown) var(--value),
-    var(--gray-700) var(--value),
-    var(--gray-700) 100%
-  );
+  background: linear-gradient(to right,
+      var(--brown) 0%,
+      var(--brown) var(--value),
+      var(--gray-700) var(--value),
+      var(--gray-700) 100%);
   border-radius: 6px;
   cursor: pointer;
 }
@@ -1491,21 +1489,71 @@
   margin-bottom: 46px;
 }
 
+.bike-specifics-caption {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .bike-specifics-wrapper {
-  height: 100%;
-  max-height: 575px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(var(--total-row, 0), minmax(80px, auto));
+  align-items: start;
+  column-gap: 20px;
   position: relative;
-  margin-bottom: 20px;
 }
 
-.bike-specifics-wrapper.active {
-  max-height: none;
+.bike-specifics-col {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span var(--total-row);
+  column-gap: 20px;
 }
 
-.bike-specifics-wrapper::after {
+.bike-specifics-row {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 2;
+  position: relative;
+}
+
+.bike-specifics-row>div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-block: 16px;
+}
+
+.bike-specifics-row.is-even::before {
+  content: "";
+  position: absolute;
+  left: -100vw;
+  z-index: -1;
+  width: 200vw;
+  height: 100%;
+  background: #eeeeee;
+}
+
+.bike-specifics-label {
+  max-width: 250px;
+}
+
+.bike-specifics-wrapper.vertical {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: initial;
+}
+
+.bike-specifics-wrapper.vertical .bike-specifics-col {
+  grid-column: span 2;
+  grid-template-columns: subgrid;
+  grid-template-rows: initial;
+  grid-auto-rows: minmax(80px, auto);
+  grid-row: initial;
+}
+
+/* .bike-specifics-wrapper::after {
   content: "";
   width: calc(100% + 40px);
   height: 86px;
@@ -1517,95 +1565,7 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease-in-out;
-}
-
-.bike-specifics-wrapper.active::after {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.bike-specifics-content-caption {
-  line-height: 0.8;
-  font-family: var(--font-transducer);
-  font-weight: 400;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.bike-specifics-content-caption::before,
-.bike-specifics-content-caption::after {
-  border-color: var(--black);
-}
-
-.bike-specifics-titles,
-.bike-specifics-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  padding-block: 26px;
-}
-
-.bike-specifics-content {
-  position: relative;
-}
-
-.bike-specifics-titles {
-  padding: 0;
-}
-
-.bike-specifics-content-title {
-  font-family: var(--font-transducer);
-}
-
-.bike-specifics-content:nth-child(even)::after {
-  content: "";
-  width: 100vw;
-  height: 100%;
-  /* margin-left: -20px; */
-  background-color: var(--white-200);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-/* .bike-specifics-wrapper {
-  display: flex;
-  align-items: start;
-}
-
-.test-01 {
-  width: 50%;
-}
-
-.test-02 {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-block: 26px;
-  position: relative;
-}
-
-.test-02:nth-child(even)::after {
-  content: "";
-  width: 100vw;
-  height: 100%;
-  margin-left: -20px;
-  background-color: var(--white-200);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 } */
-
-.bike-specifics-btn.active .read-more-btn,
-.bike-specifics-btn .less-btn {
-  display: none;
-}
-
-.bike-specifics-btn.active .less-btn {
-  display: block;
-}
 
 /* ----- FEATURES CARD SECTION ----- */
 .features-card-section {
@@ -2032,7 +1992,7 @@
   margin-bottom: 8px;
 }
 
-.stock-reserve-input + .btn,
+.stock-reserve-input+.btn,
 .stock-reserve-item-deposit-btn {
   min-width: 100%;
 }
@@ -2061,6 +2021,7 @@
 .main-basket-section {
   padding-block: 146px 64px;
 }
+
 .main-basket-title {
   max-width: 1110px;
   font-family: var(--font-transducer);
@@ -2160,6 +2121,7 @@
 .main-basket-item-qty-contents input {
   border: none;
   color: initial;
+
   &:focus {
     outline: none;
   }
@@ -2356,11 +2318,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-.toggle-btn input:checked + .slider {
+.toggle-btn input:checked+.slider {
   background-color: var(--gray-100);
 }
 
-.toggle-btn input:checked + .slider::before {
+.toggle-btn input:checked+.slider::before {
   transform: translate(-14px, -50%);
 }
 

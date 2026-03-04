@@ -1,4 +1,5 @@
 @media (max-width: 1279px) {
+
   /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 72% 0, 42% 100%, 0 100%);
@@ -117,6 +118,7 @@
 }
 
 @media (max-width: 991px) {
+
   /* ----- HERO SECTION ----- */
   .hero-section {
     height: auto;
@@ -520,13 +522,6 @@
     font-size: 45px;
   }
 
-  /* ----- BIKE SPECIFICS SECTION ----- */
-
-  .bike-specifics-titles,
-  .bike-specifics-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   /* ----- FEATURES CARD SECTION ----- */
   .features-card-section {
     padding-block: 48px 50px;
@@ -730,6 +725,7 @@
 }
 
 @media (max-width: 767px) {
+
   /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 136% 0, 10% 100%, 0 100%);
@@ -795,7 +791,7 @@
   }
 
   /* ========================================
-          PRODUCTCATEGORY HTML
+          PRODUCT CATEGORY HTML
 ========================================*/
   /* ----- Category hero section ----- */
   .category-hero-description {
@@ -827,7 +823,7 @@
   }
 
   /* ========================================
-          PRODUCTOPEN HTML
+          PRODUCT OPEN HTML
 ========================================*/
   /* ----- PRODUCT OVERVIEW SECTION ----- */
   .product-overview-section {
@@ -924,6 +920,21 @@
     max-width: 100%;
   }
 
+  /* ----- BIKE SPECIFICS SECTION ----- */
+  .bike-specifics-wrapper:not(.vertical) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: initial;
+  }
+
+  .bike-specifics-wrapper:not(.vertical) .bike-specifics-col {
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+    grid-template-rows: initial;
+    grid-auto-rows: minmax(80px, auto);
+    grid-row: initial;
+  }
+
+
   /* ----- FEATURES CARD SECTION ----- */
   .features-card-section {
     padding-bottom: 30px;
@@ -991,6 +1002,7 @@
 }
 
 @media (max-width: 575px) {
+
   /* ----- HERO SECTION ----- */
   .hero-btn-wrapper {
     flex-direction: column;
@@ -1057,7 +1069,7 @@
   }
 
   /* ========================================
-          PRODUCTOPEN HTML
+          PRODUCT OPEN HTML
 ========================================*/
   /* ----- PRODUCT OVERVIEW SECTION ----- */
   .product-overview-section {
