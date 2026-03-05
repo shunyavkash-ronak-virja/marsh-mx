@@ -762,6 +762,49 @@
     z-index: 2;
     background-color: var(--black-100-47);
   }
+
+  /* ========================================
+          PARTS FINDER HTML
+========================================*/
+  /* ----- PARTS FINDER SECTION ----- */
+  .parts-finder-section::before,
+  .parts-finder-section::after {
+    height: 70%;
+  }
+
+  .parts-finder-section::before {
+    width: 70%;
+    clip-path: polygon(64% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .parts-finder-section::after {
+    width: 60%;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 22% 100%);
+  }
+
+  .parts-finder-section {
+    padding-block: 156px 84px;
+  }
+
+  .parts-finder-main-wrapper {
+    max-width: 100%;
+  }
+
+  .parts-finder-main-wrapper h1 {
+    font-size: 35px;
+  }
+
+  .parts-finder-description {
+    margin-block: 32px 30px;
+  }
+
+  .parts-catalog-content {
+    margin-top: 104px;
+  }
+
+  .parts-catalog-title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1098,6 +1141,48 @@
 
   .order-complete-img-content {
     display: none;
+  }
+
+  /* ========================================
+          PARTS FINDER HTML
+========================================*/
+  /* ----- PARTS FINDER SECTION ----- */
+  .parts-finder-section::before,
+  .parts-finder-section::after {
+    width: 100%;
+  }
+
+  .parts-finder-section::before {
+    clip-path: polygon(94% 0, 100% 0, 100% 100%, -16% 100%);
+  }
+
+  .parts-finder-section::after {
+    clip-path: polygon(108% 0, 100% 0, 100% 100%, 22% 100%);
+  }
+
+  .parts-finder-section {
+    padding-bottom: 58px;
+  }
+
+  .parts-finder-description {
+    margin-bottom: 20px;
+  }
+
+  .parts-catalog-content {
+    margin-top: 80px;
+  }
+
+  .parts-finder-description {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .parts-finder-search-wrapper input {
+    padding-left: 28px;
+  }
+
+  .parts-finder-search-btn {
+    width: 48px;
   }
 }
 
@@ -1501,5 +1586,19 @@
 
   .order-complete-section::after {
     clip-path: polygon(100% 0, 100% 0, 100% 100%, -10% 100%);
+  }
+
+  /* ========================================
+          PARTS FINDER HTML
+========================================*/
+  /* ----- PARTS FINDER SECTION ----- */
+
+  .parts-finder-main-wrapper h1 span {
+    display: block;
+  }
+
+  .parts-finder-description {
+    font-size: 14px;
+    line-height: 1.428;
   }
 }

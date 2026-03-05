@@ -2493,3 +2493,105 @@
 /* ========================================
           PARTS FINDER HTML
 ========================================*/
+/* ----- PARTS FINDER SECTION ----- */
+.parts-finder-section {
+  padding-block: 202px 110px;
+  position: relative;
+}
+
+.parts-finder-section::before,
+.parts-finder-section::after {
+  content: "";
+  height: 56%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.parts-finder-section::before {
+  width: 47%;
+  background-color: var(--white-200);
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.parts-finder-section::after {
+  width: 40%;
+  background-color: var(--gray-500-14);
+  clip-path: polygon(96% 0, 100% 0, 100% 100%, 22% 100%);
+}
+
+.parts-finder-main-wrapper {
+  max-width: 989px;
+}
+
+.parts-finder-description {
+  max-width: 728px;
+  margin-block: 30px 40px;
+}
+
+.parts-finder-search-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.parts-finder-search-wrapper input {
+  padding-inline: 48px 66px;
+  padding-block: 22px;
+  border-radius: 35px;
+  background-color: var(--white-400);
+  border: 1px solid transparent;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.parts-finder-search-wrapper input:focus {
+  outline: none;
+  border-color: var(--black-25);
+}
+
+.parts-finder-search-wrapper input::placeholder {
+  color: var(--black);
+}
+
+.parts-finder-search-btn {
+  background-color: var(--black);
+  color: var(--primary-100);
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.parts-finder-search-btn-icon {
+  width: 76%;
+}
+
+.parts-finder-search-btn::after {
+  background-color: var(--gray);
+}
+
+.parts-catalog-content {
+  margin-top: 124px;
+}
+
+.parts-catalog-wrapper {
+  margin-top: 35px;
+}
+
+.parts-catalog {
+  background-color: var(--white);
+  padding: 16px 58px 14px;
+  box-shadow: 0 0 6px var(--black-16);
+}
+
+.parts-catalog {
+  margin-bottom: 12px;
+}
+
+.parts-catalog-content-btn {
+  min-width: 100%;
+  padding-block: 20px;
+  font-weight: 400;
+  color: var(--primary-100);
+}

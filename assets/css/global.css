@@ -10,6 +10,7 @@
   --black-6: #0000000f;
   --black-11: #0000001c;
   --black-15: #00000026;
+  --black-16: #00000029;
   --black-18: #0000002e;
   --black-25: #00000040;
   --black-28: #00000047;
@@ -60,6 +61,7 @@
   --gray-300: #7c7c7c;
   --gray-400: #999999;
   --gray-500: #322f2a;
+  --gray-500-14: #322f2a24;
   --gray-600: #606060;
   --gray-700: #c6cdcd;
   --gray-700: #d6d6d6;
@@ -435,14 +437,14 @@ button {
 .primary-btn,
 .secondary-btn,
 .bg-black-btn {
-  transition: all 0.3s ease-in-out;
   border: 1px solid;
+  transition: all 0.3s ease-in-out;
 }
 
 .primary-btn {
   background-color: var(--primary);
   color: var(--black);
-  border-color: transparent;
+  border-color: var(--primary);
 }
 
 .secondary-btn {
@@ -453,6 +455,7 @@ button {
 .bg-black-btn {
   background-color: var(--black);
   color: var(--white);
+  border-color: var(--black);
 }
 
 .primary-btn::before,
@@ -490,7 +493,7 @@ button {
 }
 
 .secondary-btn:hover {
-  border-color: transparent;
+  border-color: var(--primary);
   color: var(--black);
 }
 
