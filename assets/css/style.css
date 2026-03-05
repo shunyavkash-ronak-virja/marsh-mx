@@ -278,7 +278,7 @@
 }
 
 /* ----- SHOP BY BRAND SECTION ----- */
-.shop-by-brand {
+.home-shop-by-brand {
   padding-block: 45px 70px;
 }
 
@@ -2594,4 +2594,9 @@
   padding-block: 20px;
   font-weight: 400;
   color: var(--primary-100);
+}
+
+/* ----- SHOP BY BRAND SECTION ----- */
+.parts-finder-shop-by-brand {
+  padding-block: 110px 150px;
 }

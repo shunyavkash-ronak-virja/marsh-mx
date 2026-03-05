@@ -228,7 +228,7 @@
   }
 
   /* ----- SHOP BY BRAND SECTION ----- */
-  .shop-by-brand {
+  .home-shop-by-brand {
     padding-block: 42px 50px;
   }
 
@@ -805,6 +805,11 @@
   .parts-catalog-title {
     font-size: 30px;
   }
+
+  /* ----- SHOP BY BRAND SECTION ----- */
+  .parts-finder-shop-by-brand {
+    padding-block: 84px 114px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1183,6 +1188,11 @@
 
   .parts-finder-search-btn {
     width: 48px;
+  }
+
+  /* ----- SHOP BY BRAND SECTION ----- */
+  .parts-finder-shop-by-brand {
+    padding-block: 58px 74px;
   }
 }
 
