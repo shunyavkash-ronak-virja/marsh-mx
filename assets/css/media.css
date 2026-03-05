@@ -1,5 +1,4 @@
 @media (max-width: 1279px) {
-
   /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 72% 0, 42% 100%, 0 100%);
@@ -115,10 +114,17 @@
   .main-basket-section {
     padding-block: 134px 48px;
   }
+
+  /* ========================================
+          ORDER COMPLETE HTML
+========================================*/
+  /* ----- ORDER COMPLETE SECTION ----- */
+  .order-complete-section {
+    padding-top: 91px;
+  }
 }
 
 @media (max-width: 991px) {
-
   /* ----- HERO SECTION ----- */
   .hero-section {
     height: auto;
@@ -722,10 +728,43 @@
     max-width: 500px;
     margin-left: auto;
   }
+
+  /* ========================================
+          ORDER COMPLETE HTML
+========================================*/
+  /* ----- ORDER COMPLETE SECTION ----- */
+  .order-complete-section {
+    padding-top: 82px;
+  }
+
+  .order-complete-content {
+    margin-inline: auto;
+    padding-left: 0;
+  }
+
+  .order-complete-content,
+  .order-complete-title {
+    color: var(--white);
+  }
+
+  .order-complete-img-content {
+    width: 100%;
+    clip-path: none;
+  }
+
+  .order-complete-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--black-100-47);
+  }
 }
 
 @media (max-width: 767px) {
-
   /* ----- HERO SECTION ----- */
   .hero-content-wrapper::before {
     clip-path: polygon(0 0, 136% 0, 10% 100%, 0 100%);
@@ -934,7 +973,6 @@
     grid-row: initial;
   }
 
-
   /* ----- FEATURES CARD SECTION ----- */
   .features-card-section {
     padding-bottom: 30px;
@@ -999,10 +1037,71 @@
     flex-direction: column;
     gap: 26px;
   }
+
+  /* ========================================
+          ORDER COMPLETE HTML
+========================================*/
+  /* ----- ORDER COMPLETE SECTION ----- */
+  .order-complete-section {
+    padding-bottom: 40px;
+  }
+
+  .order-complete-wrapper::before {
+    display: none;
+  }
+
+  .order-complete-content {
+    max-width: 100%;
+    color: var(--black-200);
+    margin-top: 126px;
+  }
+
+  .order-complete-title {
+    font-size: 38px;
+    line-height: 1.21;
+    color: var(--black);
+    font-family: var(--font-transducer-black-exp);
+    font-style: italic;
+  }
+
+  .order-complete-description {
+    margin-block: 24px;
+  }
+
+  .order-complete-mobile-img-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 0.6395;
+  }
+
+  .order-complete-mobile-img {
+    object-fit: contain;
+  }
+
+  .order-complete-btn-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .order-complete-section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--white-200);
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 10% 100%);
+  }
+
+  .order-complete-img-content {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
-
   /* ----- HERO SECTION ----- */
   .hero-btn-wrapper {
     flex-direction: column;
@@ -1382,5 +1481,25 @@
 
   .checkout-item-summary .btn {
     display: flex;
+  }
+
+  /* ========================================
+          ORDER COMPLETE HTML
+========================================*/
+  /* ----- ORDER COMPLETE SECTION ----- */
+  .order-complete-title {
+    font-size: 34px;
+  }
+
+  .order-complete-btn-wrapper {
+    gap: 10px;
+  }
+
+  .order-complete-btn {
+    min-width: 100%;
+  }
+
+  .order-complete-section::after {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, -10% 100%);
   }
 }

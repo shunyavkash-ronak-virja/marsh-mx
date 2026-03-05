@@ -822,8 +822,8 @@
   justify-content: center;
 }
 
-.splide__track--nav>.splide__list>.splide__slide,
-.splide__track--nav>.splide__list>.splide__slide.is-active {
+.splide__track--nav > .splide__list > .splide__slide,
+.splide__track--nav > .splide__list > .splide__slide.is-active {
   border: none;
 }
 
@@ -1318,11 +1318,13 @@
   -webkit-appearance: none;
   appearance: none;
   outline: none;
-  background: linear-gradient(to right,
-      var(--brown) 0%,
-      var(--brown) var(--value),
-      var(--gray-700) var(--value),
-      var(--gray-700) 100%);
+  background: linear-gradient(
+    to right,
+    var(--brown) 0%,
+    var(--brown) var(--value),
+    var(--gray-700) var(--value),
+    var(--gray-700) 100%
+  );
   border-radius: 6px;
   cursor: pointer;
 }
@@ -1518,7 +1520,7 @@
   position: relative;
 }
 
-.bike-specifics-row>div {
+.bike-specifics-row > div {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1992,7 +1994,7 @@
   margin-bottom: 8px;
 }
 
-.stock-reserve-input+.btn,
+.stock-reserve-input + .btn,
 .stock-reserve-item-deposit-btn {
   min-width: 100%;
 }
@@ -2318,11 +2320,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-.toggle-btn input:checked+.slider {
+.toggle-btn input:checked + .slider {
   background-color: var(--gray-100);
 }
 
-.toggle-btn input:checked+.slider::before {
+.toggle-btn input:checked + .slider::before {
   transform: translate(-14px, -50%);
 }
 
@@ -2399,24 +2401,34 @@
 /* ========================================
           ORDER COMPLETE HTML
 ========================================*/
-/* ----- ORDER COMPLETE SECTION ( DESKTOP ) ----- */
+/* ----- ORDER COMPLETE SECTION ----- */
 .order-complete-section {
   min-height: 100vh;
   padding-top: 96px;
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.order-complete-wrapper {
+  width: 100%;
+  display: flex;
 }
 
 .order-complete-content {
-  max-width: 608px;
-  padding-left: 4%;
+  z-index: 2;
+  max-width: 757px;
+  padding-left: 2%;
 }
 
 .order-complete-description {
   max-width: 426px;
   font-weight: 200;
-  margin-block: 27px 35px;
+  margin-block: 26px 35px;
+}
+
+.order-complete-mobile-img-content {
+  display: none;
 }
 
 .order-complete-btn-wrapper {
@@ -2431,14 +2443,23 @@
   min-width: 270px;
   padding: 26px 10px;
   line-height: 1.2;
-  flex-shrink: 0;
+}
+
+.order-complete-btn-wrapper .bg-black-btn {
+  border-color: transparent;
 }
 
 .order-complete-img-content {
-  width: 100%;
+  width: 74%;
+  height: 100%;
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  z-index: -1;
-  clip-path: polygon(48% 0, 100% 0, 100% 100%, 20% 100%);
+  transform: translateY(-50%);
+  z-index: 1;
+  clip-path: polygon(42% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.order-complete-img {
+  object-position: top;
 }

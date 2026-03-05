@@ -542,43 +542,46 @@ if (partExContent.length) {
 // ================================
 //  BIKE SPECIFICS JS
 // ================================
-const bikeWrapper = document.querySelector(".bike-specifics-wrapper");
-const bikeCols = document.querySelectorAll(".bike-specifics-col");
+const bikeWrapper = document.querySelectorAll(".bike-specifics-wrapper");
+if (bikeWrapper.length) {
+  const bikeWrapper = document.querySelector(".bike-specifics-wrapper");
+  const bikeCols = document.querySelectorAll(".bike-specifics-col");
 
-function applyClasses() {
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  function applyClasses() {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-  bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row) => {
-    row.classList.remove("is-even");
-  });
-
-  const maxRowCount = Math.max(
-    ...Array.from(bikeCols).map(
-      (col) => col.querySelectorAll(".bike-specifics-row").length,
-    ),
-  );
-
-  bikeWrapper.style.setProperty("--total-row", maxRowCount);
-
-  if (isMobile) {
-    bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
-      if ((index + 1) % 2 === 0) {   // ✅ EVEN
-        row.classList.add("is-even");
-      }
+    bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row) => {
+      row.classList.remove("is-even");
     });
-  } else {
-    bikeCols.forEach((col) => {
-      col.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
-        if ((index + 1) % 2 === 0) {   // ✅ EVEN
+
+    const maxRowCount = Math.max(
+      ...Array.from(bikeCols).map((col) => col.querySelectorAll(".bike-specifics-row").length),
+    );
+
+    bikeWrapper.style.setProperty("--total-row", maxRowCount);
+
+    if (isMobile) {
+      bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
+        if ((index + 1) % 2 === 0) {
+          // ✅ EVEN
           row.classList.add("is-even");
         }
       });
-    });
+    } else {
+      bikeCols.forEach((col) => {
+        col.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
+          if ((index + 1) % 2 === 0) {
+            // ✅ EVEN
+            row.classList.add("is-even");
+          }
+        });
+      });
+    }
   }
-}
 
-applyClasses();
-window.addEventListener("resize", applyClasses);
+  applyClasses();
+  window.addEventListener("resize", applyClasses);
+}
 
 // ================================
 // FANCYBOX JS
