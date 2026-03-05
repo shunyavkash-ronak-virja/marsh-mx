@@ -544,8 +544,10 @@ if (partExContent.length) {
 // ================================
 const bikeWrapper = document.querySelectorAll(".bike-specifics-wrapper");
 if (bikeWrapper.length) {
+  const bikeSpecificsSection = document.querySelector(".bike-specifics-section");
   const bikeWrapper = document.querySelector(".bike-specifics-wrapper");
   const bikeCols = document.querySelectorAll(".bike-specifics-col");
+  const bikeSpecificsBtn = document.querySelector(".bike-specifics-btn");
 
   function applyClasses() {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
@@ -553,17 +555,13 @@ if (bikeWrapper.length) {
     bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row) => {
       row.classList.remove("is-even");
     });
-
     const maxRowCount = Math.max(
       ...Array.from(bikeCols).map((col) => col.querySelectorAll(".bike-specifics-row").length),
     );
-
     bikeWrapper.style.setProperty("--total-row", maxRowCount);
-
     if (isMobile) {
       bikeWrapper.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
         if ((index + 1) % 2 === 0) {
-          // ✅ EVEN
           row.classList.add("is-even");
         }
       });
@@ -571,7 +569,6 @@ if (bikeWrapper.length) {
       bikeCols.forEach((col) => {
         col.querySelectorAll(".bike-specifics-row").forEach((row, index) => {
           if ((index + 1) % 2 === 0) {
-            // ✅ EVEN
             row.classList.add("is-even");
           }
         });
@@ -581,6 +578,12 @@ if (bikeWrapper.length) {
 
   applyClasses();
   window.addEventListener("resize", applyClasses);
+
+  if (bikeWrapper && bikeSpecificsBtn) {
+    bikeSpecificsBtn.addEventListener("click", function () {
+      bikeWrapper.classList.toggle("active");
+    });
+  }
 }
 
 // ================================
