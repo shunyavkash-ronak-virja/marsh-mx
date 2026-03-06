@@ -767,9 +767,8 @@
           PARTS FINDER HTML
 ========================================*/
   /* ----- PARTS FINDER SECTION ----- */
-  .parts-finder-section::before,
-  .parts-finder-section::after {
-    height: 70%;
+  .parts-finder-v1 {
+    padding-block: 156px 84px;
   }
 
   .parts-finder-section::before {
@@ -780,10 +779,6 @@
   .parts-finder-section::after {
     width: 60%;
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 22% 100%);
-  }
-
-  .parts-finder-section {
-    padding-block: 156px 84px;
   }
 
   .parts-finder-main-wrapper {
@@ -809,6 +804,19 @@
   /* ----- SHOP BY BRAND SECTION ----- */
   .parts-finder-shop-by-brand {
     padding-block: 84px 114px;
+  }
+
+  /* ========================================
+          PARTS FINDER-2 HTML 
+========================================*/
+  /* ----- PARTS FINDER SECTION ----- */
+  .parts-finder-v2 {
+    padding-block: 122px;
+  }
+
+  .parts-finder-cards-wrapper {
+    row-gap: 46px;
+    margin-top: 80px;
   }
 }
 
@@ -1152,6 +1160,10 @@
           PARTS FINDER HTML
 ========================================*/
   /* ----- PARTS FINDER SECTION ----- */
+  .parts-finder-v1 {
+    padding-bottom: 58px;
+  }
+
   .parts-finder-section::before,
   .parts-finder-section::after {
     width: 100%;
@@ -1163,10 +1175,6 @@
 
   .parts-finder-section::after {
     clip-path: polygon(108% 0, 100% 0, 100% 100%, 22% 100%);
-  }
-
-  .parts-finder-section {
-    padding-bottom: 58px;
   }
 
   .parts-finder-description {
@@ -1190,9 +1198,22 @@
     width: 48px;
   }
 
+  .parts-catalog {
+    padding-left: 32px;
+  }
+
   /* ----- SHOP BY BRAND SECTION ----- */
   .parts-finder-shop-by-brand {
     padding-block: 58px 74px;
+  }
+
+  /* ========================================
+          PARTS FINDER-2 HTML 
+========================================*/
+  /* ----- PARTS FINDER SECTION ----- */
+  .parts-finder-cards-wrapper {
+    row-gap: 32px;
+    margin-top: 65px;
   }
 }
 
@@ -1602,7 +1623,6 @@
           PARTS FINDER HTML
 ========================================*/
   /* ----- PARTS FINDER SECTION ----- */
-
   .parts-finder-main-wrapper h1 span {
     display: block;
   }
@@ -1610,5 +1630,23 @@
   .parts-finder-description {
     font-size: 14px;
     line-height: 1.428;
+  }
+
+  .parts-finder-section::before,
+  .parts-finder-section::after {
+    height: 858px;
+  }
+
+  /* ========================================
+          PARTS FINDER-2 HTML 
+========================================*/
+  /* ----- PARTS FINDER SECTION ----- */
+  .parts-finder-cards-wrapper {
+    row-gap: 15px;
+    column-gap: 12px;
+  }
+
+  .parts-finder-cards-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }

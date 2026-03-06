@@ -2495,14 +2495,17 @@
 ========================================*/
 /* ----- PARTS FINDER SECTION ----- */
 .parts-finder-section {
-  padding-block: 202px 110px;
   position: relative;
+}
+
+.parts-finder-v1 {
+  padding-block: 202px 110px;
 }
 
 .parts-finder-section::before,
 .parts-finder-section::after {
   content: "";
-  height: 56%;
+  height: 748px;
   position: absolute;
   top: 0;
   right: 0;
@@ -2600,3 +2603,139 @@
 .parts-finder-shop-by-brand {
   padding-block: 110px 150px;
 }
+
+/* ========================================
+          PARTS FINDER-2 HTML 
+========================================*/
+/* ----- PARTS FINDER SECTION ----- */
+.parts-finder-v2 {
+  padding-block: 156px 160px;
+}
+
+.parts-finder-go-back-btn {
+  max-width: max-content;
+  font-family: var(--font-transducer);
+  font-weight: 700;
+  padding-block: 4px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.parts-finder-go-back-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 1px solid var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.parts-finder-go-back-btn:hover::after {
+  width: 100%;
+}
+
+.parts-finder-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+  column-gap: 22px;
+  row-gap: 60px;
+  margin-top: 100px;
+}
+
+.parts-finder-card {
+  box-shadow: 0 0 6px var(--black-16);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.parts-finder-card:hover {
+  transform: scale(1.03);
+}
+
+.parts-finder-card-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1.1291;
+  object-fit: cover;
+}
+
+.parts-finder-card-caption {
+  padding: 6px 0 12px 14px;
+  flex-grow: 1;
+}
+
+/* ----- GET IN TOUCH SECTION ----- */
+/* .get-in-touch-section {
+  padding-block: 156px 164px;
+}
+
+.get-in-touch-wrapper {
+  max-width: 892px;
+}
+
+.get-in-touch-title {
+  margin-bottom: 35px;
+}
+
+.get-in-touch-input-content {
+  display: flex;
+  align-items: end;
+  gap: 26px;
+  margin-bottom: 35px;
+}
+
+.get-in-touch-input-content > * {
+  width: 50%;
+}
+
+.get-in-touch-wrapper input::placeholder,
+.get-in-touch-textarea::placeholder {
+  color: var(--white);
+}
+
+.get-in-touch-select {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.get-in-touch-select .list {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.get-in-touch-select .option:hover,
+.get-in-touch-select .option.focus,
+.get-in-touch-select .option.selected.focus {
+  background-color: var(--gray-700);
+}
+
+.get-in-touch-textarea {
+  max-width: 100%;
+  max-height: 200px;
+  min-height: 44px;
+}
+
+.get-in-touch-btn {
+  min-width: 100%;
+  padding-block: 24px;
+  margin-block: 35px;
+}
+
+.get-in-touch-checkbox-wrapper {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.get-in-touch-checkbox-wrapper .secondary-checkbox-input {
+  background-color: var(--white);
+  border-radius: 2px;
+}
+
+.get-in-touch-checkbox-wrapper span {
+  padding-top: 2px;
+} */

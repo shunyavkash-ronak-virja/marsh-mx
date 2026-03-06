@@ -298,6 +298,7 @@ if (filterDropDown.length) {
     filterDropDown.classList.toggle("active");
   });
 }
+
 // ================================
 // FILTER TOGGLE JS
 // ================================
@@ -623,3 +624,4 @@ if (frequentlyBought.length) {
     splide.mount();
   });
 }
+  
