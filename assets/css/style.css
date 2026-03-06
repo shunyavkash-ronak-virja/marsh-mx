@@ -2739,3 +2739,105 @@
 .get-in-touch-checkbox-wrapper span {
   padding-top: 2px;
 }
+
+/* ========================================
+          PARTS FINDER-2 HTML 
+========================================*/
+/* ----- PARTS DIAGRAM SECTION ----- */
+.parts-diagram-control-btns {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.parts-diagram-control-btn {
+  width: 70px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  position: relative;
+}
+
+.parts-diagram-control-btn-icon {
+  width: 36%;
+  transition: all 0.3s ease-in-out;
+}
+
+.parts-diagram-control-btn:hover .parts-diagram-control-btn-icon {
+  color: var(--black);
+}
+
+.parts-diagram-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  margin-top: 46px;
+}
+
+.parts-diagram-img-content {
+  width: 56%;
+  max-width: 740px;
+}
+
+.parts-diagram-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.83919;
+  object-fit: cover;
+}
+
+.parts-diagram-item:not(:first-child) {
+  padding-top: 25px;
+}
+
+.parts-diagram-item:not(:last-child) {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.parts-diagram-items {
+  width: 44%;
+  max-width: 484px;
+}
+
+.parts-diagram-item-ref-nub {
+  color: var(--black-40);
+  margin-bottom: 12px;
+}
+
+.parts-diagram-item-ref-nub span {
+  color: var(--black-200);
+  font-family: var(--font-acumin-pro-wide);
+  font-weight: 500;
+}
+
+.parts-diagram-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 12px 48px;
+}
+
+.parts-diagram-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.qty-select-box {
+  min-width: 160px;
+  justify-content: center;
+  padding-block: 28px 24px;
+  gap: 8px;
+  border: 1px solid var(--black);
+  font-weight: 700;
+  line-height: 1.214;
+}
+
+.parts-diagram-select-btn {
+  min-width: 306px;
+  padding-block: 26px;
+}
