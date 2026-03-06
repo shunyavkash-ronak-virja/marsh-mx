@@ -818,6 +818,15 @@
     row-gap: 46px;
     margin-top: 80px;
   }
+
+  /* ----- GET IN TOUCH SECTION ----- */
+  .get-in-touch-section {
+    padding-block: 126px 134px;
+  }
+
+  .get-in-touch-wrapper {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1214,6 +1223,11 @@
   .parts-finder-cards-wrapper {
     row-gap: 32px;
     margin-top: 65px;
+  }
+
+  /* ----- GET IN TOUCH SECTION ----- */
+  .get-in-touch-section {
+    padding-block: 96px;
   }
 }
 
@@ -1648,5 +1662,20 @@
 
   .parts-finder-cards-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* ----- GET IN TOUCH SECTION ----- */
+  .get-in-touch-input-content {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 25px;
+  }
+
+  .get-in-touch-input-content > * {
+    width: 100%;
+  }
+
+  .get-in-touch-btn {
+    margin-block: 28px; 
   }
 }
