@@ -1368,6 +1368,10 @@
   }
 
   /* ----- NEWS ARTICLES SECTION ----- */
+  .news-articles-section {
+    padding-bottom: 125px;
+  }
+
   .news-articles-wrapper {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
@@ -1861,6 +1865,10 @@
   }
 
   /* ----- NEWS ARTICLES SECTION ----- */
+  .news-articles-section {
+    padding-bottom: 98px;
+  }
+
   .articles-card-img {
     aspect-ratio: 1 / 0.65544;
   }
