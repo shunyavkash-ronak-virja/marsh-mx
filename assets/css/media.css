@@ -122,6 +122,14 @@
   .order-complete-section {
     padding-top: 91px;
   }
+
+  /* ========================================
+          PARTS FINDER-3 HTML 
+========================================*/
+  /* ----- PARTS DIAGRAM SECTION ----- */
+  .parts-diagram-items {
+    height: 682px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -827,6 +835,58 @@
   .get-in-touch-wrapper {
     max-width: 100%;
   }
+
+  /* ========================================
+          PARTS FINDER-3 HTML 
+========================================*/
+  /* ----- PARTS DIAGRAM SECTION ----- */
+  .parts-finder-v3 {
+    padding-bottom: 128px;
+  }
+
+  .parts-diagram-control-btns {
+    gap: 6px;
+  }
+
+  .parts-diagram-wrapper {
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 32px;
+  }
+
+  .parts-diagram-img-content,
+  .parts-diagram-items {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .parts-diagram-img {
+    border: 1px solid var(--black);
+  }
+
+  .parts-diagram-items {
+    height: auto;
+    overflow-y: unset;
+    box-shadow: 0 0 6px var(--black-16);
+    padding-block: 24px 20px;
+    padding-inline: 18px;
+  }
+
+  .parts-diagram-item-title {
+    margin-bottom: 30px;
+  }
+
+  .parts-diagram-select-wrapper {
+    gap: 8px;
+  }
+
+  .qty-select-box {
+    min-width: 134px;
+  }
+
+  .parts-diagram-select-btn {
+    max-width: 246px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1228,6 +1288,30 @@
   /* ----- GET IN TOUCH SECTION ----- */
   .get-in-touch-section {
     padding-block: 96px;
+  }
+
+  /* ========================================
+          PARTS FINDER-3 HTML 
+========================================*/
+  /* ----- PARTS DIAGRAM SECTION ----- */
+  .parts-diagram-item-title {
+    margin-bottom: 24px;
+  }
+
+  .parts-diagram-item:not(:first-child) {
+    padding-top: 40px;
+  }
+
+  .parts-diagram-item {
+    padding-bottom: 16px;
+  }
+
+  .qty-select-box {
+    min-width: 110px;
+  }
+
+  .parts-diagram-select-btn {
+    max-width: 205px;
   }
 }
 
@@ -1676,6 +1760,36 @@
   }
 
   .get-in-touch-btn {
-    margin-block: 28px; 
+    margin-block: 28px;
+  }
+
+  /* ========================================
+          PARTS FINDER-3 HTML 
+========================================*/
+  /* ----- PARTS DIAGRAM SECTION ----- */
+  .parts-diagram-wrapper {
+    margin-top: 12px;
+  }
+
+  .parts-diagram-img {
+    aspect-ratio: 1 / 1.252;
+    object-position: center;
+  }
+
+  .parts-diagram-item-title {
+    flex-direction: column;
+    align-items: start;
+
+    & span {
+      align-self: end;
+    }
+  }
+
+  .parts-diagram-select-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .qty-select-box {
+    min-width: 92px;
   }
 }

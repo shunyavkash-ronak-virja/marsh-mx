@@ -2741,7 +2741,7 @@
 }
 
 /* ========================================
-          PARTS FINDER-2 HTML 
+          PARTS FINDER-3 HTML 
 ========================================*/
 /* ----- PARTS DIAGRAM SECTION ----- */
 .parts-diagram-control-btns {
@@ -2787,20 +2787,23 @@
   height: auto;
   aspect-ratio: 1 / 0.83919;
   object-fit: cover;
-}
-
-.parts-diagram-item:not(:first-child) {
-  padding-top: 25px;
-}
-
-.parts-diagram-item:not(:last-child) {
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--gray);
+  object-position: left bottom;
 }
 
 .parts-diagram-items {
   width: 44%;
-  max-width: 484px;
+  height: 762px;
+  max-width: 498px;
+  overflow-y: auto;
+}
+
+.parts-diagram-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.parts-diagram-item:not(:first-child) {
+  padding-top: 25px;
 }
 
 .parts-diagram-item-ref-nub {
@@ -2818,7 +2821,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-block: 12px 48px;
+  margin-bottom: 48px;
 }
 
 .parts-diagram-select-wrapper {
@@ -2830,14 +2833,19 @@
 .qty-select-box {
   min-width: 160px;
   justify-content: center;
-  padding-block: 28px 24px;
+  padding-block: 24px;
   gap: 8px;
   border: 1px solid var(--black);
   font-weight: 700;
   line-height: 1.214;
 }
 
+.qty-select-box span {
+  padding-top: 4px;
+}
+
 .parts-diagram-select-btn {
-  min-width: 306px;
+  max-width: 306px;
+  flex-grow: 1;
   padding-block: 26px;
 }
