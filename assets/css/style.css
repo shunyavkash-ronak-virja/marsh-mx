@@ -2894,12 +2894,13 @@
   height: auto;
   aspect-ratio: 1 / 0.709;
   flex-shrink: 0;
+  object-position: bottom;
 }
 
 .news-articles-hero .hero-media {
   width: 62%;
   height: 95%;
-  max-width: 868px;
+  max-width: 1120px;
   clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -2996,4 +2997,12 @@
 
 .news-articles-btn {
   justify-self: center;
+}
+
+/* ========================================
+          ARTICLE DETAILS HTML 
+========================================*/
+/* ----- ARTICLE DETAILS SECTION ----- */
+.article-details-section {
+  padding-block: 172px;
 }
