@@ -626,7 +626,7 @@ button {
 
 /* ----- Text btn ----- */
 .text-btn,
-.secondray-text-btn {
+.secondary-text-btn {
   padding-block: 6px;
   width: max-content;
   position: relative;
@@ -657,11 +657,11 @@ button {
 
 .text-btn::before,
 .text-btn:hover::after,
-.secondray-text-btn:hover::after {
+.secondary-text-btn:hover::after {
   width: 100%;
 }
 
-.secondray-text-btn::after {
+.secondary-text-btn::after {
   content: "";
   width: 0;
   height: 2px;
@@ -672,7 +672,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-.secondray-text-btn-black::after {
+.secondary-text-btn-black::after {
   background-color: var(--black);
 }
 

@@ -717,7 +717,7 @@
 ========================================*/
   /* ----- CHECKOUT SECTION ----- */
   .checkout-section {
-    padding-top: 134px;
+    padding-block: 134px;
   }
 
   .checkout-main-wrapper {

@@ -1839,8 +1839,9 @@
 }
 
 .frequently-bought-img {
-  min-height: 266px;
-  max-height: 266px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.80313;
   object-fit: contain;
 }
 
@@ -2246,7 +2247,7 @@
 ========================================*/
 /* ----- CHECKOUT SECTION ----- */
 .checkout-section {
-  padding-top: 154px;
+  padding-block: 154px;
 }
 
 .checkout-main-wrapper {
@@ -3116,4 +3117,9 @@
   color: var(--white-500-75);
   font-weight: 200;
   line-height: 1.555;
+}
+
+/* ----- FREQUENTLY BOUGHT SECTION ----- */
+.news-articles-frequently-bought .frequently-bought-price {
+  color: var(--gray-100);
 }
