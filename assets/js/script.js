@@ -624,4 +624,3 @@ if (frequentlyBought.length) {
     splide.mount();
   });
 }
-  
