@@ -624,7 +624,9 @@ button {
   z-index: 2;
 }
 
-.text-btn {
+/* ----- Text btn ----- */
+.text-btn,
+.secondray-text-btn {
   padding-block: 6px;
   width: max-content;
   position: relative;
@@ -653,9 +655,25 @@ button {
   width: 0;
 }
 
-.text-btn ::before,
-.text-btn:hover::after {
+.text-btn::before,
+.text-btn:hover::after,
+.secondray-text-btn:hover::after {
   width: 100%;
+}
+
+.secondray-text-btn::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--white-40);
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondray-text-btn-black::after {
+  background-color: var(--black);
 }
 
 /* ----- Common scroll bar ----- */
