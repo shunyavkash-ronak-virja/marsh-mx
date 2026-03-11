@@ -1052,6 +1052,32 @@
   .servicing-hero .hero-content-wrapper {
     padding-block: 90px 118px;
   }
+
+  /* ----- WORKSHOP INFO SECTION ----- */
+  .workshop-info-section {
+    padding-block: 70px 50px;
+  }
+
+  .workshop-info-section h4 {
+    font-size: 30px;
+  }
+
+  .workshop-info-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 48px;
+    margin-top: 48px;
+  }
+
+  .workshop-info-location,
+  .workshop-info-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .workshop-info-location-link {
+    margin-top: 18px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1551,6 +1577,19 @@
 
   .servicing-hero .hero-dec {
     margin-bottom: 28px;
+  }
+
+  /* ----- WORKSHOP INFO SECTION ----- */
+  .workshop-info-section {
+    padding-block: 54px 30px;
+  }
+
+  .workshop-info-location-link {
+    margin-top: 8px;
+  }
+
+  .workshop-info-description:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -2066,4 +2105,6 @@
   .related-posts-slider .articles-card-img {
     aspect-ratio: 1 / 0.73944;
   }
+
+  /* ----- WORKSHOP INFO SECTION ----- */
 }

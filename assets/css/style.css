@@ -3188,3 +3188,53 @@
   width: 54%;
   clip-path: polygon(42% 0, 100% 0, 100% 100%, 0 100%);
 }
+
+/* ----- WORKSHOP INFO SECTION ----- */
+.workshop-info-section {
+  padding-block: 98px 60px;
+}
+
+.workshop-info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.workshop-info-location {
+  width: 22%;
+  max-width: 274px;
+}
+
+.workshop-info-address {
+  font-weight: 300;
+  line-height: 1.944;
+}
+
+.workshop-info-location-link {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.workshop-info-location-link-icon {
+  width: 18px;
+  height: 24px;
+}
+
+.workshop-info-content {
+  width: 78%;
+  max-width: 872px;
+}
+
+.workshop-info-description {
+  color: var(--black-75);
+  font-weight: 200;
+}
+
+.workshop-info-description:not(:last-child) {
+  margin-bottom: 20px;
+}
