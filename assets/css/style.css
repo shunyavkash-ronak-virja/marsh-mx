@@ -3123,3 +3123,37 @@
 .news-articles-frequently-bought .frequently-bought-price {
   color: var(--gray-100);
 }
+
+/* ----- RELATED POSTS SECTION ----- */
+.related-posts-section {
+  padding-block: 90px 212px;
+}
+
+.related-posts-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 176px;
+}
+
+.related-posts-title {
+  margin-bottom: 66px;
+}
+
+.related-posts-track {
+  overflow: visible;
+}
+
+.related-posts-slide {
+  width: calc(100% / 3.1246);
+}
+
+.related-posts-slider .articles-card-wrapper {
+  filter: drop-shadow(0 3px 6px var(--black-16));
+}
+
+.related-posts-slider .articles-card-wrapper:hover {
+  transform: scale(1);
+}

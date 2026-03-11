@@ -624,3 +624,31 @@ if (frequentlyBought.length) {
     splide.mount();
   });
 }
+
+// ================================
+// RELATED POSTS JS
+// ================================
+const RelatedPosts = document.querySelectorAll(".related-posts-slider");
+if (RelatedPosts.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".related-posts-slider.splide", {
+      type: "slide",
+      perPage: 3,
+      gap: 25,
+      pagination: false,
+      arrows: false,
+      perMove: 1,
+      speed: 800,
+      interval: 5000,
+      breakpoints: {
+        991: {
+          perPage: 2,
+        },
+        575: {
+          perPage: 1,
+        },
+      },
+    });
+    splide.mount();
+  });
+}
