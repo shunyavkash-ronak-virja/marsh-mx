@@ -3238,3 +3238,43 @@
 .workshop-info-description:not(:last-child) {
   margin-bottom: 20px;
 }
+
+/* ----- DOWNLOAD DOCUMENT SECTION ----- */
+.download-document-section {
+  padding-block: 60px 106px;
+}
+
+.download-document-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.download-document-content {
+  width: 30%;
+  max-width: 374px;
+}
+
+.download-document-items-list {
+  width: 70%;
+  max-width: 838px;
+}
+
+.download-document-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 18px;
+}
+
+.download-document-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  background-color: var(--black-6);
+  padding-block: 24px;
+  padding-inline: 16px;
+  font-family: var(--font-transducer);
+}
