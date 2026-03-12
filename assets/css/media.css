@@ -1078,6 +1078,22 @@
   .workshop-info-location-link {
     margin-top: 18px;
   }
+
+  /* ----- DOWNLOAD DOCUMENT SECTION ----- */
+  .download-document-section {
+    padding-block: 50px 86px;
+  }
+
+  .download-document-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .download-document-content,
+  .download-document-items-list {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1590,6 +1606,16 @@
 
   .workshop-info-description:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  /* ----- DOWNLOAD DOCUMENT SECTION ----- */
+  .download-document-section {
+    padding-top: 30px;
+  }
+
+  .download-document-description {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
   }
 }
 
