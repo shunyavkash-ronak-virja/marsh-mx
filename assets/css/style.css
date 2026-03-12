@@ -3296,3 +3296,11 @@
   height: 20px;
   flex-shrink: 0;
 }
+
+/* ----- CONTENT IMAGE SECTION ----- */ 
+.content-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.48125;
+  object-fit: cover;
+}

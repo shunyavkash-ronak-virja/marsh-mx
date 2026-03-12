@@ -1617,6 +1617,11 @@
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
+
+  /* ----- CONTENT IMAGE SECTION ----- */
+  .content-image {
+    aspect-ratio: 1 / 0.5862;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2132,5 +2137,8 @@
     aspect-ratio: 1 / 0.73944;
   }
 
-  /* ----- WORKSHOP INFO SECTION ----- */
+  /* ----- CONTENT IMAGE SECTION ----- */
+  .content-image {
+    aspect-ratio: 1 / 1.1353;
+  }
 }
