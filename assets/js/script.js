@@ -652,3 +652,22 @@ if (RelatedPosts.length) {
     splide.mount();
   });
 }
+
+// ================================
+// OUR TEAM JS
+// ================================
+const ourTeamSplide = document.querySelectorAll(".our-team-splide");
+if (ourTeamSplide.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".our-team-splide.splide", {
+      type: "slide",
+      autoWidth: true,
+      gap: 22,
+      pagination: false,
+      perMove: 1,
+      speed: 800,
+      interval: 5000,
+    });
+    splide.mount();
+  });
+}
