@@ -1112,6 +1112,14 @@
   .aftersales-service-dec {
     margin-block: 20px 42px;
   }
+
+  /* ========================================
+          OUR STORY HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .our-story .hero-content-wrapper {
+    padding-block: 185px 104px;
+  }
 }
 
 @media (max-width: 767px) {

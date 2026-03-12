@@ -3168,8 +3168,8 @@
   padding-block: 120px 148px;
 }
 
-.hero-v2 .hero-content-wrapper::before {
-  clip-path: polygon(0 0, 64% 0, 40% 100%, 0 100%);
+.servicing-hero .hero-content-wrapper::before {
+  clip-path: polygon(0 0, 66% 0, 42% 100%, 0 100%);
 }
 
 .servicing-hero .hero-title {
@@ -3185,7 +3185,7 @@
 }
 
 .servicing-hero .hero-media {
-  width: 54%;
+  width: 52%;
   clip-path: polygon(42% 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -3405,4 +3405,33 @@
   justify-content: center;
   gap: 10px;
   margin-top: 25px;
+}
+
+/* ========================================
+          OUR STORY HTML 
+========================================*/
+/* ----- HERO SECTION ----- */
+.our-story .hero-content-wrapper {
+  padding-block: 188px 146px;
+}
+
+.our-story .hero-title {
+  margin-block: 20px;
+}
+
+.our-story .hero-title div {
+  display: inline;
+}
+
+.our-story .hero-dec {
+  margin-bottom: 32px;
+}
+
+.our-story .hero-content-wrapper::before {
+  clip-path: polygon(0 0, 66% 0, 40% 100%, 0 100%);
+}
+
+.our-story .hero-media {
+  width: 54%;
+  clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
 }
