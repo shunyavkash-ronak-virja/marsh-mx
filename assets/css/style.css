@@ -3435,3 +3435,23 @@
   width: 54%;
   clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%);
 }
+
+/* ----- ABOUT US SECTION ----- */
+.about-us-section {
+  padding-block: 72px 112px;
+}
+
+.about-us-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 6%;
+  margin-top: 34px;
+}
+
+.about-us-description {
+  max-width: 536px;
+  color: var(--black-75);
+  font-weight: 200;
+  line-height: 1.75;
+}
+  

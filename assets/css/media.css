@@ -1120,6 +1120,19 @@
   .our-story .hero-content-wrapper {
     padding-block: 185px 104px;
   }
+
+  /* ----- ABOUT US SECTION ----- */
+  .about-us-section {
+    padding-block: 62px 82px;
+  }
+
+  .about-us-wrapper {
+    flex-direction: column;
+  }
+
+  .about-us-description {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1647,6 +1660,11 @@
   /* ----- AFTERSALES SERVICE SECTION ----- */
   .aftersales-service-section {
     padding-top: 76px;
+  }
+
+  /* ----- ABOUT US SECTION ----- */
+  .about-us-section {
+    padding-block: 58px;
   }
 }
 
