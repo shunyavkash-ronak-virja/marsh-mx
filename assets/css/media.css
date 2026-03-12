@@ -2187,4 +2187,8 @@
   .aftersales-service-textarea {
     min-height: auto;
   }
+
+  .aftersales-service-checkbox {
+    margin-top: 36px;
+  }
 }
