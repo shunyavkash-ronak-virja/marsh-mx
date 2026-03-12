@@ -3347,3 +3347,62 @@
   color: var(--gray);
   font-weight: 200;
 }
+
+/* ----- AFTERSALES SERVICE SECTION ----- */
+.aftersales-service-section {
+  padding-block: 142px 90px;
+}
+
+.aftersales-service-dec {
+  max-width: 522px;
+  margin-block: 24px 50px;
+  line-height: 1.285;
+  font-weight: 200;
+}
+
+.aftersales-service-form {
+  max-width: 892px;
+}
+
+.aftersales-service-inputs input,
+.aftersales-service-textarea {
+  border-color: var(--white-300);
+}
+
+.aftersales-service-inputs {
+  display: flex;
+  align-items: end;
+  gap: 28px;
+  margin-bottom: 22px;
+}
+
+.aftersales-service-inputs input,
+.aftersales-service-inputs .select-box {
+  width: 50%;
+}
+
+.aftersales-service-inputs input::placeholder,
+.aftersales-service-textarea::placeholder {
+  color: var(--black);
+}
+
+.aftersales-service-textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 110px;
+}
+
+.aftersales-service-btn {
+  margin-top: 38px;
+  min-width: 100%;
+  padding-block: 26px;
+}
+
+.aftersales-service-checkbox {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}

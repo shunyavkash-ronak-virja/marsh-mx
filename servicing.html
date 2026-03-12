@@ -9,6 +9,9 @@
     <!----- Favicon ----->
     <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 
+    <!----- Nice select css ----->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
     <!----- Splide css ----->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -744,6 +747,42 @@
         </div>
     </section>
 
+    <!----- Aftersales service section ----->
+    <section class="aftersales-service-section">
+        <div class="container">
+            <h2 class="text-center font-black">AFTERSALES SERVICE OPTIONS</h2>
+            <p class="mx-auto text-center font-14 truncate line-clamp-2 aftersales-service-dec">Please note we only work on vehicles that have been purchased through us and existing customers will be prioritised.</p>
+            <form class="mx-auto aftersales-service-form">
+                <div class="aftersales-service-inputs">
+                    <input class="font-black text-field-input" type="text" placeholder="Your Name…" required>
+                    <input class="font-black text-field-input" type="email" placeholder="Your Email…" required>
+                </div>
+                <div class="aftersales-service-inputs">
+                    <input class="font-black text-field-input" type="number" placeholder="Your Number…" required>
+                    <input class="font-black text-field-input" type="date" placeholder="Purchase Date…" required>
+                </div>
+                <div class="aftersales-service-inputs">
+                    <input class="font-black text-field-input" type="text" placeholder="Bike Purchased…" required>
+                    <select class="cursor-pointer select-box select-box-icon-black" required>
+                        <option value="service-option-01" selected>Service Required</option>
+                        <option value="service-option-02">Service-02</option>
+                        <option value="service-option-03">Service-03</option>
+                        <option value="service-option-04">Service-04</option>
+                        <option value="service-option-05">Service-05</option>
+                    </select>
+                </div>
+                <textarea class="aftersales-service-textarea text-field-input" placeholder="Message…"></textarea>
+                <button class="btn primary-btn cursor-pointer aftersales-service-btn" type="submit">
+                    <span>SUBMIT FORM</span>
+                </button>
+                <label class="mx-auto font-12 font-black cursor-pointer aftersales-service-checkbox">
+                    <input class="cursor-pointer checkbox-input" type="checkbox">
+                    <span>Please select, to subscribe to our newsletters</span>
+                </label>
+            </form>
+        </div>
+    </section>
+
     <!----- Footer ----->
     <footer class="overflow-hidden">
         <div class="container">
@@ -888,6 +927,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Nice select js -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
 
     <!----- Splide js ----->
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
