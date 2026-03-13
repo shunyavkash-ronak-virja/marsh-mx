@@ -673,6 +673,31 @@ if (ourTeamSplide.length) {
 }
 
 // ================================
+// OUR RIDERS JS
+// ================================
+const ourRidersSlider = document.querySelectorAll(".our-riders-slider");
+if (ourRidersSlider.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".our-riders-slider.splide", {
+      type: "slide",
+      autoWidth: true,
+      gap: 35,
+      pagination: false,
+      perMove: 1,
+      drag: false,
+      speed: 800,
+      interval: 5000,
+      breakpoints: {
+        767: {
+          gap: 24,
+        },
+      },
+    });
+    splide.mount();
+  });
+}
+
+// ================================
 // OUR HISTORY JS
 // ================================
 const ourHistorySlider = document.querySelectorAll(".our-history-slider");
