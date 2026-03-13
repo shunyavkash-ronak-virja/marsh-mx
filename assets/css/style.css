@@ -1657,7 +1657,7 @@
   border: 1px solid var(--primary-200-60);
   background-color: var(--gray-200-60);
   color: var(--primary-100);
-  padding: 28px;
+  padding: 28px 12px;
 }
 
 .product-video-btn-icon {
@@ -3308,6 +3308,30 @@
 /* ----- OUR TEAM SECTION ----- */
 .our-team-section {
   padding-block: 132px 142px;
+  position: relative;
+}
+
+.our-team-section::before,
+.our-team-section::after {
+  content: "";
+  height: 516px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.our-team-section::before {
+  width: 100%;
+  background-color: var(--white-200);
+  left: 0;
+}
+
+.our-team-section::after {
+  width: 100%;
+  max-width: 500px;
+  right: 0;
+  background-color: var(--gray-500-14);
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .our-team-splide {
@@ -3319,7 +3343,7 @@
 }
 
 .our-team-slide {
-  width: calc(100% / 3.5363);
+  width: calc(100% / 3.6888);
 }
 
 .our-team-wrapper {
@@ -3454,4 +3478,108 @@
   font-weight: 200;
   line-height: 1.75;
 }
-  
+
+/* ----- OUR TEAM v2 SECTION ----- */
+.our-storys-our-team {
+  padding-block: 136px;
+  background-color: var(--white-200);
+}
+
+/* ----- PRODUCT VIDEO SECTION ----- */
+.our-story-product-video .product-video-content {
+  height: 714px;
+}
+
+/* ----- OUR HISTORY SECTION ----- */
+.our-history-section {
+  padding-block: 165px 178px;
+  background-color: var(--white-200);
+}
+
+.our-history-slider {
+  margin-top: 124px;
+}
+
+.our-history-track {
+  overflow: visible;
+}
+
+.our-history-slide {
+  width: calc(100% / 2.9641);
+}
+
+.our-history-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.65623;
+  object-fit: cover;
+}
+
+.our-history-title {
+  margin-block: 20px 26px;
+}
+
+.our-history-description {
+  color: var(--gray);
+  font-weight: 200;
+  line-height: 1.625;
+}
+
+.our-history-time-line,
+.our-history-border,
+.our-history-dot,
+.our-history-date {
+  position: absolute;
+}
+
+.our-history-time-line,
+.our-history-dot,
+.our-history-date {
+  left: 0;
+}
+
+.our-history-time-line {
+  top: -26px;
+}
+
+.our-history-time-line::before {
+  content: "";
+  width: 200vw;
+  border-bottom: 1px solid var(--black-75);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.our-history-dot {
+  width: 18px;
+  aspect-ratio: 1;
+  border: 1px solid var(--gray);
+  background-color: var(--white-200);
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all ease-in-out;
+}
+
+.our-history-date {
+  color: var(--black-200);
+  font-weight: 200;
+  top: -40px;
+}
+
+.our-history-slide.is-active .our-history-dot {
+  background-color: var(--primary-100);
+  border-color: var(--gray-500);
+}
+
+.our-history-slider .primary-slider-arrows .splide__arrow {
+  top: -170px;
+}
+
+/* ----- SHOP BY BRAND SECTION ----- */
+.our-story-shop-by-brand {
+  padding-block: 150px 186px;
+}

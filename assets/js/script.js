@@ -671,3 +671,28 @@ if (ourTeamSplide.length) {
     splide.mount();
   });
 }
+
+// ================================
+// OUR HISTORY JS
+// ================================
+const ourHistorySlider = document.querySelectorAll(".our-history-slider");
+if (ourHistorySlider.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".our-history-slider.splide", {
+      type: "slide",
+      autoWidth: true,
+      gap: 35,
+      pagination: false,
+      perMove: 1,
+      drag: false,
+      speed: 800,
+      interval: 5000,
+      breakpoints: {
+        767: {
+          gap: 24,
+        },
+      },
+    });
+    splide.mount();
+  });
+}

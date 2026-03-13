@@ -1133,6 +1133,30 @@
   .about-us-description {
     max-width: 100%;
   }
+
+  /* ----- OUR TEAM v2 SECTION ----- */
+  .our-storys-our-team {
+    padding-block: 106px;
+  }
+
+  /* ----- PRODUCT VIDEO SECTION ----- */
+  .our-story-product-video .product-video-content {
+    height: 514px;
+  }
+
+  /* ----- OUR HISTORY SECTION ----- */
+  .our-history-section {
+    padding-block: 135px 148px;
+  }
+
+  .our-history-slide {
+    width: calc(100% / 1.979);
+  }
+
+  /* ----- SHOP BY BRAND SECTION ----- */
+  .our-story-shop-by-brand {
+    padding-block: 106px 150px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1653,6 +1677,11 @@
     padding-block: 112px 76px;
   }
 
+  .our-team-section::before,
+  .our-team-section::after {
+    display: none;
+  }
+
   .our-team-slide {
     width: calc(100% / 1.5);
   }
@@ -1665,6 +1694,52 @@
   /* ----- ABOUT US SECTION ----- */
   .about-us-section {
     padding-block: 58px;
+  }
+
+  /* ========================================
+          OUR STORY HTML 
+========================================*/
+  /* ----- OUR TEAM v2 SECTION ----- */
+  .our-storys-our-team {
+    padding-block: 72px 94px;
+  }
+
+  /* ----- PRODUCT VIDEO SECTION ----- */
+  .our-story-product-video .product-video-content {
+    height: 298px;
+  }
+
+  /* ----- OUR HISTORY SECTION ----- */
+  .our-history-section {
+    padding-block: 94px 118px;
+  }
+
+  .our-history-slide {
+    width: calc(100% / 1.76);
+  }
+
+  .our-history-slider .primary-slider-arrows {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our-history-slider .primary-slider-arrows .splide__arrow {
+    top: auto;
+  }
+
+  .our-history-slider .primary-slider-arrows .splide__arrow--prev {
+    right: 4px;
+  }
+
+  .our-history-slider .primary-slider-arrows .splide__arrow--next {
+    right: -50px;
+  }
+
+  /* ----- SHOP BY BRAND SECTION ----- */
+  .our-story-shop-by-brand {
+    padding-block: 82px 100px;
   }
 }
 
@@ -2186,7 +2261,7 @@
     width: calc(100% / 1.12865);
   }
 
-  .our-team-section h2 span {
+  .our-storys-title span {
     display: block;
   }
 
@@ -2216,5 +2291,15 @@
 
   .aftersales-service-checkbox {
     margin-top: 36px;
+  }
+
+  /* ----- OUR HISTORY SECTION ----- */
+  .our-history-slide {
+    width: calc(100% / 1.12861);
+  }
+
+  /* ----- SHOP BY BRAND SECTION ----- */
+  .our-story-shop-by-brand {
+    padding-bottom: 66px;
   }
 }
