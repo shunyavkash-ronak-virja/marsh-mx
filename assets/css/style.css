@@ -3583,3 +3583,98 @@
 .our-story-shop-by-brand {
   padding-block: 150px 186px;
 }
+
+/* ========================================
+          RACE TEAM HTML 
+========================================*/
+/* ----- HERO BANNER SECTION ----- */
+.hero-banner-section {
+  padding-top: 96px;
+  height: 636px;
+}
+
+.hero-banner-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.hero-banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----- HOW IT STARTED SECTION ----- */
+.how-it-started-section {
+  padding-block: 90px 82px;
+}
+
+.how-it-started-content {
+  max-width: 1136px;
+}
+
+.how-it-started-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.how-it-started-description {
+  max-width: 536px;
+  color: var(--black-75);
+}
+
+/* ----- OUR RIDERS SECTION ----- */
+.our-riders-section {
+  padding-block: 120px 128px;
+  background-color: var(--black-300);
+}
+
+.our-riders-slider {
+  margin-top: 60px;
+}
+
+.our-riders-track {
+  overflow: visible;
+}
+
+.our-riders-slide {
+  width: calc(100% / 3.6888);
+}
+
+.our-riders-wrapper,
+.our-riders-content {
+  position: relative;
+}
+
+.our-riders-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.83334;
+  object-fit: cover;
+}
+
+.our-riders-title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-35);
+  padding: 16px;
+}
+
+.our-riders-btn {
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 24px;
+}
