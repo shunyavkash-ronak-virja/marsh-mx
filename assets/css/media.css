@@ -1216,6 +1216,23 @@
   .facebook-feed-slide {
     width: calc(100% / 2.6);
   }
+
+  /* ========================================
+          CONTACT HTML 
+========================================*/
+  /* ----- CONTACT US SECTION ----- */
+  .contact-us-section {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16%, rgba(0, 0, 0, 1) 54%);
+    padding-block: 216px 30px;
+  }
+
+  .contact-us-img {
+    top: -22%;
+  }
+
+  .contact-us-wrapper {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1860,6 +1877,18 @@
   .facebook-feed-slide {
     width: calc(100% / 1.876);
   }
+
+  /* ========================================
+          CONTACT HTML 
+========================================*/
+  /* ----- CONTACT US SECTION ----- */
+  .contact-us-section {
+    padding-top: 196px;
+  }
+
+  .contact-us-img {
+    top: 82px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2495,5 +2524,37 @@
 
   .facebook-feed-section .primary-slider-arrows .splide__arrow {
     top: -72px;
+  }
+
+  /* ========================================
+          CONTACT HTML 
+========================================*/
+  /* ----- CONTACT US SECTION ----- */
+  .contact-us-section {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 32%);
+  }
+
+  .contact-us-section h1 span {
+    display: block;
+  }
+
+  .contact-us-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us-content-label {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 424px) {
+  /* ========================================
+          CONTACT HTML 
+========================================*/
+  /* ----- CONTACT US SECTION ----- */
+  .contact-us-section {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 1) 28%);
   }
 }
