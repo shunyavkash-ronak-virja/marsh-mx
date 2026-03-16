@@ -106,8 +106,8 @@
 }
 
 .primary-slider-arrows .splide__arrow svg {
-  width: 10px;
-  height: 16px;
+  width: 18%;
+  height: auto;
   flex-shrink: 0;
 }
 
@@ -2965,6 +2965,7 @@
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 0.73944;
+  object-fit: cover;
 }
 
 .articles-card-img-tag {
@@ -3690,4 +3691,67 @@
 
 .our-riders-section .primary-slider-arrows .splide__arrow:hover {
   background: var(--primary-100);
+}
+
+/* ----- UPCOMING EVENTS SECTION ----- */
+.upcoming-events-section {
+  padding-block: 116px 130px;
+  background-color: var(--white-200);
+}
+
+.upcoming-events-slider {
+  margin-top: 48px;
+}
+
+.upcoming-events-track {
+  overflow: visible;
+}
+
+.upcoming-events-slide {
+  width: calc(100% / 2.1558);
+}
+
+.upcoming-events-card {
+  filter: drop-shadow(0 0 16px var(--black-16));
+}
+
+.upcoming-events-card-img-content {
+  position: relative;
+}
+
+.upcoming-events-card-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.52436;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.upcoming-events-card:hover .upcoming-events-card-img {
+  transform: scale(1.05);
+}
+
+.upcoming-events-date {
+  min-width: 220px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-block: 12px;
+  padding-inline: 50px 30px;
+  clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.upcoming-events-contents {
+  background-color: var(--white);
+  padding: 28px 26px 22px;
+}
+
+.upcoming-events-content-description {
+  margin-top: 20px;
+  line-height: 1.428;
+  color: var(--black-75);
+}
+
+.upcoming-events-section .primary-slider-arrows .splide__arrow {
+  top: -96px;
 }

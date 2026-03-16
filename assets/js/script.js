@@ -712,6 +712,26 @@ if (ourRidersSlider.length) {
       drag: false,
       speed: 800,
       interval: 5000,
+    });
+    splide.mount();
+  });
+}
+
+// ================================
+// OUR RIDERS JS
+// ================================
+const upcomingEventsSlider = document.querySelectorAll(".upcoming-events-slider");
+if (upcomingEventsSlider.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".upcoming-events-slider.splide", {
+      type: "slide",
+      autoWidth: true,
+      gap: 18,
+      pagination: false,
+      perMove: 1,
+      drag: false,
+      speed: 800,
+      interval: 5000,
       breakpoints: {
         767: {
           gap: 24,
