@@ -1189,6 +1189,15 @@
     gap: 0;
     margin-top: 28px;
   }
+
+  /* ----- OUR RIDERS SECTION ----- */
+  .our-riders-section {
+    padding-block: 90px 190px;
+  }
+
+  .our-riders-slide {
+    width: calc(100% / 2.6);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1773,6 +1782,36 @@
   .our-story-shop-by-brand {
     padding-block: 82px 100px;
   }
+
+  /* ----- OUR RIDERS SECTION ----- */
+  .our-riders-section {
+    padding-bottom: 212px;
+  }
+
+  .our-riders-slide {
+    width: calc(100% / 2);
+  }
+
+  .our-riders-section .primary-slider-arrows {
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our-riders-section .primary-slider-arrows .splide__arrow {
+    top: auto;
+    width: 50px;
+    height: 42px;
+  }
+
+  .our-riders-section .primary-slider-arrows .splide__arrow--prev {
+    right: 0px;
+  }
+
+  .our-riders-section .primary-slider-arrows .splide__arrow--next {
+    right: -46px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2341,5 +2380,10 @@
   /* ----- HERO BANNER SECTION ----- */
   .hero-banner-section {
     height: 520px;
+  }
+
+  /* ----- OUR RIDERS SECTION ----- */
+  .our-riders-slide {
+    width: calc(100% / 1.12861);
   }
 }

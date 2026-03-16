@@ -673,12 +673,12 @@ if (ourTeamSplide.length) {
 }
 
 // ================================
-// OUR RIDERS JS
+// OUR HISTORY JS
 // ================================
-const ourRidersSlider = document.querySelectorAll(".our-riders-slider");
-if (ourRidersSlider.length) {
+const ourHistorySlider = document.querySelectorAll(".our-history-slider");
+if (ourHistorySlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
-    const splide = new Splide(".our-riders-slider.splide", {
+    const splide = new Splide(".our-history-slider.splide", {
       type: "slide",
       autoWidth: true,
       gap: 35,
@@ -698,15 +698,15 @@ if (ourRidersSlider.length) {
 }
 
 // ================================
-// OUR HISTORY JS
+// OUR RIDERS JS
 // ================================
-const ourHistorySlider = document.querySelectorAll(".our-history-slider");
-if (ourHistorySlider.length) {
+const ourRidersSlider = document.querySelectorAll(".our-riders-slider");
+if (ourRidersSlider.length) {
   document.addEventListener("DOMContentLoaded", function () {
-    const splide = new Splide(".our-history-slider.splide", {
+    const splide = new Splide(".our-riders-slider.splide", {
       type: "slide",
       autoWidth: true,
-      gap: 35,
+      gap: 22,
       pagination: false,
       perMove: 1,
       drag: false,
