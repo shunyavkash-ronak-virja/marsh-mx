@@ -3889,9 +3889,14 @@
   margin-top: 25px;
 }
 
-/* ----- CONTACT US SECTION ----- */
+/* ----- GET IN TOUCH v2 SECTION ----- */
+.get-in-touch-v2-section {
+  padding-block: 145px;
+}
+
 .get-in-touch-v2 {
   max-width: 892px;
+  margin-top: 26px;
 }
 
 .get-in-touch-inupt-wrapper {
@@ -3947,5 +3952,18 @@
   max-width: max-content;
   display: flex;
   align-items: center;
+  gap: 10px;
   margin-top: 30px;
+}
+
+.get-in-touch-v2-subscribe span {
+  padding-top: 2px;
+}
+
+.get-in-touch-v2-subscribe .checkbox-input {
+  background-color: var(--white);
+}
+
+.get-in-touch-v2-subscribe .checkbox-input::after {
+  background-color: var(--primary-100);
 }

@@ -1233,6 +1233,14 @@
   .contact-us-wrapper {
     max-width: 100%;
   }
+  /* ----- GET IN TOUCH v2 SECTION ----- */
+  .get-in-touch-v2-section {
+    padding-block: 105px;
+  }
+
+  .get-in-touch-v2 {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1888,6 +1896,21 @@
 
   .contact-us-img {
     top: 82px;
+  }
+
+  /* ----- GET IN TOUCH v2 SECTION ----- */
+  .get-in-touch-v2-section {
+    padding-block: 86px;
+  }
+
+  .get-in-touch-inupt-wrapper {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 26px;
+  }
+
+  .get-in-touch-inupt-wrapper > * {
+    width: 100%;
   }
 }
 
