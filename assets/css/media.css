@@ -529,13 +529,6 @@
 
   /* --- END MORE INFO SIDEBAR --- */
 
-  /* --- START BASKET SIDEBAR --- */
-  .mini-basket-summary {
-    font-size: 30px;
-  }
-
-  /* --- END BASKET SIDEBAR --- */
-
   /* ----- CONVERSION SECTION ----- */
   .conversion-section {
     margin-top: 0;
@@ -815,10 +808,6 @@
     margin-top: 104px;
   }
 
-  .parts-catalog-title {
-    font-size: 30px;
-  }
-
   /* ----- SHOP BY BRAND SECTION ----- */
   .parts-finder-shop-by-brand {
     padding-block: 84px 114px;
@@ -977,12 +966,6 @@
     margin-left: -20px;
   }
 
-  .article-details-range-content-title,
-  .article-details-consider-title,
-  .article-details-summary-title {
-    font-size: 30px;
-  }
-
   .article-details-range-contents > :not(:last-child) {
     margin-bottom: 20px;
   }
@@ -1034,10 +1017,6 @@
   /* ----- RELATED POSTS SECTION ----- */
   .related-posts-section {
     padding-block: 74px 182px;
-  }
-
-  .related-posts-title {
-    font-size: 30px;
   }
 
   .related-posts-btn-wrapper {

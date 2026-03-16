@@ -9,8 +9,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-bottom: 34px;
 }
 

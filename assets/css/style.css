@@ -146,8 +146,6 @@
 
 .featured-content-price {
   margin-top: 18px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
 }
 
 /* ----- EXPLORE MORE SECTION ----- */
@@ -514,8 +512,6 @@
 }
 
 .product-category-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-block: 42px 46px;
 }
 
@@ -564,8 +560,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
 }
 
 .product-lists-item-icon {
@@ -694,8 +688,6 @@
 }
 
 .product-card-price {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   color: var(--gray-100);
   margin-top: 10px;
 }
@@ -729,8 +721,6 @@
 
 .cta-content-title {
   font-size: 52px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-bottom: 4px;
 }
 
@@ -892,7 +882,6 @@
 }
 
 .product-overview-title span {
-  font-family: var(--font-transducer);
   font-weight: 500;
 }
 
@@ -959,8 +948,6 @@
 }
 
 .more-info-content-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-bottom: 22px;
 }
 
@@ -991,8 +978,6 @@
 }
 
 .product-overview-price-wrapper span {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   color: var(--gray-100);
 }
 
@@ -1047,11 +1032,6 @@
   margin-bottom: 26px;
 }
 
-.mini-basket-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
-}
-
 .mini-basket-close-btn {
   width: 25px;
   height: 25px;
@@ -1088,8 +1068,6 @@
 }
 
 .mini-basket-item-qty {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-top: 6px;
 }
 
@@ -1098,13 +1076,11 @@
   height: 20px;
   align-self: start;
 }
-
+  
 .mini-basket-summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -1196,8 +1172,6 @@
   width: 100%;
   min-width: auto;
   max-width: none;
-  font-family: var(--font-transducer);
-  font-weight: 400;
 }
 
 /* ----- START FINANCE MODAL ----- */
@@ -1369,8 +1343,6 @@
 }
 
 .part-ex-head-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -1623,8 +1595,6 @@
   min-width: 254px;
   padding-block: 12px;
   padding-inline: 78px 30px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
   text-align: center;
   clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -1847,8 +1817,6 @@
 
 .frequently-bought-price {
   margin-top: 8px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
 }
 
 .frequently-bought-btn {
@@ -1979,10 +1947,6 @@
   padding-left: 40px;
 }
 
-.specifics-list-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
-}
 
 .compare-btn {
   min-width: 100%;
@@ -2053,8 +2017,6 @@
 
 .main-basket-title {
   max-width: 1110px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
   padding-bottom: 16px;
 }
 
@@ -2094,8 +2056,6 @@
 }
 
 .main-basket-item-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   color: var(--black-40);
   text-align: center;
 }
@@ -2196,8 +2156,6 @@
 
 .main-basket-summary-title,
 .main-basket-summary-price {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   color: var(--black-40);
 }
 
@@ -2271,8 +2229,6 @@
 }
 
 .checkout-form-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-block: 18px 25px;
 }
 
@@ -2356,8 +2312,6 @@
 }
 
 .checkout-delivery-title {
-  font-family: var(--font-transducer);
-  font-weight: 400;
   margin-bottom: 30px;
 }
 
@@ -2395,8 +2349,6 @@
   align-items: end;
   justify-content: space-between;
   gap: 24px;
-  font-family: var(--font-transducer);
-  font-weight: 400;
 }
 
 .checkout-item-title-wrapper span {
@@ -2615,7 +2567,6 @@
 
 .parts-finder-go-back-btn {
   max-width: max-content;
-  font-family: var(--font-transducer);
   font-weight: 700;
   padding-block: 4px;
   margin-bottom: 30px;
