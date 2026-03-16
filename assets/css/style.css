@@ -3722,7 +3722,7 @@
 .upcoming-events-card-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 0.52436;
+  aspect-ratio: 1 / 0.52599;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
@@ -3754,4 +3754,64 @@
 
 .upcoming-events-section .primary-slider-arrows .splide__arrow {
   top: -96px;
+}
+
+/* ----- FACEBOOK FEED SECTION ----- */
+.facebook-feed-section {
+  padding-block: 150px 235px;
+  /* 42 72 */
+}
+
+.facebook-feed-slider {
+  margin-top: 38px;
+}
+
+.facebook-feed-track {
+  overflow: visible;
+}
+
+.facebook-feed-slide {
+  width: calc(100% / 3.7726);
+}
+
+.facebook-feed-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.8523;
+}
+
+.facebook-feed-media-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.facebook-feed-media-avatar {
+  width: 62px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook-feed-media-avatar-img {
+  width: 54px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.facebook-feed-media-wrapper h4 {
+  padding-top: 4px;
+}
+
+.facebook-feed-description {
+  margin-top: 25px;
+  color: var(--gray);
+  font-weight: 200;
+}
+
+.facebook-feed-section .primary-slider-arrows .splide__arrow {
+  top: -85px;
 }

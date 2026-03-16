@@ -741,3 +741,28 @@ if (upcomingEventsSlider.length) {
     splide.mount();
   });
 }
+
+// ================================
+// OUR RIDERS JS
+// ================================
+const facebookFeedSlider = document.querySelectorAll(".facebook-feed-slider");
+if (facebookFeedSlider.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".facebook-feed-slider.splide", {
+      type: "slide",
+      autoWidth: true,
+      gap: 20,
+      pagination: false,
+      perMove: 1,
+      drag: false,
+      speed: 800,
+      interval: 5000,
+      breakpoints: {
+        767: {
+          gap: 24,
+        },
+      },
+    });
+    splide.mount();
+  });
+}
