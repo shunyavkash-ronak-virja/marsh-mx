@@ -4117,3 +4117,133 @@
 .enquire-modal-checkbox-wrapper span {
   padding-top: 2px;
 }
+
+/* ========================================
+          FAQS HTML 
+========================================*/
+/* ----- FAQS SECTION ----- */
+.faqs-section {
+  padding-block: 180px 108px;
+}
+
+.faqs-search-wrapper {
+  max-width: 685px;
+  position: relative;
+  margin-top: 26px;
+}
+
+.faqs-search-input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  background-color: var(--white-400);
+  padding-block: 20px;
+  padding-inline: 38px 48px;
+  transition: all 0.3s ease-in-out;
+}
+
+.faqs-search-input:focus {
+  outline: none;
+  border-color: var(--white-300);
+}
+
+.faqs-search-btn {
+  width: 36px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.faqs-search-btn:focus {
+  outline: none;
+}
+
+.faqs-search-btn-icon {
+  width: 50%;
+}
+
+.faqs-tab-wrapper {
+  max-width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.faqs-tab-item {
+  color: var(--black-35);
+}
+
+.faqs-tab-item.active {
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.faqs-wrapper {
+  margin-top: 58px;
+}
+
+.faq-list-wrapper {
+  max-width: 1125px;
+  filter: drop-shadow(0 0 16px var(--black-16));
+  background-color: var(--white);
+  padding-inline: 32px;
+}
+
+.faq-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-title-wrapper.active {
+  padding-block: 35px 16px;
+}
+
+.plus-btn {
+  background-color: var(--primary-100);
+  color: var(--black);
+}
+
+.plus-btn-icon {
+  width: 62%;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-content.active {
+  grid-template-rows: 1fr;
+  padding-block: 14px 40px;
+}
+
+.faq-content-border {
+  border: 1px solid var(--gray-75);
+}
+
+.faq-description-wrapper {
+  margin-top: 30px;
+}
+
+.faq-description {
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.faq-description:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faqs-btn {
+  margin-top: 18px;
+  min-width: 230px;
+  padding-block: 26px;
+}
