@@ -4032,3 +4032,88 @@
   margin-top: 22px;
   padding-block: 24px;
 }
+
+.enquire-dialog {
+  max-width: 562px;
+  background-color: var(--white);
+  padding: 8px 12px 38px;
+}
+
+.enquire-dialog .modal-close-btn {
+  width: 58px;
+  background-color: var(--white-500);
+  color: var(--black);
+}
+
+.enquire-modal-wrapper {
+  padding-inline: 50px;
+}
+
+.enquire-modal-title {
+  margin-bottom: 48px;
+}
+
+.enquire-modal-input {
+  border-color: var(--white-300);
+}
+
+.enquire-modal-input:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.enquire-modal-input,
+.enquire-modal-input::placeholder {
+  color: var(--black-200-75);
+}
+
+.enquire-modal-cv-input input {
+  display: none;
+}
+
+.enquire-modal-cv-input {
+  border: 1px dashed var(--black-32);
+  border-radius: 2px;
+  padding-block: 20px;
+  padding-inline: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.enquire-modal-cv-input:hover {
+  border-color: var(--black);
+}
+
+.enquire-modal-cv-icon {
+  width: 22px;
+  height: 20px;
+}
+
+.enquire-modal-cv-input span {
+  padding-top: 4px;
+}
+
+.enquire-modal-btn {
+  min-width: 100%;
+  padding-block: 26px;
+  margin-top: 16px;
+}
+
+.enquire-modal-checkbox-wrapper {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.enquire-modal-checkbox-wrapper .checkbox-input {
+  width: 25px;
+}
+
+.enquire-modal-checkbox-wrapper span {
+  padding-top: 2px;
+}

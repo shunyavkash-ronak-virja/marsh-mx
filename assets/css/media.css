@@ -1983,6 +1983,10 @@
     line-height: 1.866;
     font-weight: 700;
   }
+
+  .enquire-modal-title {
+    margin-block: 48px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2669,6 +2673,31 @@
 
   .careers-get-in-touch-btn {
     min-width: 100%;
+  }
+
+  .enquire-dialog {
+    max-width: 100%;
+    padding: 20px 36px;
+  }
+
+  .enquire-modal-wrapper {
+    padding-inline: 0;
+  }
+
+  .enquire-modal-title {
+    margin-block: 114px 54px;
+  }
+
+  .enquire-modal-cv-input {
+    margin-top: 48px;
+  }
+
+  .enquire-modal-btn {
+    margin-top: 10px;
+  }
+
+  .enquire-modal-checkbox-wrapper {
+    margin-top: 20px;
   }
 }
 
