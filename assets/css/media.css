@@ -1220,6 +1220,11 @@
   .get-in-touch-v2 {
     max-width: 100%;
   }
+
+  /* ----- EXPLORE MORE SECTION ----- */
+  .contact-explore-more {
+    padding-block: 36px 106px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1890,6 +1895,11 @@
 
   .get-in-touch-inupt-wrapper > * {
     width: 100%;
+  }
+
+  /* ----- EXPLORE MORE SECTION ----- */
+  .contact-explore-more {
+    padding-block: 22px 80px;
   }
 }
 

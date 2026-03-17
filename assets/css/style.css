@@ -1076,7 +1076,7 @@
   height: 20px;
   align-self: start;
 }
-  
+
 .mini-basket-summary {
   display: flex;
   align-items: center;
@@ -1946,7 +1946,6 @@
   padding-block: 26px;
   padding-left: 40px;
 }
-
 
 .compare-btn {
   min-width: 100%;
@@ -3917,4 +3916,9 @@
 
 .get-in-touch-v2-subscribe .checkbox-input::after {
   background-color: var(--primary-100);
+}
+
+/* ----- EXPLORE MORE SECTION ----- */
+.contact-explore-more {
+  padding-block: 56px 136px;
 }
