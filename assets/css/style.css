@@ -3922,3 +3922,113 @@
 .contact-explore-more {
   padding-block: 56px 136px;
 }
+
+/* ========================================
+          CAREERS HTML 
+========================================*/
+/* ----- CAREERS SECTION ----- */
+.careers-section {
+  padding-block: 244px 142px;
+  position: relative;
+}
+
+.careers-section::before,
+.careers-section::after {
+  content: "";
+  height: 790px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.careers-section::before {
+  width: 50%;
+  background-color: var(--white-200);
+  clip-path: polygon(64% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.careers-section::after {
+  width: 40%;
+  background-color: var(--gray-500-14);
+  clip-path: polygon(90% 0, 100% 0, 100% 100%, 22% 100%);
+}
+
+.careers-title {
+  margin-bottom: 98px;
+}
+
+.careers-list-wrapper {
+  background-color: var(--white);
+  padding: 64px 62px 75px;
+  filter: drop-shadow(0 0 16px var(--black-16));
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.careers-list-wrapper:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.careers-list-main {
+  width: 22%;
+  max-width: 258px;
+  display: flex;
+  flex-direction: column;
+}
+
+.careers-list-title {
+  line-height: 1.2;
+}
+
+.careers-list-caption {
+  margin-block: 20px;
+  flex-grow: 1;
+}
+
+.careers-list-enquire-btn {
+  min-width: 100%;
+  padding-block: 24px;
+}
+
+.careers-list-content {
+  width: 78%;
+  max-width: 818px;
+}
+
+.careers-list-tag {
+  margin-bottom: 28px;
+}
+
+.careers-list-description {
+  color: var(--gray);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.careers-list-more-info {
+  margin-top: 25px;
+  font-weight: 300;
+}
+
+.careers-list-read-more-btn {
+  display: inline;
+}
+
+.careers-list-read-more-btn::after,
+.careers-list-read-more-btn::before {
+  border-color: var(--black-200);
+}
+
+.careers-get-in-touch-wrapper {
+  margin-top: 100px;
+  margin-left: 64px;
+}
+
+.careers-get-in-touch-btn {
+  min-width: 258px;
+  margin-top: 22px;
+  padding-block: 24px;
+}

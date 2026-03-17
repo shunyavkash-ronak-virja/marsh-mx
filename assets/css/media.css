@@ -140,6 +140,14 @@
   .hero-banner-section {
     padding-top: 90px;
   }
+
+  /* ========================================
+          CAREERS HTML 
+========================================*/
+  /* ----- CAREERS SECTION ----- */
+  .careers-list-wrapper {
+    padding: 44px 42px 55px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1225,6 +1233,49 @@
   .contact-explore-more {
     padding-block: 36px 106px;
   }
+
+  /* ========================================
+          CAREERS HTML 
+========================================*/
+  /* ----- CAREERS SECTION ----- */
+  .careers-section {
+    padding-block: 215px 102px;
+  }
+
+  .careers-title {
+    margin-bottom: 76px;
+  }
+
+  .careers-list-wrapper {
+    padding: 26px 22px 34px;
+    flex-direction: column;
+  }
+
+  .careers-list-main,
+  .careers-list-content {
+    width: 100%;
+  }
+
+  .careers-list-main {
+    max-width: 318px;
+  }
+
+  .careers-list-content {
+    max-width: 100%;
+  }
+
+  .careers-list-wrapper:not(:last-child) {
+    margin-bottom: 42px;
+  }
+
+  .careers-get-in-touch-wrapper {
+    margin-top: 80px;
+    margin-left: 32px;
+  }
+
+  .careers-get-in-touch-btn {
+    margin-top: 28px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1901,6 +1952,37 @@
   .contact-explore-more {
     padding-block: 22px 80px;
   }
+
+  /* ========================================
+          CAREERS HTML 
+========================================*/
+  /* ----- CAREERS SECTION ----- */
+  .careers-section::before {
+    width: 75%;
+  }
+
+  .careers-section::after {
+    width: 70%;
+  }
+
+  .careers-section {
+    padding-bottom: 62px;
+  }
+
+  .careers-title {
+    margin-bottom: 54px;
+  }
+
+  .careers-get-in-touch-wrapper {
+    margin-top: 65px;
+    margin-left: 0;
+  }
+
+  .careers-list-more-info {
+    font-size: 15px;
+    line-height: 1.866;
+    font-weight: 700;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2558,6 +2640,35 @@
   .contact-us-content-label {
     flex-direction: column;
     margin-bottom: 16px;
+  }
+
+  /* ========================================
+          CAREERS HTML 
+========================================*/
+  /* ----- CAREERS SECTION ----- */
+  .careers-section::before,
+  .careers-section::after {
+    width: 100%;
+  }
+
+  .careers-section::after {
+    clip-path: polygon(110% 0, 100% 0, 100% 100%, 40% 100%);
+  }
+
+  .careers-title {
+    font-size: 20px;
+  }
+
+  .careers-list-wrapper {
+    padding-inline: 15px;
+  }
+
+  .careers-list-main {
+    max-width: 100%;
+  }
+
+  .careers-get-in-touch-btn {
+    min-width: 100%;
   }
 }
 
