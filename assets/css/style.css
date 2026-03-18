@@ -4124,6 +4124,29 @@
 /* ----- FAQS SECTION ----- */
 .faqs-section {
   padding-block: 180px 108px;
+  position: relative;
+}
+
+.faqs-section::before,
+.faqs-section::after {
+  content: "";
+  height: 790px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.faqs-section::before {
+  width: 50%;
+  background-color: var(--white-200);
+  clip-path: polygon(64% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.faqs-section::after {
+  width: 40%;
+  background-color: var(--gray-500-14);
+  clip-path: polygon(90% 0, 100% 0, 100% 100%, 22% 100%);
 }
 
 .faqs-search-wrapper {
@@ -4150,8 +4173,9 @@
 .faqs-search-btn {
   width: 36px;
   position: absolute;
-  top: 10px;
+  top: 50%;
   right: 10px;
+  transform: translateY(-50%);
 }
 
 .faqs-search-btn:focus {
@@ -4167,12 +4191,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   margin-top: 28px;
+  overflow-x: auto;
 }
 
 .faqs-tab-item {
   color: var(--black-35);
+  flex-shrink: 0;
 }
 
 .faqs-tab-item.active {
@@ -4190,18 +4216,27 @@
   filter: drop-shadow(0 0 16px var(--black-16));
   background-color: var(--white);
   padding-inline: 32px;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-list-wrapper:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.faq-list-wrapper.active:not(:last-child) {
+  margin-bottom: 22px;
 }
 
 .faq-title-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
   padding-block: 16px;
   transition: all 0.3s ease-in-out;
 }
 
-.faq-title-wrapper.active {
+.faq-list-wrapper.active .faq-title-wrapper {
   padding-block: 35px 16px;
 }
 
@@ -4210,8 +4245,17 @@
   color: var(--black);
 }
 
+.plus-btn::after {
+  background-color: var(--black-11);
+}
+
 .plus-btn-icon {
   width: 62%;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-list-wrapper.active .plus-btn-icon {
+  transform: rotate(45deg);
 }
 
 .faq-content {
@@ -4220,7 +4264,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.faq-content.active {
+.faq-list-wrapper.active .faq-content {
   grid-template-rows: 1fr;
   padding-block: 14px 40px;
 }

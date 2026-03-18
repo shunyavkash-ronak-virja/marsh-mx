@@ -606,7 +606,7 @@ header.body-scroll {
 
 @media (max-width: 991px) {
   .header-items,
-  .icon-btn-black {
+  .header-features-wrapper .icon-btn-black {
     display: none;
   }
 

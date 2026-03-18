@@ -766,3 +766,20 @@ if (facebookFeedSlider.length) {
     splide.mount();
   });
 }
+
+// ================================
+// FAQS JS
+// ================================
+const faqsSection = document.querySelectorAll(".faqs-section");
+if (faqsSection.length) {
+  const faqListWrapper = document.querySelectorAll(".faq-list-wrapper");
+
+  faqListWrapper.forEach((faq) => {
+    faq.querySelector(".faq-title-wrapper").addEventListener("click", () => {
+      faqListWrapper.forEach((item) => {
+        if (item !== faq) item.classList.remove("active");
+      });
+      faq.classList.toggle("active");
+    });
+  });
+}

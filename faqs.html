@@ -524,7 +524,7 @@
     <!----- FAQs section ----->
     <section class="faqs-section">
         <div class="container">
-            <h1 class="font-40 font-black text-center title">FAQS</h1>
+            <h1 class="font-40 font-black text-center title faqs-title">FAQS</h1>
             <div class="mx-auto faqs-search-wrapper">
                 <input class="font-12 faqs-search-input" type="text" placeholder="Search for your question…">
                 <button class="icon-btn icon-btn-black cursor-pointer border-none faqs-search-btn">
@@ -533,24 +533,105 @@
                     </svg>
                 </button>
             </div>
-            <ul class="mx-auto faqs-tab-wrapper">
+            <ul class="mx-auto scroll-bar faqs-tab-wrapper">
                 <li class="h6 font-transducer-400 cursor-pointer faqs-tab-item active">VIEW ALL</li>
                 <li class="h6 font-transducer-400 cursor-pointer faqs-tab-item">FILTER 1</li>
                 <li class="h6 font-transducer-400 cursor-pointer faqs-tab-item">FILTER 2</li>
                 <li class="h6 font-transducer-400 cursor-pointer faqs-tab-item">FILTER 3</li>
             </ul>
             <div class="faqs-wrapper">
-                <div class="mx-auto faq-list-wrapper">
-                    <div class="faq-title-wrapper active">
-                        <h4 class="font-black font-transducer-400">WHAT ARE THE OPENING HOURS?</h4>
+                <div class="mx-auto faq-list-wrapper active">
+                    <div class="cursor-pointer faq-title-wrapper">
+                        <h4 class="font-black font-transducer-400 faqs-question">WHAT ARE THE OPENING HOURS?</h4>
                         <div class="icon-btn icon-btn-medium cursor-pointer plus-btn">
-                            <svg class="plus-btn-icon lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="round">
+                            <svg class="plus-btn-icon icon-btn-content lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="round">
                                 <path d="M5 12h14" />
                                 <path d="M12 5v14" />
                             </svg>
                         </div>
                     </div>
-                    <div class="faq-content active">
+                    <div class="faq-content">
+                        <div class="overflow-hidden">
+                            <div class="faq-content-border"></div>
+                            <div class="faq-description-wrapper">
+                                <p class="font-14 faq-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusas.
+                                </p>
+                                <p class="font-14 faq-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <a class="btn primary-btn faqs-btn" href="javascript:void(0)">
+                                <span>CONTACT US</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto faq-list-wrapper">
+                    <div class="cursor-pointer faq-title-wrapper">
+                        <h4 class="font-black font-transducer-400 faqs-question">HOW LONG IS THE WARRANTY?</h4>
+                        <div class="icon-btn icon-btn-medium cursor-pointer plus-btn">
+                            <svg class="plus-btn-icon icon-btn-content lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M5 12h14" />
+                                <path d="M12 5v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content">
+                        <div class="overflow-hidden">
+                            <div class="faq-content-border"></div>
+                            <div class="faq-description-wrapper">
+                                <p class="font-14 faq-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusas.
+                                </p>
+                                <p class="font-14 faq-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <a class="btn primary-btn faqs-btn" href="javascript:void(0)">
+                                <span>CONTACT US</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto faq-list-wrapper">
+                    <div class="cursor-pointer faq-title-wrapper">
+                        <h4 class="font-black font-transducer-400 faqs-question">WHAT IS THE RETURN POLICY?</h4>
+                        <div class="icon-btn icon-btn-medium cursor-pointer plus-btn">
+                            <svg class="plus-btn-icon icon-btn-content lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M5 12h14" />
+                                <path d="M12 5v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content">
+                        <div class="overflow-hidden">
+                            <div class="faq-content-border"></div>
+                            <div class="faq-description-wrapper">
+                                <p class="font-14 faq-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusas.
+                                </p>
+                                <p class="font-14 faq-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <a class="btn primary-btn faqs-btn" href="javascript:void(0)">
+                                <span>CONTACT US</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto faq-list-wrapper">
+                    <div class="cursor-pointer faq-title-wrapper">
+                        <h4 class="font-black font-transducer-400 faqs-question">CAN I GET BREAKDOWN COVER?</h4>
+                        <div class="icon-btn icon-btn-medium cursor-pointer plus-btn">
+                            <svg class="plus-btn-icon icon-btn-content lucide lucide-plus-icon lucide-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M5 12h14" />
+                                <path d="M12 5v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content">
                         <div class="overflow-hidden">
                             <div class="faq-content-border"></div>
                             <div class="faq-description-wrapper">

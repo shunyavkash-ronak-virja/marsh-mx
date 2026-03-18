@@ -1276,6 +1276,47 @@
   .careers-get-in-touch-btn {
     margin-top: 28px;
   }
+
+  /* ========================================
+          FAQS HTML 
+========================================*/
+  /* ----- FAQS SECTION ----- */
+  .faqs-title {
+    font-size: 40px;
+  }
+
+  .faqs-search-wrapper {
+    margin-top: 32px;
+  }
+
+  .faqs-tab-wrapper {
+    margin-top: 40px;
+  }
+
+  .faqs-wrapper {
+    margin-top: 45px;
+  }
+
+  .faq-list-wrapper {
+    max-width: 100%;
+  }
+
+  .faq-list-wrapper:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .faq-list-wrapper.active:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .faqs-question {
+    font-size: 35px;
+    line-height: 1;
+  }
+
+  .faq-description {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1986,6 +2027,38 @@
 
   .enquire-modal-title {
     margin-block: 48px;
+  }
+
+  /* ========================================
+          FAQS HTML 
+========================================*/
+  /* ----- FAQS SECTION ----- */
+  .faqs-search-wrapper {
+    max-width: 100%;
+  }
+
+  .faqs-search-input {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-block: 16px;
+    border-radius: 36px;
+    padding-inline: 26px 46px;
+  }
+
+  .faq-title-wrapper {
+    padding-block: 24px;
+  }
+
+  .faq-list-wrapper.active .faq-title-wrapper {
+    padding-bottom: 25px;
+  }
+
+  .faq-list-wrapper.active .faq-content {
+    padding-block: 0 32px;
+  }
+
+  .faq-list-wrapper {
+    padding-inline: 26px;
   }
 }
 
@@ -2698,6 +2771,14 @@
 
   .enquire-modal-checkbox-wrapper {
     margin-top: 20px;
+  }
+
+  /* ========================================
+          FAQS HTML 
+========================================*/
+  /* ----- FAQS SECTION ----- */
+  .faqs-tab-wrapper {
+    max-width: 100%;
   }
 }
 
