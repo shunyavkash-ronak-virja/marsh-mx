@@ -1321,6 +1321,69 @@
   .faq-description {
     font-size: 16px;
   }
+
+  /* ========================================
+          PRIVACY HTML 
+========================================*/
+  /* ----- PRIVACY SECTION ----- */
+  .privacy-section {
+    padding-block: 170px;
+    overflow: hidden;
+  }
+
+  .privacy-section::before {
+    width: 70%;
+    clip-path: polygon(94% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .privacy-wrapper {
+    flex-direction: column;
+    gap: 90px;
+  }
+
+  .privacy-contents-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .privacy-items-list {
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-left: -20px;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    overflow-x: auto;
+    padding-block: 32px 18px;
+    padding-inline: 18px;
+    background-color: var(--white-500);
+  }
+
+  .privacy-items-list::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  .privacy-items-list::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    background-color: var(--white-300-75);
+    border-radius: 24px;
+    background-clip: padding-box;
+  }
+
+  .privacy-item {
+    flex-shrink: 0;
+  }
+
+  .privacy-item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .privacy-contents {
+    scroll-margin-top: 140px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2073,6 +2136,18 @@
   .faq-description-wrapper {
     -webkit-line-clamp: 7;
   }
+
+  /* ========================================
+          PRIVACY HTML 
+========================================*/
+  /* ----- PRIVACY SECTION ----- */
+  .privacy-section {
+    padding-block: 158px;
+  }
+
+  .privacy-contents:not(:first-child) {
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2802,6 +2877,14 @@
 
   .faqs-tab-wrapper {
     max-width: 100%;
+  }
+
+  /* ========================================
+          PRIVACY HTML 
+========================================*/
+  /* ----- PRIVACY SECTION ----- */
+  .privacy-section::before {
+    width: 100%;
   }
 }
 

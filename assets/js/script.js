@@ -783,3 +783,20 @@ if (faqsSection.length) {
     });
   });
 }
+
+// ================================
+// PRIVACY POLICY JS
+// ================================
+const privacySection = document.querySelectorAll(".privacy-section");
+if (privacySection.length) {
+  const privacyItem = document.querySelectorAll(".privacy-item");
+
+  privacyItem.forEach((list) => {
+    list.addEventListener("click", () => {
+      privacyItem.forEach((itme) => {
+        if (list !== itme) itme.classList.remove("active");
+      });
+      list.classList.add("active");
+    });
+  });
+}
