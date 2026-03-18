@@ -2033,6 +2033,11 @@
           FAQS HTML 
 ========================================*/
   /* ----- FAQS SECTION ----- */
+  .faqs-section::before,
+  .faqs-section::after {
+    width: 75%;
+  }
+
   .faqs-search-wrapper {
     max-width: 100%;
   }
@@ -2059,6 +2064,10 @@
 
   .faq-list-wrapper {
     padding-inline: 26px;
+  }
+
+  .faq-description-wrapper {
+    -webkit-line-clamp: 7;
   }
 }
 
@@ -2777,6 +2786,16 @@
           FAQS HTML 
 ========================================*/
   /* ----- FAQS SECTION ----- */
+  .faqs-section::before {
+    width: 80%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 74%, 90% 0);
+  }
+
+  .faqs-section::after {
+    width: 100%;
+    clip-path: polygon(120% 0, 100% 0, 100% 100%, 26% 100%);
+  }
+
   .faqs-tab-wrapper {
     max-width: 100%;
   }

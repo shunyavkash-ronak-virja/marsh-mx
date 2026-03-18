@@ -4275,6 +4275,7 @@
 
 .faq-description-wrapper {
   margin-top: 30px;
+  -webkit-line-clamp: none;
 }
 
 .faq-description {
