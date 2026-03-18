@@ -1281,6 +1281,10 @@
           FAQS HTML 
 ========================================*/
   /* ----- FAQS SECTION ----- */
+  .faqs-section {
+    padding-block: 198px 82px;
+  }
+
   .faqs-title {
     font-size: 40px;
   }
