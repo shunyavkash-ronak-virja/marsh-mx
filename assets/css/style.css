@@ -4371,3 +4371,54 @@
   color: var(--gray);
   font-weight: 300;
 }
+
+/* ========================================
+          ACCOUNT SIGN IN HTML 
+========================================*/
+/* ----- HERO SECTION ----- */
+.account-sign-in-section .hero-content-wrapper::before {
+  background-color: var(--black);
+}
+
+.hero-content-wrapper {
+  padding-block: 105px 126px;
+}
+
+.sign-in-caption {
+  color: var(--white-62);
+  font-weight: 200;
+  margin-bottom: 38px;
+}
+
+.account-sign-in-input {
+  margin-top: 18px;
+}
+
+.account-sign-in-input-wrapper:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.account-sign-in-btn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.account-sign-in-reset-wrapper {
+  line-height: 1.428;
+  font-weight: 200;
+}
+
+.account-sign-in-section .account-sign-in-login-btn {
+  min-width: 230px;
+}
+
+.account-sign-in-reset-btn {
+  padding-block: 2px;
+}
+
+.account-sign-in-section .hero-media {
+  width: 56%;
+  clip-path: polygon(52% 0, 100% 0, 100% 100%, 0 100%);
+}
