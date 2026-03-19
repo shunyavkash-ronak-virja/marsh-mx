@@ -157,12 +157,20 @@
     clip-path: polygon(0 0, 68% 0, 38% 100%, 0 100%);
   }
 
-  .account-sign-in-section .hero-content-wrapper {
+  .account-sign-in-section .account-sign-in-content-wrapper {
     padding-left: 0;
   }
 
   .account-sign-in-btn-wrapper {
     gap: 20px;
+  }
+
+  /* ========================================
+          ACCOUNT SIGN IN 2 HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .password-reset-section .hero-content-wrapper {
+    padding-left: 0;
   }
 }
 
@@ -1414,7 +1422,7 @@
     background-color: var(--black-25);
   }
 
-  .account-sign-in-section .hero-content-wrapper {
+  .account-sign-in-section .account-sign-in-content-wrapper {
     padding-bottom: 0;
   }
 
@@ -1441,6 +1449,22 @@
 
   .account-sign-in-section .hero-media {
     position: relative;
+  }
+
+  /* ========================================
+          ACCOUNT SIGN IN 2 HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .password-reset-section .hero-main-wrapper {
+    align-items: start;
+  }
+
+  .password-reset-section .hero-content-wrapper {
+    padding-block: 90px;
+  }
+
+  .password-reset-section .hero-media {
+    margin-left: -20px;
   }
 }
 
@@ -2215,12 +2239,20 @@
     gap: 42px;
   }
 
-  .account-sign-in-section .hero-content-wrapper {
+  .account-sign-in-section .account-sign-in-content-wrapper {
     max-width: 100%;
   }
 
   .create-new-account-wrapper {
     align-items: start;
+  }
+
+  /* ========================================
+          ACCOUNT SIGN IN 2 HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .password-reset-section .hero-content-wrapper {
+    padding-bottom: 0;
   }
 }
 
@@ -2972,6 +3004,23 @@
   }
 
   .account-sign-in-section .account-sign-in-login-btn {
+    min-width: 100%;
+  }
+  /* ========================================
+          ACCOUNT SIGN IN 2 HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .password-reset-section .hero-content-wrapper {
+    max-width: 100%;
+  }
+
+  .password-reset-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .password-reset-section .reset-password-btn {
     min-width: 100%;
   }
 }

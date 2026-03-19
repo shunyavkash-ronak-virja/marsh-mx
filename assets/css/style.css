@@ -4381,7 +4381,7 @@
   background-color: var(--black);
 }
 
-.account-sign-in-section .hero-content-wrapper {
+.account-sign-in-section .account-sign-in-content-wrapper {
   width: 44%;
   padding-block: 105px 126px;
   max-width: 502px;
@@ -4449,4 +4449,56 @@
 
 .create-new-account-wrapper .create-new-account-btn {
   min-width: 230px;
+}
+
+/* ========================================
+          ACCOUNT SIGN IN 2 HTML 
+========================================*/
+/* ----- HERO SECTION ----- */
+.password-reset-section {
+  background: none;
+}
+
+.password-reset-section .hero-content-wrapper {
+  max-width: 500px;
+  padding-block: 128px 136px;
+  padding-left: 6%;
+}
+
+.password-reset-description {
+  margin-block: 10px 42px;
+  color: var(--white-62);
+  font-weight: 200;
+}
+
+.password-reset-email-wrapper {
+  margin-bottom: 26px;
+}
+
+.password-reset-email-wrapper input {
+  margin-top: 16px;
+}
+
+.password-reset-email-wrapper input::placeholder {
+  color: var(--white-75);
+  font-weight: 200;
+}
+
+.password-reset-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.password-reset-section .reset-password-btn {
+  min-width: 230px;
+}
+
+.back-to-login-btn {
+  padding-block: 2px;
+  font-weight: 200;
+}
+
+.password-reset-section .hero-media-img {
+  object-position: center;
 }
