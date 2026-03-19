@@ -1466,6 +1466,25 @@
   .password-reset-section .hero-media {
     margin-left: -20px;
   }
+
+  /* ========================================
+          ACCOUNT CREATION HTML 
+========================================*/
+  /* ----- ACCOUNT CREATION SECTION ----- */
+  .account-creation-section {
+    padding-block: 192px 82px;
+  }
+
+  .account-creation-form {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 46px;
+  }
+
+  .account-creation-field input {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3021,6 +3040,23 @@
   }
 
   .password-reset-section .reset-password-btn {
+    min-width: 100%;
+  }
+
+  /* ========================================
+          ACCOUNT CREATION HTML 
+========================================*/
+  /* ----- ACCOUNT CREATION SECTION ----- */
+  .account-creation-wrapper {
+    max-width: 100%;
+  }
+
+  .account-creation-btn-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .create-account-btn {
     min-width: 100%;
   }
 }

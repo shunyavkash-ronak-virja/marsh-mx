@@ -4502,3 +4502,72 @@
 .password-reset-section .hero-media-img {
   object-position: center;
 }
+
+/* ========================================
+          ACCOUNT CREATION HTML 
+========================================*/
+/* ----- ACCOUNT CREATION SECTION ----- */
+.account-creation-section {
+  padding-block: 208px 108px;
+}
+
+.account-creation-form {
+  max-width: 1094px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.account-creation-wrapper {
+  width: 100%;
+  max-width: 494px;
+}
+
+.account-creation-title {
+  margin-bottom: 46px;
+}
+
+.account-creation-field:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.account-creation-field input {
+  margin-top: 20px;
+  border-color: var(--white-75);
+}
+
+.account-creation-checkbox-content {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.account-creation-checkbox {
+  background-color: var(--white);
+}
+
+.account-creation-checkbox::after {
+  background-color: var(--primary-100);
+}
+
+.account-creation-checkbox-content span {
+  font-weight: 200;
+  padding-top: 2px;
+}
+
+.account-creation-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.create-account-btn {
+  min-width: 286px;
+}
+
+.account-creation-redirect-btn {
+  font-weight: 300;
+  padding-block: 2px;
+}

@@ -518,36 +518,61 @@
         </div>
     </header>
 
-    <!----- Hero section ----->
-    <section class="overflow-hidden hero-section hero-v2 account-sign-in-section password-reset-section">
+    <!----- Account creation section ----->
+    <section class="bg-black account-creation-section">
         <div class="container">
-            <div class="hero-main-wrapper">
-                <form class="hero-content-wrapper">
-                    <h3 class="font-white font-transducer-400">
-                        PASSWORD RESET
-                    </h3>
-                    <p class="font-14 password-reset-description">
-                        Please enter your email below to receive a password reset link
-                    </p>
-                    <div class="password-reset-email-wrapper">
-                        <label class="h4 font-white font-transducer-400" for="password-reset-email">
+            <form class="mx-auto account-creation-form">
+                <div class="account-creation-wrapper">
+                    <h3 class="h2 font-white account-creation-title">CONTACT INFORMATION</h3>
+                    <div class="account-creation-field">
+                        <label class="h4 font-white font-transducer-400" for="first-name">
+                            FIRST NAME*
+                        </label>
+                        <input class="font-white text-field-input" type="text" placeholder="Please Enter…" id="first-name" required>
+                    </div>
+                    <div class="account-creation-field">
+                        <label class="h4 font-white font-transducer-400" for="last-name">
+                            LAST NAME*
+                        </label>
+                        <input class="font-white text-field-input" type="text" placeholder="Please Enter…" id="last-name" required>
+                    </div>
+                    <label class="cursor-pointer account-creation-checkbox-content">
+                        <input class="cursor-pointer checkbox-input account-creation-checkbox" type="checkbox">
+                        <span class="font-12 font-white">
+                            Please tick to subscribe to our newsletter
+                        </span>
+                    </label>
+                </div>
+                <div class="account-creation-wrapper">
+                    <h3 class="h2 font-white account-creation-title">SIGN-IN INFORMATION</h3>
+                    <div class="account-creation-field">
+                        <label class="h4 font-white font-transducer-400" for="sign-in-email">
                             EMAIL ADDRESS*
                         </label>
-                        <input class="font-white text-field-input" type="email" placeholder="Please Enter…" id="password-reset-email" required>
+                        <input class="font-white text-field-input" type="email" placeholder="Please Enter…" id="sign-in-email" required>
                     </div>
-                    <div class="password-reset-wrapper">
-                        <button class="btn primary-btn cursor-pointer reset-password-btn" type="submit">
-                            <span>RESET PASSWORD</span>
+                    <div class="account-creation-field">
+                        <label class="h4 font-white font-transducer-400" for="sign-in-pass">
+                            PASSWORD*
+                        </label>
+                        <input class="font-white text-field-input" type="password" placeholder="Please Enter…" id="sign-in-pass" required>
+                    </div>
+                    <div class="account-creation-field">
+                        <label class="h4 font-white font-transducer-400" for="sign-in-confirm-pass">
+                            CONFIRM PASSWORD*
+                        </label>
+                        <input class="font-white text-field-input" type="password" placeholder="Please Enter…" id="sign-in-confirm-pass" required>
+                    </div>
+                    <div class="account-creation-btn-wrapper">
+                        <button class="btn primary-btn cursor-pointer create-account-btn" type="submit">
+                            <span>CREATE ACCOUNT</span>
                         </button>
-                        <a class="font-14 font-white text-btn back-to-login-btn" href="account-sign-in.html">
-                            Back to login
+                        <a class="font-14 text-btn font-white account-creation-redirect-btn" href="account-sign-in.html">
+                            I already have an account
                         </a>
                     </div>
-                </form>
-                <div class="hero-media">
-                    <img class="img-cover hero-media-img" src="assets/images/sections/hero-section/hero-img-07.png " alt="hero-img">
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 
