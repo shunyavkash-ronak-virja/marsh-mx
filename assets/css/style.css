@@ -1210,7 +1210,8 @@
 .finance-purchase-btn {
   min-width: 180px;
   border: 1px solid var(--brown);
-  padding: 8px 12px;
+  padding-block: 10px 8px;
+  padding-inline: 12px;
   font-weight: 600;
   text-transform: capitalize;
   color: var(--gray-600);
@@ -3143,6 +3144,7 @@
 /* ----- WORKSHOP INFO SECTION ----- */
 .workshop-info-section {
   padding-block: 98px 60px;
+  scroll-margin-top: 50px;
 }
 
 .workshop-info-wrapper {
