@@ -4160,6 +4160,7 @@
   border: 1px solid transparent;
   border-radius: 28px;
   background-color: var(--white-400);
+  font-family: inherit;
   padding-block: 20px;
   padding-inline: 38px 48px;
   transition: all 0.3s ease-in-out;
@@ -4380,8 +4381,11 @@
   background-color: var(--black);
 }
 
-.hero-content-wrapper {
+.account-sign-in-section .hero-content-wrapper {
+  width: 44%;
   padding-block: 105px 126px;
+  max-width: 502px;
+  padding-left: 6%;
 }
 
 .sign-in-caption {
@@ -4421,4 +4425,28 @@
 .account-sign-in-section .hero-media {
   width: 56%;
   clip-path: polygon(52% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.create-new-account-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  padding-left: 22%;
+  background-color: var(--black-54);
+}
+
+.create-new-account-caprion {
+  font-weight: 200;
+  margin-block: 10px 28px;
+}
+
+.create-new-account-wrapper .create-new-account-btn {
+  min-width: 230px;
 }

@@ -148,6 +148,22 @@
   .careers-list-wrapper {
     padding: 44px 42px 55px;
   }
+
+  /* ========================================
+          ACCOUNT SIGN IN HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .account-sign-in-section .hero-content-wrapper::before {
+    clip-path: polygon(0 0, 68% 0, 38% 100%, 0 100%);
+  }
+
+  .account-sign-in-section .hero-content-wrapper {
+    padding-left: 0;
+  }
+
+  .account-sign-in-btn-wrapper {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1384,6 +1400,48 @@
   .privacy-contents {
     scroll-margin-top: 140px;
   }
+
+  /* ========================================
+          ACCOUNT SIGN IN HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .hero-section.account-sign-in-section .hero-main-wrapper {
+    gap: 52px;
+  }
+
+  .create-new-account-wrapper {
+    padding-left: 18px;
+    background-color: var(--black-25);
+  }
+
+  .account-sign-in-section .hero-content-wrapper {
+    padding-bottom: 0;
+  }
+
+  .account-sign-in-title {
+    font-size: 45px;
+  }
+
+  .sign-in-caption {
+    margin-block: 14px 44px;
+  }
+
+  .account-sign-in-input-wrapper label {
+    font-size: 35px;
+    line-height: 1.75;
+  }
+
+  .account-sign-in-input-wrapper:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .account-sign-in-btn-wrapper {
+    gap: 32px;
+  }
+
+  .account-sign-in-section .hero-media {
+    position: relative;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2148,6 +2206,22 @@
   .privacy-contents:not(:first-child) {
     margin-top: 70px;
   }
+
+  /* ========================================
+          ACCOUNT SIGN IN HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .hero-section.account-sign-in-section .hero-main-wrapper {
+    gap: 42px;
+  }
+
+  .account-sign-in-section .hero-content-wrapper {
+    max-width: 100%;
+  }
+
+  .create-new-account-wrapper {
+    align-items: start;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2885,6 +2959,20 @@
   /* ----- PRIVACY SECTION ----- */
   .privacy-section::before {
     width: 100%;
+  }
+
+  /* ========================================
+          ACCOUNT SIGN IN HTML 
+========================================*/
+  /* ----- HERO SECTION ----- */
+  .account-sign-in-btn-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .account-sign-in-section .account-sign-in-login-btn {
+    min-width: 100%;
   }
 }
 
