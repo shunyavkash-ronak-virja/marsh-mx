@@ -310,6 +310,28 @@ header.body-scroll {
   padding: 4px 6px;
 }
 
+/* ----- search box ----- */
+/* .header-search-box-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.header-search-box-wrapper input {
+  max-width: 445px;
+  border-radius: 28px;
+  padding-inline: 20px;
+  background-color: var(--white-400);
+}
+
+.header-search-box-wrapper .icon-btn {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+} */
+
 /* ----- Responsive ----- */
 .responsive-wrapper {
   display: none;

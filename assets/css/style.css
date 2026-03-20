@@ -989,26 +989,21 @@
   margin-block: 24px 22px;
 }
 
-.product-overview-qty-btn {
+.product-overview-qty-box {
   min-width: 136px;
-  border-color: var(--black);
-  color: var(--black);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  border: 1px solid var(--black);
+  padding-block: 18px;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
 }
 
-.product-overview-qty-btn svg {
-  transition: all 0.3s ease-in-out;
+.product-overview-qty-box span {
+  padding-top: 4px;
 }
 
-.product-overview-qty-btn:hover svg {
-  transform: rotate(180deg);
-}
-
-.product-overview-qty-btn-icon {
-  width: 12px;
-  height: 8px;
+.product-overview-basket {
+  padding-block: 26px;
 }
 
 /* --- START BASKET SIDEBAR --- */
@@ -1907,12 +1902,10 @@
   margin-top: 6px;
 }
 
-.compare-item-img-content {
+.compare-item-img {
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 0.638;
-}
-
-.compare-item-img-content .img-cover {
   object-fit: contain;
 }
 
@@ -4056,7 +4049,7 @@
 }
 
 .enquire-modal-input {
-  border-color: var(--white-300);
+  border-color: var(--white-300-75);
 }
 
 .enquire-modal-input:not(:last-child) {
@@ -4398,6 +4391,7 @@
 
 .account-sign-in-input {
   margin-top: 18px;
+  border-color: var(--white-75);
 }
 
 .account-sign-in-input-wrapper:not(:last-child) {
@@ -4462,7 +4456,7 @@
 }
 
 .password-reset-section .hero-content-wrapper {
-  max-width: 500px;
+  max-width: 506px;
   padding-block: 128px 136px;
   padding-left: 6%;
 }
@@ -4479,6 +4473,7 @@
 
 .password-reset-email-wrapper input {
   margin-top: 16px;
+  border-color: var(--white-75);
 }
 
 .password-reset-email-wrapper input::placeholder {

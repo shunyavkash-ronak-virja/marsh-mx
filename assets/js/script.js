@@ -665,6 +665,7 @@ if (ourTeamSplide.length) {
       gap: 22,
       pagination: false,
       perMove: 1,
+      drag: false,
       speed: 800,
       interval: 5000,
     });
