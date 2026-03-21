@@ -325,9 +325,10 @@ if (productItemsWrapper.length) {
 // ================================
 // PRODUCT OVERVIEW
 // ================================
-const productOverviewWrapper = document.querySelectorAll(".product-overview-wrapper");
-if (productOverviewWrapper.length) {
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const productOverviewWrapper = document.querySelectorAll(".product-overview-wrapper");
+
+  if (productOverviewWrapper.length > 0) {
     var main = new Splide(".product-overview-slider.splide", {
       type: "fade",
       rewind: true,
@@ -341,21 +342,24 @@ if (productOverviewWrapper.length) {
       gap: 10,
       rewind: true,
       pagination: false,
+      isNavigation: true,
       perPage: 3,
       breakpoints: {
         575: {
           perPage: 2,
           fixedWidth: 88,
           fixedHeight: 80,
+          focus: "center",
         },
       },
     });
 
     main.sync(thumbnails);
-    main.mount();
+
     thumbnails.mount();
-  });
-}
+    main.mount();
+  }
+});
 
 // ================================
 // GLOBAL SIDEABR JS
